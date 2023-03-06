@@ -60,7 +60,7 @@ The search words typed by the user in the search box defines the main query cons
 
 ### Advanced Search
 
-This will be considered a fielded search and the query syntax of Solr will be used to search. This will allow us to use wildcards (`*`), proximity matching (`~`, looks for terms that are within a specific distance from one another) and general features described in [Solr docs](https://solr.apache.org/guide/6_6/searching.html). The basic syntax is `field:term`. Field names may differ from datasets' attributes, the mapping rules are defined in the [schema.xml](https://github.com/ckan/ckan/blob/master/ckan/config/solr/schema.xml) file. You can use `title` to search by the dataset name and `text` to look in a catch-all field. CKAN supports fuzzy searches based on the Levenshtein Distance, or Edit Distance algorithm, to do a fuzzy search use the `~` symbol at the end of a single-word term.
+This will be considered a fielded search and the query syntax of Solr will be used to search. This will allow us to use wildcards (`*`), proximity matching (`~`, looks for terms that are within a specific distance from one another) and general features described in <a href="https://solr.apache.org/guide/6_6/searching.html" target="_blank">Solr docs</a>. The basic syntax is `field:term`. Field names may differ from datasets' attributes, the mapping rules are defined in the <a href="https://github.com/ckan/ckan/blob/master/ckan/config/solr/schema.xml" target="_blank">schema.xml</a> file. You can use `title` to search by the dataset name and `text` to look in a catch-all field. CKAN supports fuzzy searches based on the Levenshtein Distance, or Edit Distance algorithm, to do a fuzzy search use the `~` symbol at the end of a single-word term.
 
 **Examples**:
 

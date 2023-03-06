@@ -1,6 +1,6 @@
 # ALTERNATIVE Platform - User Guide
 
-The web platform, made with [CKAN](https://docs.ckan.org/en/2.9/user-guide.html), can be used to manage, publish and find data. It also has an API, which can be used by generating an [API Token](users.md#api-tokens); and a [python library](https://github.com/ALTERNATIVE-EU/alternative-lib) - for searching datasets and downloading resources.
+The web platform, made with <a href="https://docs.ckan.org/en/2.9/user-guide.html" target="_blank">CKAN</a>, can be used to manage, publish and find data. It also has an API, which can be used by generating an [API Token](users.md#api-tokens); and a [python library](jupyter.md#python-library) - for searching datasets and downloading resources.
 
 ## Contents:
 
@@ -10,4 +10,4 @@ The web platform, made with [CKAN](https://docs.ckan.org/en/2.9/user-guide.html)
 
 [Metadata](metadata.md)
 
-[Jupyterhub](jupyter.md)
+[JupyterHub](jupyter.md)

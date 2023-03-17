@@ -16,7 +16,7 @@ In the middle, you can see the currently open tabs and interact with them. From 
 
 ## File System
 
-`/home/jovyan` and `/home/shared` directories are not being deleted between server stops. `/home/jovyan` is personal for the user - nobody else can see its content. `/home/shared` is for all users - everybody can see its content. All other directories are deleted and recreated everytime the server is stopped/started.
+Each user has 10 GB available space. `/home/jovyan` and `/home/shared` directories are not being deleted between server stops. `/home/jovyan` is personal for the user - nobody else can see its content. `/home/shared` is for all users - everybody can see its content. All other directories are deleted and recreated everytime the server is stopped/started.
 
 ## Environments
 

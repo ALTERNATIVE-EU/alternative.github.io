@@ -20,7 +20,7 @@ Underneath the creation form you can see all your tokens. From the list you can 
 
 ### News Feed
 
-At the top of any page, select the dashboard symbol. This shows changes to datasets, organizations and groups that you follow. It is possible to follow individual users to be notified of changes that they make. To start/stop following something, go to its dedicated page and select `Follow`/`Unfollow`.
+At the top of any page, select the dashboard symbol. This shows changes to datasets, organizations and groups that you follow. It is possible to follow individual users to be notified of changes that they make. To start/stop following something, go to its dedicated page and select `Follow`/`Unfollow`. You can also select the `Activity Stream` tab to see all activities related to the object. You can enable email notifications for updates to things you follow by enabling `Subscribe to notification emails` from your profile settings.
 
 ## Organizations
 

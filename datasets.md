@@ -14,7 +14,7 @@ By selecting `Datasets` you can see a list of all datasets on the platform. From
 1. You can access the `Create Dataset` screen in two ways. Go to `Datasets` page, then select the `Add Dataset` button. Alternatively, go to `Organizations`, select the page for the organization that should own your new dataset. Provided that you are a member of this organization, you can now select the `Add Dataset` button.
 2. Add [information](metadata.md#fields) about the data
 3. Press `Next: Add Data`
-4. This is where you will add one or more resources which contain the data for this dataset. Choose a file (`Upload` button) or link (`Link` button) for your data resource. Fill the other information on the page:
+4. This is where you will add one or more resources which contain the data for this dataset. Choose a file (`Upload` button, max file size = 1 GB) or link (`Link` button) for your data resource. Fill the other information on the page:
    - Name - a name for this resource, different resources in the dataset should have different names
    - Description - a description of the resource
    - Format - the file format of the resource

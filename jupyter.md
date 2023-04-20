@@ -20,30 +20,56 @@ Each user has 10 GB available space. `/home/jovyan` and `/home/shared` directori
 
 ## Environments
 
-Every JupyterLab server is being spawned with two environments from the start - default python environment and an additional <a href="https://conda.io/projects/conda/en/latest/user-guide/index.html" target="_blank">conda</a> environment. On `Launcher` tab under `Notebook` or `Console` you can choose which environment to use. You can also use the `Terminal` to:
+Every JupyterLab server is being spawned with two environments from the start - default python environment and an additional <a href="https://conda.io/projects/conda/en/latest/user-guide/index.html" target="_blank">conda</a> environment. On `Launcher` tab under `Notebook` or `Console` you can choose which environment to use. You can also use the `Terminal`:
 
-### Add New Environments:
+### Python Virtual Environments
+
+Each environment has their own independent set of Python packages installed in their `site` directories. A virtual environment is created on top of an existing Python installation, known as the virtual environment’s `base` Python, and may be isolated from the packages in the base environment, so only those explicitly installed in the virtual environment are available. <a href="https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments/#creating-a-virtual-environment" target="_blank">Python Virtual Environment Docs</a>.
+
+ - Add New Environments:
+```
+python -m venv /path/to/new/virtual/environment
+```
+
+- Activate Different Environment:
+```
+source environment/bin/activate
+```
+
+- Deactivate Current Environment:
+```
+deactivate
+```
+
+- Delete Environment:
+```
+rm -rf environment
+```
+
+### Conda Environments
+
+- Add New Environments:
 ```
 conda create --name Conda2
 conda activate Conda2
 python -m ipykernel install --user --name=Conda2
 ```
 
-### Delete Environment:
-```
-conda activate base
-conda remove -n Conda2 --all
-jupyter kernelspec remove conda2
-```
-
-### Activate Different Environment:
+- Activate Different Environment:
 ```
 conda activate Conda2
 ```
 
-### Deactivate Current Environment:
+- Deactivate Current Environment:
 ```
 conda deactivate
+```
+
+- Delete Environment:
+```
+conda activate base
+conda remove -n Conda2 --all
+jupyter kernelspec remove conda2
 ```
 
 ## Python Library

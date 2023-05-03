@@ -82,7 +82,7 @@ conda create --prefix /home/jovyan/Conda2
 
 - Activate Different Environment:
 ```
-conda activate Conda2
+conda activate /home/jovyan/Conda2
 ```
 
 - Install Packages:

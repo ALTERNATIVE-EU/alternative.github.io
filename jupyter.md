@@ -130,3 +130,33 @@ pip install alternative-lib
 ```
 
 [Example](lib-example.py) of the library being used to get a public dataset and download its resource.
+
+## R
+
+You can use R from a `Terminal`. The first time you install a new package you should be asked where to save it. **Make sure any packages you install are in the `/home/jovyan` directory or they will get deleted.**
+
+- Activate R Console:
+```
+R
+```
+
+- Help Command:
+```
+help()
+```
+
+- Install Package:
+```
+install.packages("package_name")
+```
+
+- Exit R Console:
+```
+q()
+```
+
+### Useful R Docs
+- <a href="https://www.r-project.org/" target="_blank">The R Project</a>
+- <a href="https://cran.r-project.org/doc/contrib/Lemon-kickstart/index.html" target="_blank">Kickstarting R</a>
+- <a href="https://datatofish.com/install-package-r/" target="_blank">Installing R Packages</a>
+- <a href="https://bioconductor.org/install/" target="_blank">Installing and Using Bioconductor</a>

@@ -150,6 +150,11 @@ help()
 install.packages("package_name")
 ```
 
+- List Installed Packages:
+```
+installed.packages()
+```
+
 - Exit R Console:
 ```
 q()
@@ -159,7 +164,6 @@ q()
 - <a href="https://www.r-project.org/" target="_blank">The R Project</a>
 - <a href="https://cran.r-project.org/doc/contrib/Lemon-kickstart/index.html" target="_blank">Kickstarting R</a>
 - <a href="https://datatofish.com/install-package-r/" target="_blank">Installing R Packages</a>
-- <a href="https://bioconductor.org/install/" target="_blank">Installing and Using Bioconductor</a>
 
 ### Version Update
 
@@ -175,4 +179,15 @@ To add the directory in paths list:
 To make the directory the main library for packages:
 ```
 .libPaths( c( "yourLib" , .libPaths() ) )
+```
+
+### Bioconductor
+
+<a href="https://bioconductor.org/install/" target="_blank">Installing and Using Bioconductor</a>. When installing packages with `BiocManager::install()`, add the path to your R package directory, like so (replace `your_R_package_dir` with the directory name):
+```
+BiocManager::install(lib="/home/jovyan/your_R_package_dir")
+```
+or
+```
+BiocManager::install("package_name", lib="/home/jovyan/your_R_package_dir")
 ```

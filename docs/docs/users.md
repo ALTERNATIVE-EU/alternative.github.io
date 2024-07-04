@@ -11,6 +11,7 @@ You can see your profile by selecting the button containing your picture and nam
 API tokens are used in API calls or with the python library to access private datasets, that your account has rights to.
 
 To generate an API token:
+
 1. Go to your profile page
 2. Select the `API Tokens` tab
 3. Set a name for your token and click `Create API Token`

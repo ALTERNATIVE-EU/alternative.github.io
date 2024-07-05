@@ -8,28 +8,28 @@
       
       
       
-        <link rel="canonical" href="https://platform.alternative-project.eu/ai-ml-api/security/authentication-and-authorization/">
+        <link rel="canonical" href="https://platform.alternative-project.eu/deployment/platform/">
       
       
-        <link rel="prev" href="../../overview/data-flow/">
+        <link rel="prev" href="../../metadata/">
       
       
-        <link rel="next" href="../encryption/">
+        <link rel="next" href="../envoy-filter/">
       
       
-      <link rel="icon" href="../../../assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.28">
     
     
       
-        <title>Authentication and Authorization - ALTERNATIVE Platform Documentation</title>
+        <title>Platform - ALTERNATIVE Platform Documentation</title>
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.6543a935.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.6543a935.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -48,7 +48,7 @@
       
     
     
-    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#authentication-and-authorization" class="md-skip">
+        <a href="#install-alternative-ckan-environment-on-k8s" class="md-skip">
           Skip to content
         </a>
       
@@ -90,7 +90,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../.." title="ALTERNATIVE Platform Documentation" class="md-header__button md-logo" aria-label="ALTERNATIVE Platform Documentation" data-md-component="logo">
+    <a href="../.." title="ALTERNATIVE Platform Documentation" class="md-header__button md-logo" aria-label="ALTERNATIVE Platform Documentation" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -110,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Authentication and Authorization
+              Platform
             
           </span>
         </div>
@@ -225,7 +225,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../.." title="ALTERNATIVE Platform Documentation" class="md-nav__button md-logo" aria-label="ALTERNATIVE Platform Documentation" data-md-component="logo">
+    <a href="../.." title="ALTERNATIVE Platform Documentation" class="md-nav__button md-logo" aria-label="ALTERNATIVE Platform Documentation" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -255,7 +255,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../introduction/" class="md-nav__link">
+      <a href="../../introduction/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -275,7 +275,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../networking/" class="md-nav__link">
+      <a href="../../networking/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -295,7 +295,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../users/" class="md-nav__link">
+      <a href="../../users/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -315,7 +315,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../datasets/" class="md-nav__link">
+      <a href="../../datasets/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -335,141 +335,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../metadata/" class="md-nav__link">
+      <a href="../../metadata/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
     Metadata
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-    
-      
-        
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
-        
-          
-          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
-            
-  
-  <span class="md-ellipsis">
-    Deployment
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_6">
-            <span class="md-nav__icon md-icon"></span>
-            Deployment
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../deployment/platform/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Platform
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../deployment/envoy-filter/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Envoy Filter
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../deployment/ai-ml-api/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    AI/ML API
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../jupyter/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    JupyterHub
   </span>
   
 
@@ -499,7 +369,342 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Deployment
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Deployment
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Platform
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Platform
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#requirements" class="md-nav__link">
+    <span class="md-ellipsis">
+      Requirements
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-certificate" class="md-nav__link">
+    <span class="md-ellipsis">
+      Create Certificate
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-ingress" class="md-nav__link">
+    <span class="md-ellipsis">
+      Create Ingress
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#install-keycloak" class="md-nav__link">
+    <span class="md-ellipsis">
+      Install Keycloak
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Install Keycloak">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#restore-keycloak-backup" class="md-nav__link">
+    <span class="md-ellipsis">
+      Restore Keycloak Backup
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#build-alternative-ckan-docker-image" class="md-nav__link">
+    <span class="md-ellipsis">
+      Build ALTERNATIVE CKAN Docker Image
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#install-ckan" class="md-nav__link">
+    <span class="md-ellipsis">
+      Install CKAN
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-users" class="md-nav__link">
+    <span class="md-ellipsis">
+      Create Users
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#change-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Change Settings
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#restore-ckan-postgresql-backup" class="md-nav__link">
+    <span class="md-ellipsis">
+      Restore CKAN PostgreSQL Backup
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#install-jupyterhub" class="md-nav__link">
+    <span class="md-ellipsis">
+      Install Jupyterhub
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Install Jupyterhub">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#create-certificate_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Create Certificate
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#create-ingress_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Create Ingress
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#create-shared-jupyter-volume" class="md-nav__link">
+    <span class="md-ellipsis">
+      Create Shared Jupyter Volume
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#build-custom-image" class="md-nav__link">
+    <span class="md-ellipsis">
+      Build Custom Image
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#install-helm-chart" class="md-nav__link">
+    <span class="md-ellipsis">
+      Install Helm Chart
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#backup-jobs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Backup Jobs
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../envoy-filter/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Envoy Filter
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ai-ml-api/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    AI/ML API
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../jupyter/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    JupyterHub
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
         
           
           <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="">
@@ -513,7 +718,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_8">
             <span class="md-nav__icon md-icon"></span>
             Building Blocks
@@ -527,7 +732,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../building-blocks/cloud-infrastructure/" class="md-nav__link">
+      <a href="../../building-blocks/cloud-infrastructure/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -548,7 +753,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../building-blocks/kubernetes/" class="md-nav__link">
+      <a href="../../building-blocks/kubernetes/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -569,7 +774,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../building-blocks/administrative-services/" class="md-nav__link">
+      <a href="../../building-blocks/administrative-services/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -590,7 +795,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../building-blocks/storage/" class="md-nav__link">
+      <a href="../../building-blocks/storage/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -611,7 +816,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../building-blocks/user-services/" class="md-nav__link">
+      <a href="../../building-blocks/user-services/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -629,8 +834,6 @@
                 
   
   
-    
-  
   
   
     
@@ -639,11 +842,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_6" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_6" >
         
           
           <label class="md-nav__link" for="__nav_8_6" id="__nav_8_6_label" tabindex="0">
@@ -657,7 +860,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_6_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_6_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_8_6">
             <span class="md-nav__icon md-icon"></span>
             APIs
@@ -671,7 +874,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../building-blocks/apis/" class="md-nav__link">
+      <a href="../../building-blocks/apis/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -689,8 +892,6 @@
                 
   
   
-    
-  
   
   
     
@@ -699,11 +900,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_6_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_6_2" >
         
           
           <label class="md-nav__link" for="__nav_8_6_2" id="__nav_8_6_2_label" tabindex="0">
@@ -717,7 +918,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_8_6_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_8_6_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_8_6_2">
             <span class="md-nav__icon md-icon"></span>
             AI/ML API
@@ -731,7 +932,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../" class="md-nav__link">
+      <a href="../../ai-ml-api/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -789,7 +990,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../overview/system-architecture/" class="md-nav__link">
+      <a href="../../ai-ml-api/overview/system-architecture/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -810,7 +1011,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../overview/data-flow/" class="md-nav__link">
+      <a href="../../ai-ml-api/overview/data-flow/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -836,8 +1037,6 @@
                 
   
   
-    
-  
   
   
     
@@ -846,11 +1045,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_6_2_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_6_2_3" >
         
           
           <label class="md-nav__link" for="__nav_8_6_2_3" id="__nav_8_6_2_3_label" tabindex="0">
@@ -864,7 +1063,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_8_6_2_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_8_6_2_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_8_6_2_3">
             <span class="md-nav__icon md-icon"></span>
             Security
@@ -875,30 +1074,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Authentication and Authorization
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../ai-ml-api/security/authentication-and-authorization/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -907,125 +1086,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
-    <span class="md-ellipsis">
-      Overview
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#token-based-security-mechanism" class="md-nav__link">
-    <span class="md-ellipsis">
-      Token-based Security Mechanism
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Token-based Security Mechanism">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#implementation-details" class="md-nav__link">
-    <span class="md-ellipsis">
-      Implementation Details
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#verification-process" class="md-nav__link">
-    <span class="md-ellipsis">
-      Verification Process
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#keycloak-integration" class="md-nav__link">
-    <span class="md-ellipsis">
-      Keycloak Integration
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Keycloak Integration">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#integration-steps" class="md-nav__link">
-    <span class="md-ellipsis">
-      Integration Steps
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#access-control" class="md-nav__link">
-    <span class="md-ellipsis">
-      Access Control
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Access Control">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#best-practices" class="md-nav__link">
-    <span class="md-ellipsis">
-      Best Practices
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#common-issues-and-troubleshooting" class="md-nav__link">
-    <span class="md-ellipsis">
-      Common Issues and Troubleshooting
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1038,7 +1098,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../encryption/" class="md-nav__link">
+      <a href="../../ai-ml-api/security/encryption/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1104,7 +1164,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../token-management/ckan-integration/" class="md-nav__link">
+      <a href="../../ai-ml-api/token-management/ckan-integration/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1125,7 +1185,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../token-management/token-lifecycle/" class="md-nav__link">
+      <a href="../../ai-ml-api/token-management/token-lifecycle/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1191,7 +1251,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../api-usage/endpoints/" class="md-nav__link">
+      <a href="../../ai-ml-api/api-usage/endpoints/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1212,7 +1272,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../api-usage/authentication/" class="md-nav__link">
+      <a href="../../ai-ml-api/api-usage/authentication/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1233,7 +1293,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../api-usage/error-handling/" class="md-nav__link">
+      <a href="../../ai-ml-api/api-usage/error-handling/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1262,7 +1322,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../scalability/" class="md-nav__link">
+      <a href="../../ai-ml-api/scalability/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1283,7 +1343,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../testing/" class="md-nav__link">
+      <a href="../../ai-ml-api/testing/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1304,7 +1364,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../deployment/" class="md-nav__link">
+      <a href="../../ai-ml-api/deployment/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1325,7 +1385,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../repositories/" class="md-nav__link">
+      <a href="../../ai-ml-api/repositories/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1362,7 +1422,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../building-blocks/features/" class="md-nav__link">
+      <a href="../../building-blocks/features/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1383,7 +1443,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../building-blocks/extensions/" class="md-nav__link">
+      <a href="../../building-blocks/extensions/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1431,37 +1491,46 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
+  <a href="#requirements" class="md-nav__link">
     <span class="md-ellipsis">
-      Overview
+      Requirements
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#token-based-security-mechanism" class="md-nav__link">
+  <a href="#create-certificate" class="md-nav__link">
     <span class="md-ellipsis">
-      Token-based Security Mechanism
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Token-based Security Mechanism">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#implementation-details" class="md-nav__link">
-    <span class="md-ellipsis">
-      Implementation Details
+      Create Certificate
     </span>
   </a>
   
 </li>
+      
+        <li class="md-nav__item">
+  <a href="#create-ingress" class="md-nav__link">
+    <span class="md-ellipsis">
+      Create Ingress
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#install-keycloak" class="md-nav__link">
+    <span class="md-ellipsis">
+      Install Keycloak
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Install Keycloak">
+      <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#verification-process" class="md-nav__link">
+  <a href="#restore-keycloak-backup" class="md-nav__link">
     <span class="md-ellipsis">
-      Verification Process
+      Restore Keycloak Backup
     </span>
   </a>
   
@@ -1473,19 +1542,100 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#keycloak-integration" class="md-nav__link">
+  <a href="#build-alternative-ckan-docker-image" class="md-nav__link">
     <span class="md-ellipsis">
-      Keycloak Integration
+      Build ALTERNATIVE CKAN Docker Image
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Keycloak Integration">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#install-ckan" class="md-nav__link">
+    <span class="md-ellipsis">
+      Install CKAN
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-users" class="md-nav__link">
+    <span class="md-ellipsis">
+      Create Users
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#change-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Change Settings
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#restore-ckan-postgresql-backup" class="md-nav__link">
+    <span class="md-ellipsis">
+      Restore CKAN PostgreSQL Backup
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#install-jupyterhub" class="md-nav__link">
+    <span class="md-ellipsis">
+      Install Jupyterhub
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Install Jupyterhub">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#integration-steps" class="md-nav__link">
+  <a href="#create-certificate_1" class="md-nav__link">
     <span class="md-ellipsis">
-      Integration Steps
+      Create Certificate
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#create-ingress_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Create Ingress
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#create-shared-jupyter-volume" class="md-nav__link">
+    <span class="md-ellipsis">
+      Create Shared Jupyter Volume
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#build-custom-image" class="md-nav__link">
+    <span class="md-ellipsis">
+      Build Custom Image
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#install-helm-chart" class="md-nav__link">
+    <span class="md-ellipsis">
+      Install Helm Chart
     </span>
   </a>
   
@@ -1497,33 +1647,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#access-control" class="md-nav__link">
+  <a href="#backup-jobs" class="md-nav__link">
     <span class="md-ellipsis">
-      Access Control
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Access Control">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#best-practices" class="md-nav__link">
-    <span class="md-ellipsis">
-      Best Practices
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#common-issues-and-troubleshooting" class="md-nav__link">
-    <span class="md-ellipsis">
-      Common Issues and Troubleshooting
+      Backup Jobs
     </span>
   </a>
   
@@ -1547,48 +1673,236 @@
   
 
 
-<h1 id="authentication-and-authorization">Authentication and Authorization</h1>
-<h2 id="overview">Overview</h2>
-<p>This document outlines the authentication and authorization mechanisms implemented in our system. It covers the token-based security mechanism using an Envoy filter, integration with Keycloak for identity and access management, and the application of Role-based Access Control (RBAC) for fine-grained permissions.</p>
-<h2 id="token-based-security-mechanism">Token-based Security Mechanism</h2>
-<p>The system employs a robust token-based security mechanism integrated within the Istio service mesh. This approach ensures that only authenticated and authorized requests can access protected services.</p>
-<h3 id="implementation-details">Implementation Details</h3>
+<h1 id="install-alternative-ckan-environment-on-k8s">Install ALTERNATIVE CKAN Environment on K8S</h1>
+<h2 id="requirements">Requirements</h2>
+<p>You will need a cluster with:</p>
 <ul>
-<li><strong>Envoy Filter</strong>: A custom HTTP filter deployed as a sidecar container alongside the service it secures. It performs the following functions:</li>
-<li><strong>Request Interception</strong>: All incoming requests are intercepted for validation.</li>
-<li><strong>Token Validation</strong>: Validates the JWT token's signature and checks the token ID against a revocation list stored in a PostgreSQL database.</li>
-<li><strong>Caching</strong>: To improve performance and reduce database queries, caching is used for the token's revocation status and the public key for signature verification.</li>
+<li>Ingress controller configured</li>
+<li>Cert-Manager configured</li>
+<li>Domain name resolving to ingress-controller's service external IP</li>
+<li>GCP bucket and credentials json file for that project</li>
+<li>Kubeconfig file for interaction with the cluster (set environment variable <code>KUBECONFIG</code> to point to it)</li>
 </ul>
-<h3 id="verification-process">Verification Process</h3>
+<p>You also need to clone <a href="https://github.com/ALTERNATIVE-EU/platform-deployment">platform-deployment</a> repository and all the CKAN extension ones.</p>
+<h2 id="create-certificate">Create Certificate</h2>
 <ol>
-<li><strong>Extract Token</strong>: The token is extracted from the request header.</li>
-<li><strong>Validate Structure and Signature</strong>: Checks if the token structure is valid and verifies the signature.</li>
-<li><strong>Check Expiration</strong>: Ensures the token has not expired.</li>
-<li><strong>Verify Claims</strong>: Verifies the issuer and audience claims.</li>
-<li><strong>Revocation List Check</strong>: Checks the token ID against a revocation list.</li>
+<li>Navigate to the <code>platform-deployment</code> repository
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>cd platform-deployment
+</code></pre></div></li>
+<li>Update <code>dnsNames</code> and <code>issuerRef</code> params in <code>deployment/manifest/certificate.yaml</code></li>
+<li>Create the certificate resource
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>kubectl apply -f ./deployment/manifests/certificate.yaml
+</code></pre></div></li>
 </ol>
-<h2 id="keycloak-integration">Keycloak Integration</h2>
-<p>Keycloak serves as the central identity and access management system, offering features like OAuth 2.0, OpenID Connect support, and multi-factor authentication.</p>
-<h3 id="integration-steps">Integration Steps</h3>
+<h2 id="create-ingress">Create Ingress</h2>
 <ol>
-<li><strong>Realm Configuration</strong>: Set up a Keycloak realm specific to the API.</li>
-<li><strong>Client Application Setup</strong>: Register the client application in Keycloak.</li>
-<li><strong>Roles and Permissions</strong>: Define roles and permissions for access control.</li>
-<li><strong>Token Configuration</strong>: Configure token settings, including lifespan and signature algorithm.</li>
-<li><strong>Library Integration</strong>: Integrate Keycloak libraries with the Envoy filter for seamless authentication and authorization.</li>
+<li>Update <code>tls</code> and <code>rules</code> params in <code>deployment/manifest/ingress.yaml</code></li>
+<li>Create the ingress resource
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>kubectl apply -f ./deployment/manifests/ingress.yaml
+</code></pre></div></li>
 </ol>
-<h2 id="access-control">Access Control</h2>
-<p>Role-based Access Control (RBAC) is implemented to provide fine-grained access control to API endpoints. This section could be expanded with examples of role definitions and how they are applied to endpoints.</p>
-<h3 id="best-practices">Best Practices</h3>
-<ul>
-<li><strong>Regularly Update Roles</strong>: Ensure roles and permissions are regularly reviewed and updated to reflect changes in access requirements.</li>
-</ul>
-<h2 id="common-issues-and-troubleshooting">Common Issues and Troubleshooting</h2>
-<ul>
-<li><strong>Token Validation Failure</strong>: Ensure the token has not expired and the signature matches the public key.</li>
-<li><strong>Access Denied</strong>: Verify the user's roles and permissions align with the requested resource's access control policies.</li>
-<li><strong>Performance Issues</strong>: Check the caching mechanism for token validation and revocation status to ensure it is functioning correctly.</li>
-</ul>
+<h2 id="install-keycloak">Install Keycloak</h2>
+<ol>
+<li>Install helm chart
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>helm install -f ./deployment/charts/keycloak/values.yaml keycloak ./deployment/charts/keycloak/ --namespace default
+</code></pre></div></li>
+<li>Get admin credentials (username is <code>user</code>)
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>kubectl get secret keycloak -o jsonpath=&#39;{.data.admin-password}&#39;|base64 --decode
+</code></pre></div></li>
+<li>Create alternative realm from json file <code>deployment/charts/keycloak/realms/alternative-realm.json</code></li>
+<li>Update URL parameters in <code>ckan-backend</code>, <code>ckan-frontend</code> and <code>jupyterhub</code> clients (add jupyterhub URL)</li>
+<li>Generate new client credentials secret for <code>ckan-backend</code> and <code>jupyterhub</code> clients</li>
+<li>Configure realm email settings</li>
+<li>Enable <code>Forgot password</code> functionality</li>
+</ol>
+<h3 id="restore-keycloak-backup">Restore Keycloak Backup</h3>
+<ol>
+<li>
+<p>Install the helm chart and wait for the pods to be ready and running
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>helm install -f ./deployment/charts/keycloak/values.yaml keycloak ./deployment/charts/keycloak/ --namespace default
+</code></pre></div></p>
+</li>
+<li>
+<p>Copy the <code>.dump</code> file to the Keycloak DB pod
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>kubectl cp keycloak.dump keycloak-postgresql-0:/tmp/backup.dump
+</code></pre></div></p>
+</li>
+<li>
+<p>Remove Keycloak pod
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>kubectl scale statefulsets keycloak --replicas=0
+</code></pre></div></p>
+</li>
+<li>
+<p>Get PostgreSQL password
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>kubectl get secret keycloak-postgresql -o jsonpath=&#39;{.data.password}&#39; | base64 --decode
+</code></pre></div></p>
+</li>
+<li>
+<p>Enter Keycloak DB pod
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>kubectl exec -it keycloak-postgresql-0 /bin/bash
+</code></pre></div></p>
+</li>
+<li>
+<p>Set environment variables (replace <code>pass</code> with the PostgreSQL password)
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>export PGDATABASE=bitnami_keycloak
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>export PGUSER=bn_keycloak
+<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>export PGPASSWORD=pass
+</code></pre></div></p>
+</li>
+<li>
+<p>Recreate the DB from the backup file
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>dropdb -f $PGDATABASE
+<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>createdb $PGDATABASE
+<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>pg_restore -d $PGDATABASE /tmp/backup.dump
+</code></pre></div></p>
+</li>
+<li>
+<p>Restoring from the backup recreates the main user of Keycloak so the password in the secret will no longer be correct, to fix that:</p>
+</li>
+<li>Start PostgreSQL console with <code>psql</code></li>
+<li>Get the user ID of user with username <code>user</code>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>select id from user_entity where &quot;username&quot;=&#39;user&#39;;
+</code></pre></div></li>
+<li>Run these queries (replace <code>usr_id</code>)
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>delete from credential where &quot;user_id&quot;=&#39;usr_id&#39;;
+<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>delete from user_role_mapping where &quot;user_id&quot;=&#39;usr_id&#39;;
+<a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a>delete from user_entity where &quot;id&quot;=&#39;usr_id&#39;;
+</code></pre></div></li>
+<li>
+<p>Exit DB pod, delete it with the below command and wait for it to be recreated, ready and running again
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>kubectl delete pod keycloak-postgresql-0
+</code></pre></div></p>
+</li>
+<li>
+<p>Recreate Keycloak pod
+<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>kubectl scale statefulsets keycloak --replicas=1
+</code></pre></div></p>
+</li>
+<li>
+<p>Enter Keycloak with username <code>user</code> and password from this command <code>kubectl get secret keycloak -o jsonpath='{.data.admin-password}' | base64 --decode</code> and check if everything got recovered</p>
+</li>
+</ol>
+<h2 id="build-alternative-ckan-docker-image">Build ALTERNATIVE CKAN Docker Image</h2>
+<ol>
+<li>Update configs in <code>ckan-alternative-theme/keycloak_auth-config</code> and <code>ckan-alternative-theme/cloudstorage-config</code></li>
+<li>Copy the CKAN extensions into <code>ckan-alternative-theme</code></li>
+<li>Build the image
+<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>docker build -f ./ckan-alternative-theme/AlternativeCKAN ./ckan-alternative-theme -t gcr.io/alternative-363010/ckan-alternative
+</code></pre></div></li>
+<li>Upload the image to the registry
+<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>docker push gcr.io/alternative-363010/ckan-alternative
+</code></pre></div></li>
+</ol>
+<h2 id="install-ckan">Install CKAN</h2>
+<ol>
+<li>Add chart repo
+<div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>helm repo add keitaro-charts https://keitaro-charts.storage.googleapis.com
+</code></pre></div></li>
+<li>Update <code>deployment/manifests/ckan_values.yaml</code></li>
+<li>Install helm chart
+<div class="highlight"><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a>helm install -f ./deployment/manifests/ckan_values.yaml ckan keitaro-charts/ckan
+</code></pre></div></li>
+<li>Wait for the ckan pod to become ready</li>
+</ol>
+<h2 id="create-users">Create Users</h2>
+<p>Add users in Keycloak, sysadmin users should be in the group <code>admins</code></p>
+<h2 id="change-settings">Change Settings</h2>
+<p>From sysadmin settings, change the logo with <code>../ckanext-alternative_theme/ckanext/alternative_theme/public/images/fulllogo_transparent.png</code> and update the rest of the options as you wish</p>
+<h2 id="restore-ckan-postgresql-backup">Restore CKAN PostgreSQL Backup</h2>
+<ol>
+<li>
+<p>Copy the <code>.dump</code> file to the DB pod
+<div class="highlight"><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a>kubectl cp postgres.dump postgres-0:/tmp/backup.dump
+</code></pre></div></p>
+</li>
+<li>
+<p>Get PostgreSQL password
+<div class="highlight"><pre><span></span><code><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a>kubectl get secret postgrescredentials -o jsonpath=&#39;{.data.postgresql-password}&#39; | base64 --decode
+</code></pre></div></p>
+</li>
+<li>
+<p>Enter DB pod
+<div class="highlight"><pre><span></span><code><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a>kubectl exec -it postgres-0 /bin/bash
+</code></pre></div></p>
+</li>
+<li>
+<p>Set environment variables (replace <code>pass</code> with the PostgreSQL password)
+<div class="highlight"><pre><span></span><code><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a>export PGDATABASE=ckan_default
+<a id="__codelineno-23-2" name="__codelineno-23-2" href="#__codelineno-23-2"></a>export PGUSER=postgres
+<a id="__codelineno-23-3" name="__codelineno-23-3" href="#__codelineno-23-3"></a>export PGPASSWORD=pass
+</code></pre></div></p>
+</li>
+<li>
+<p>Restore the DB from the backup file
+<div class="highlight"><pre><span></span><code><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a>pg_restore -d $PGDATABASE /tmp/backup.dump --clean --if-exists
+</code></pre></div></p>
+</li>
+<li>
+<p>Exit the DB pod with <code>exit</code> and enter the CKAN pod (replace <code>ckan-pod</code> with the actual pod name)
+<div class="highlight"><pre><span></span><code><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a>kubectl exec -it ckan-pod /bin/bash
+</code></pre></div></p>
+</li>
+<li>
+<p>Rebuild the search index for datasets to be listed correctly
+<div class="highlight"><pre><span></span><code><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a>ckan -c production.ini search-index rebuild
+</code></pre></div></p>
+</li>
+</ol>
+<h2 id="install-jupyterhub">Install Jupyterhub</h2>
+<h3 id="create-certificate_1">Create Certificate</h3>
+<ol>
+<li>Update <code>dnsNames</code> and <code>issuerRef</code> params in <code>jupyterhub/manifests/certificate.yaml</code></li>
+<li>Create the certificate resource
+<div class="highlight"><pre><span></span><code><a id="__codelineno-27-1" name="__codelineno-27-1" href="#__codelineno-27-1"></a>kubectl apply -f ./jupyterhub/manifests/certificate.yaml
+</code></pre></div></li>
+</ol>
+<h3 id="create-ingress_1">Create Ingress</h3>
+<ol>
+<li>Update <code>tls</code> and <code>rules</code> params in <code>jupyterhub/manifests/ingress.yaml</code></li>
+<li>Create the ingress resource
+<div class="highlight"><pre><span></span><code><a id="__codelineno-28-1" name="__codelineno-28-1" href="#__codelineno-28-1"></a>kubectl apply -f ./jupyterhub/manifests/ingress.yaml
+</code></pre></div></li>
+</ol>
+<h3 id="create-shared-jupyter-volume">Create Shared Jupyter Volume</h3>
+<ol>
+<li>Create NFS required pvc resource
+<div class="highlight"><pre><span></span><code><a id="__codelineno-29-1" name="__codelineno-29-1" href="#__codelineno-29-1"></a>kubectl apply -f ./jupyterhub/manifests/nfs/pvc.yaml
+</code></pre></div></li>
+<li>Create NFS resources
+<div class="highlight"><pre><span></span><code><a id="__codelineno-30-1" name="__codelineno-30-1" href="#__codelineno-30-1"></a>kubectl apply -f ./jupyterhub/manifests/nfs/deployment.yaml
+<a id="__codelineno-30-2" name="__codelineno-30-2" href="#__codelineno-30-2"></a>kubectl apply -f ./jupyterhub/manifests/nfs/service.yaml
+</code></pre></div></li>
+<li>Create Persistent volume required for shared PVC
+<div class="highlight"><pre><span></span><code><a id="__codelineno-31-1" name="__codelineno-31-1" href="#__codelineno-31-1"></a>kubectl apply -f ./jupyterhub/manifests/nfs/pv.yaml
+</code></pre></div></li>
+<li>Create shared PVC
+<div class="highlight"><pre><span></span><code><a id="__codelineno-32-1" name="__codelineno-32-1" href="#__codelineno-32-1"></a>kubectl apply -f ./jupyterhub/manifests/pvc.yaml
+</code></pre></div></li>
+</ol>
+<h3 id="build-custom-image">Build Custom Image</h3>
+<ol>
+<li>Build a new docker image
+<div class="highlight"><pre><span></span><code><a id="__codelineno-33-1" name="__codelineno-33-1" href="#__codelineno-33-1"></a>DOCKER_BUILDKIT=1 docker build -f ./jupyterhub/singleuser/Dockerfile ./jupyterhub/singleuser/ -t alternative.cr.de-fra.ionos.com/alternative-singleuser:v0.0.7
+</code></pre></div></li>
+<li>Push the new image
+<div class="highlight"><pre><span></span><code><a id="__codelineno-34-1" name="__codelineno-34-1" href="#__codelineno-34-1"></a>docker push alternative.cr.de-fra.ionos.com/alternative-singleuser:v0.0.7
+</code></pre></div></li>
+</ol>
+<h3 id="install-helm-chart">Install Helm Chart</h3>
+<ol>
+<li>Update the parameters in <code>jupyterhub/config.yaml</code></li>
+<li>Install helm chart
+<div class="highlight"><pre><span></span><code><a id="__codelineno-35-1" name="__codelineno-35-1" href="#__codelineno-35-1"></a>helm install -f ./jupyterhub/config.yaml alternative-jupyterhub ./jupyterhub/chart/ --version=2.0.0
+</code></pre></div></li>
+</ol>
+<h2 id="backup-jobs">Backup Jobs</h2>
+<ol>
+<li>Update the configurations in <code>deployment/manifests/backup_job.yaml</code> and <code>deployment/manifests/backup_credentials.yaml</code></li>
+<li>Apply the files
+<div class="highlight"><pre><span></span><code><a id="__codelineno-36-1" name="__codelineno-36-1" href="#__codelineno-36-1"></a>kubectl apply -f ./deployment/manifests/backup_credentials.yaml
+<a id="__codelineno-36-2" name="__codelineno-36-2" href="#__codelineno-36-2"></a>kubectl apply -f ./deployment/manifests/backup_job.yaml
+</code></pre></div></li>
+</ol>
 
 
 
@@ -1663,10 +1977,10 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.sections", "search.suggest", "search.highlight", "content.tabs.link"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.sections", "search.suggest", "search.highlight", "content.tabs.link"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.fe8b6f2b.min.js"></script>
+      <script src="../../assets/javascripts/bundle.fe8b6f2b.min.js"></script>
       
     
   </body>

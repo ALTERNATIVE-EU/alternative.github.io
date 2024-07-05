@@ -145,4 +145,19 @@
          <lastmod>2024-07-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
+    <url>
+         <loc>https://platform.alternative-project.eu/deployment/ai-ml-api/</loc>
+         <lastmod>2024-07-05</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://platform.alternative-project.eu/deployment/envoy-filter/</loc>
+         <lastmod>2024-07-05</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://platform.alternative-project.eu/deployment/platform/</loc>
+         <lastmod>2024-07-05</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
 </urlset>

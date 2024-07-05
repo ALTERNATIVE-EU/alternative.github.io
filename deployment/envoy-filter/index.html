@@ -8,28 +8,28 @@
       
       
       
-        <link rel="canonical" href="https://platform.alternative-project.eu/ai-ml-api/security/authentication-and-authorization/">
+        <link rel="canonical" href="https://platform.alternative-project.eu/deployment/envoy-filter/">
       
       
-        <link rel="prev" href="../../overview/data-flow/">
+        <link rel="prev" href="../platform/">
       
       
-        <link rel="next" href="../encryption/">
+        <link rel="next" href="../ai-ml-api/">
       
       
-      <link rel="icon" href="../../../assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.28">
     
     
       
-        <title>Authentication and Authorization - ALTERNATIVE Platform Documentation</title>
+        <title>Envoy Filter - ALTERNATIVE Platform Documentation</title>
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.6543a935.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.6543a935.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -48,7 +48,7 @@
       
     
     
-    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#authentication-and-authorization" class="md-skip">
+        <a href="#alternative-envoy-filter" class="md-skip">
           Skip to content
         </a>
       
@@ -90,7 +90,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../.." title="ALTERNATIVE Platform Documentation" class="md-header__button md-logo" aria-label="ALTERNATIVE Platform Documentation" data-md-component="logo">
+    <a href="../.." title="ALTERNATIVE Platform Documentation" class="md-header__button md-logo" aria-label="ALTERNATIVE Platform Documentation" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -110,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Authentication and Authorization
+              Envoy Filter
             
           </span>
         </div>
@@ -225,7 +225,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../.." title="ALTERNATIVE Platform Documentation" class="md-nav__button md-logo" aria-label="ALTERNATIVE Platform Documentation" data-md-component="logo">
+    <a href="../.." title="ALTERNATIVE Platform Documentation" class="md-nav__button md-logo" aria-label="ALTERNATIVE Platform Documentation" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -255,7 +255,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../introduction/" class="md-nav__link">
+      <a href="../../introduction/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -275,7 +275,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../networking/" class="md-nav__link">
+      <a href="../../networking/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -295,7 +295,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../users/" class="md-nav__link">
+      <a href="../../users/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -315,7 +315,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../datasets/" class="md-nav__link">
+      <a href="../../datasets/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -335,141 +335,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../metadata/" class="md-nav__link">
+      <a href="../../metadata/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
     Metadata
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-    
-      
-        
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
-        
-          
-          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
-            
-  
-  <span class="md-ellipsis">
-    Deployment
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_6">
-            <span class="md-nav__icon md-icon"></span>
-            Deployment
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../deployment/platform/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Platform
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../deployment/envoy-filter/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Envoy Filter
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../deployment/ai-ml-api/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    AI/ML API
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../jupyter/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    JupyterHub
   </span>
   
 
@@ -499,7 +369,279 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Deployment
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Deployment
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../platform/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Platform
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Envoy Filter
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Envoy Filter
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prerequisites
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      Architecture
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Architecture">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#envoy-and-istio-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Envoy and Istio Integration
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#database-interaction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Database Interaction
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#getting-started" class="md-nav__link">
+    <span class="md-ellipsis">
+      Getting Started
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Getting Started">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configuration
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usage" class="md-nav__link">
+    <span class="md-ellipsis">
+      Usage
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#trigger-refresh-cache" class="md-nav__link">
+    <span class="md-ellipsis">
+      Trigger refresh cache
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ai-ml-api/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    AI/ML API
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../jupyter/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    JupyterHub
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
         
           
           <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="">
@@ -513,7 +655,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_8">
             <span class="md-nav__icon md-icon"></span>
             Building Blocks
@@ -527,7 +669,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../building-blocks/cloud-infrastructure/" class="md-nav__link">
+      <a href="../../building-blocks/cloud-infrastructure/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -548,7 +690,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../building-blocks/kubernetes/" class="md-nav__link">
+      <a href="../../building-blocks/kubernetes/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -569,7 +711,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../building-blocks/administrative-services/" class="md-nav__link">
+      <a href="../../building-blocks/administrative-services/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -590,7 +732,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../building-blocks/storage/" class="md-nav__link">
+      <a href="../../building-blocks/storage/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -611,7 +753,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../building-blocks/user-services/" class="md-nav__link">
+      <a href="../../building-blocks/user-services/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -629,8 +771,6 @@
                 
   
   
-    
-  
   
   
     
@@ -639,11 +779,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_6" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_6" >
         
           
           <label class="md-nav__link" for="__nav_8_6" id="__nav_8_6_label" tabindex="0">
@@ -657,7 +797,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_6_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_6_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_8_6">
             <span class="md-nav__icon md-icon"></span>
             APIs
@@ -671,7 +811,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../building-blocks/apis/" class="md-nav__link">
+      <a href="../../building-blocks/apis/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -689,8 +829,6 @@
                 
   
   
-    
-  
   
   
     
@@ -699,11 +837,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_6_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_6_2" >
         
           
           <label class="md-nav__link" for="__nav_8_6_2" id="__nav_8_6_2_label" tabindex="0">
@@ -717,7 +855,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_8_6_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_8_6_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_8_6_2">
             <span class="md-nav__icon md-icon"></span>
             AI/ML API
@@ -731,7 +869,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../" class="md-nav__link">
+      <a href="../../ai-ml-api/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -789,7 +927,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../overview/system-architecture/" class="md-nav__link">
+      <a href="../../ai-ml-api/overview/system-architecture/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -810,7 +948,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../overview/data-flow/" class="md-nav__link">
+      <a href="../../ai-ml-api/overview/data-flow/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -836,8 +974,6 @@
                 
   
   
-    
-  
   
   
     
@@ -846,11 +982,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_6_2_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_6_2_3" >
         
           
           <label class="md-nav__link" for="__nav_8_6_2_3" id="__nav_8_6_2_3_label" tabindex="0">
@@ -864,7 +1000,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_8_6_2_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_8_6_2_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_8_6_2_3">
             <span class="md-nav__icon md-icon"></span>
             Security
@@ -875,30 +1011,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Authentication and Authorization
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../ai-ml-api/security/authentication-and-authorization/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -907,125 +1023,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
-    <span class="md-ellipsis">
-      Overview
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#token-based-security-mechanism" class="md-nav__link">
-    <span class="md-ellipsis">
-      Token-based Security Mechanism
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Token-based Security Mechanism">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#implementation-details" class="md-nav__link">
-    <span class="md-ellipsis">
-      Implementation Details
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#verification-process" class="md-nav__link">
-    <span class="md-ellipsis">
-      Verification Process
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#keycloak-integration" class="md-nav__link">
-    <span class="md-ellipsis">
-      Keycloak Integration
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Keycloak Integration">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#integration-steps" class="md-nav__link">
-    <span class="md-ellipsis">
-      Integration Steps
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#access-control" class="md-nav__link">
-    <span class="md-ellipsis">
-      Access Control
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Access Control">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#best-practices" class="md-nav__link">
-    <span class="md-ellipsis">
-      Best Practices
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#common-issues-and-troubleshooting" class="md-nav__link">
-    <span class="md-ellipsis">
-      Common Issues and Troubleshooting
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1038,7 +1035,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../encryption/" class="md-nav__link">
+      <a href="../../ai-ml-api/security/encryption/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1104,7 +1101,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../token-management/ckan-integration/" class="md-nav__link">
+      <a href="../../ai-ml-api/token-management/ckan-integration/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1125,7 +1122,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../token-management/token-lifecycle/" class="md-nav__link">
+      <a href="../../ai-ml-api/token-management/token-lifecycle/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1191,7 +1188,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../api-usage/endpoints/" class="md-nav__link">
+      <a href="../../ai-ml-api/api-usage/endpoints/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1212,7 +1209,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../api-usage/authentication/" class="md-nav__link">
+      <a href="../../ai-ml-api/api-usage/authentication/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1233,7 +1230,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../api-usage/error-handling/" class="md-nav__link">
+      <a href="../../ai-ml-api/api-usage/error-handling/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1262,7 +1259,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../scalability/" class="md-nav__link">
+      <a href="../../ai-ml-api/scalability/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1283,7 +1280,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../testing/" class="md-nav__link">
+      <a href="../../ai-ml-api/testing/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1304,7 +1301,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../deployment/" class="md-nav__link">
+      <a href="../../ai-ml-api/deployment/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1325,7 +1322,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../repositories/" class="md-nav__link">
+      <a href="../../ai-ml-api/repositories/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1362,7 +1359,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../building-blocks/features/" class="md-nav__link">
+      <a href="../../building-blocks/features/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1383,7 +1380,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../building-blocks/extensions/" class="md-nav__link">
+      <a href="../../building-blocks/extensions/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1440,28 +1437,37 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#token-based-security-mechanism" class="md-nav__link">
+  <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
-      Token-based Security Mechanism
+      Prerequisites
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Token-based Security Mechanism">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      Architecture
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Architecture">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#implementation-details" class="md-nav__link">
+  <a href="#envoy-and-istio-integration" class="md-nav__link">
     <span class="md-ellipsis">
-      Implementation Details
+      Envoy and Istio Integration
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#verification-process" class="md-nav__link">
+  <a href="#database-interaction" class="md-nav__link">
     <span class="md-ellipsis">
-      Verification Process
+      Database Interaction
     </span>
   </a>
   
@@ -1473,19 +1479,46 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#keycloak-integration" class="md-nav__link">
+  <a href="#getting-started" class="md-nav__link">
     <span class="md-ellipsis">
-      Keycloak Integration
+      Getting Started
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Keycloak Integration">
+    <nav class="md-nav" aria-label="Getting Started">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#integration-steps" class="md-nav__link">
+  <a href="#installation" class="md-nav__link">
     <span class="md-ellipsis">
-      Integration Steps
+      Installation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configuration
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usage" class="md-nav__link">
+    <span class="md-ellipsis">
+      Usage
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#trigger-refresh-cache" class="md-nav__link">
+    <span class="md-ellipsis">
+      Trigger refresh cache
     </span>
   </a>
   
@@ -1493,39 +1526,6 @@
         
       </ul>
     </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#access-control" class="md-nav__link">
-    <span class="md-ellipsis">
-      Access Control
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Access Control">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#best-practices" class="md-nav__link">
-    <span class="md-ellipsis">
-      Best Practices
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#common-issues-and-troubleshooting" class="md-nav__link">
-    <span class="md-ellipsis">
-      Common Issues and Troubleshooting
-    </span>
-  </a>
   
 </li>
       
@@ -1547,48 +1547,124 @@
   
 
 
-<h1 id="authentication-and-authorization">Authentication and Authorization</h1>
+<h1 id="alternative-envoy-filter">Alternative Envoy Filter</h1>
 <h2 id="overview">Overview</h2>
-<p>This document outlines the authentication and authorization mechanisms implemented in our system. It covers the token-based security mechanism using an Envoy filter, integration with Keycloak for identity and access management, and the application of Role-based Access Control (RBAC) for fine-grained permissions.</p>
-<h2 id="token-based-security-mechanism">Token-based Security Mechanism</h2>
-<p>The system employs a robust token-based security mechanism integrated within the Istio service mesh. This approach ensures that only authenticated and authorized requests can access protected services.</p>
-<h3 id="implementation-details">Implementation Details</h3>
+<p>This document describes the implementation and usage of a alternative Envoy filter designed for use in an Istio service mesh. The filter, written in Go, validates JWT tokens by checking if the token's ID has been revoked, as recorded in a database, and by verifying the token's signature. This ensures that only valid and active tokens are allowed, enhancing the security within the service mesh.</p>
+<h2 id="prerequisites">Prerequisites</h2>
 <ul>
-<li><strong>Envoy Filter</strong>: A custom HTTP filter deployed as a sidecar container alongside the service it secures. It performs the following functions:</li>
-<li><strong>Request Interception</strong>: All incoming requests are intercepted for validation.</li>
-<li><strong>Token Validation</strong>: Validates the JWT token's signature and checks the token ID against a revocation list stored in a PostgreSQL database.</li>
-<li><strong>Caching</strong>: To improve performance and reduce database queries, caching is used for the token's revocation status and the public key for signature verification.</li>
+<li>Kubernetes cluster</li>
+<li>Service with deployment which will be protected by the filter</li>
+<li>Istio installed on the cluster</li>
+<li>A JWT token issuer, such as <a href="https://www.keycloak.org/">Keycloak</a>, to generate JWT tokens</li>
+<li>Docker</li>
+<li>PostgreSQL database</li>
 </ul>
-<h3 id="verification-process">Verification Process</h3>
+<h2 id="architecture">Architecture</h2>
+<p>The alternative Envoy filter is registered as an HTTP filter in the Envoy proxy. The filter is written in Go. The filter is deployed as a sidecar container in the same pod as the service, and it intercepts all incoming requests to the service. The filter validates the JWT token signature and checks if the token ID has been revoked. If the token is valid, the request is forwarded to the service. If the token is invalid, the request is rejected. The filter also caches the token's revocation status to reduce the number of database queries, and the also caches the public key used to verify the token's signature. </p>
+<h3 id="envoy-and-istio-integration">Envoy and Istio Integration</h3>
+<p>The alternative filter is integrated with Envoy and Istio as follows:</p>
 <ol>
-<li><strong>Extract Token</strong>: The token is extracted from the request header.</li>
-<li><strong>Validate Structure and Signature</strong>: Checks if the token structure is valid and verifies the signature.</li>
-<li><strong>Check Expiration</strong>: Ensures the token has not expired.</li>
-<li><strong>Verify Claims</strong>: Verifies the issuer and audience claims.</li>
-<li><strong>Revocation List Check</strong>: Checks the token ID against a revocation list.</li>
+<li>
+<p>The alternative filter is built as a shared object file (.so) and is registered as an HTTP filter in the Envoy proxy. The filter is deployed as a sidecar container in the same pod as the service.</p>
+</li>
+<li>
+<p>The filter intercepts all incoming requests to the service. The filter validates the JWT token signature and checks if the token ID has been revoked. If the token is valid, the request is forwarded to the service. If the token is invalid, the request is rejected.</p>
+</li>
+<li>
+<p>The filter caches the token's revocation status to reduce the number of database queries, and also caches the public key used to verify the token's signature.</p>
+</li>
 </ol>
-<h2 id="keycloak-integration">Keycloak Integration</h2>
-<p>Keycloak serves as the central identity and access management system, offering features like OAuth 2.0, OpenID Connect support, and multi-factor authentication.</p>
-<h3 id="integration-steps">Integration Steps</h3>
+<h3 id="database-interaction">Database Interaction</h3>
+<p>The filter interacts with a database to check if the token ID has been revoked. The filter uses a PostgreSQL database to store the token IDs that have been revoked. The filter queries the database to check if the token ID is present in the database, and if the token ID is present, the filter rejects the request. The filter caches the token's revocation status to reduce the number of database queries.</p>
+<h2 id="getting-started">Getting Started</h2>
+<h3 id="installation">Installation</h3>
 <ol>
-<li><strong>Realm Configuration</strong>: Set up a Keycloak realm specific to the API.</li>
-<li><strong>Client Application Setup</strong>: Register the client application in Keycloak.</li>
-<li><strong>Roles and Permissions</strong>: Define roles and permissions for access control.</li>
-<li><strong>Token Configuration</strong>: Configure token settings, including lifespan and signature algorithm.</li>
-<li><strong>Library Integration</strong>: Integrate Keycloak libraries with the Envoy filter for seamless authentication and authorization.</li>
+<li>Clone the repository:</li>
 </ol>
-<h2 id="access-control">Access Control</h2>
-<p>Role-based Access Control (RBAC) is implemented to provide fine-grained access control to API endpoints. This section could be expanded with examples of role definitions and how they are applied to endpoints.</p>
-<h3 id="best-practices">Best Practices</h3>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>git<span class="w"> </span>clone<span class="w"> </span>git@github.com:ALTERNATIVE-EU/auth-envoy-filter.git
+</code></pre></div>
+1. Navigate to the <code>envoy-filter</code> directory:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nb">cd</span><span class="w"> </span>envoy-filter
+</code></pre></div>
+<ol>
+<li>
+<p>Use <code>envoy-fitlter/database/schema.sql</code> to create the database schema in your PostgreSQL database.</p>
+</li>
+<li>
+<p>Compile the envoy filter:</p>
+</li>
+</ol>
+<p><code>bash
+   docker compose run --rm go_plugin_compile</code></p>
+<ol>
+<li>Create a PVC which will store the compiled envoy filter:</li>
+</ol>
+<p><code>bash
+   kubectl apply -f manifests/pvc.yaml</code></p>
+<ol>
+<li>Add volume to the service's deployment:</li>
+</ol>
+<p><code>bash
+   kubectl patch deployment &lt;depoyment-name&gt; -n &lt;namespace --type=json -p='[{"op": "add", "path": "/spec/template/spec/volumes/-", "value": {"name": "jwt-revocation-validation", "persistentVolumeClaim": {"claimName": "jwt-revocation-validation"}}}]'</code></p>
+<ol>
+<li>Add volumeMount to the sidecar container:</li>
+</ol>
+<p><code>bash
+   kubectl patch deployment &lt;depoyment-name&gt; -n &lt;namespace&gt; --type=json -p='[{"op": "add", "path": "/spec/template/spec/containers/1/volumeMounts/-", "value": {"mountPath": "/etc/istio/jwt-revocation-validation", "name": "jwt-revocation-validation"}}]'</code></p>
+<ol>
+<li>Copy the envoy filter to the <code>revocation_filter</code> directory:</li>
+</ol>
+<p><code>bash
+    kubectl cp -n &lt;namespace&gt; revocation_filter/revocation_filter.so -c istio-proxy $(kubectl get pod -n &lt;namespace&gt; -l app=&lt;app-name&gt; -o custom-columns=NAME:.metadata.name --no-headers):/etc/istio/jwt-revocation-validation/revocation_filter.so</code></p>
+<ol>
+<li>
+<p>Update the configuration in the <code>envoy-filter/manifests/envoyfilter.yaml</code> file to match your environment. Make sure to update <code>jwks_url</code> and <code>data_source_name</code> fields.</p>
+</li>
+<li>
+<p>Apply the envoy filter manifest:
+    <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>kubectl<span class="w"> </span>apply<span class="w"> </span>-f<span class="w"> </span>manifests/envoyfilter.yaml
+</code></pre></div></p>
+</li>
+</ol>
+<h3 id="configuration">Configuration</h3>
+<p>The alternative filter is configured using the <code>envoy-filter/manifests/envoyfilter.yaml</code> file. The configuration options are as follows:</p>
 <ul>
-<li><strong>Regularly Update Roles</strong>: Ensure roles and permissions are regularly reviewed and updated to reflect changes in access requirements.</li>
+<li><code>jwks_url</code>: The URL of the JWKS endpoint that contains the public key used to verify the JWT token signature.</li>
+<li><code>data_source_name</code>: The data source connection string for the PostgreSQL database.</li>
+<li><code>public_key_cache_ttl</code>: The time-to-live (TTL) for the public key cache.</li>
+<li><code>revocation_status_cache_ttl</code>: The time-to-live (TTL) for the revocation status cache.</li>
 </ul>
-<h2 id="common-issues-and-troubleshooting">Common Issues and Troubleshooting</h2>
-<ul>
-<li><strong>Token Validation Failure</strong>: Ensure the token has not expired and the signature matches the public key.</li>
-<li><strong>Access Denied</strong>: Verify the user's roles and permissions align with the requested resource's access control policies.</li>
-<li><strong>Performance Issues</strong>: Check the caching mechanism for token validation and revocation status to ensure it is functioning correctly.</li>
-</ul>
+<h3 id="usage">Usage</h3>
+<ol>
+<li>
+<p>Generate a JWT token using a JWT token issuer, such as <a href="https://www.keycloak.org/">Keycloak</a>.</p>
+</li>
+<li>
+<p>Send a request to the service with the JWT token in the <code>Authorization</code> header:</p>
+</li>
+</ol>
+<p><code>bash
+   curl -H "Authorization: Bearer &lt;JWT token&gt;" http://&lt;service-url&gt;</code> </p>
+<ol>
+<li>
+<p>The filter will validate the JWT token and forward the request to the service if the token is valid. If the token is invalid, the filter will reject the request.</p>
+</li>
+<li>
+<p>Add the token to the revocation list:</p>
+</li>
+</ol>
+<p><code>bash
+   psql -h &lt;database-host&gt; -U &lt;database-username&gt; -d &lt;database-name&gt; -c "INSERT INTO revoked_tokens (token_id) VALUES ('&lt;token-id&gt;');"</code></p>
+<ol>
+<li>Send a request to the service with the JWT token in the <code>Authorization</code> header:</li>
+</ol>
+<p><code>bash
+    curl -H "Authorization: Bearer &lt;JWT token&gt;" http://&lt;service-url&gt;</code></p>
+<ol>
+<li>The filter will reject the request because the token has been revoked.</li>
+</ol>
+<h3 id="trigger-refresh-cache">Trigger refresh cache</h3>
+<p>Send a request with header "X-Refresh-Cache: true", the envoy filter will trigger a manual refresh of the revocation status caches.</p>
 
 
 
@@ -1663,10 +1739,10 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.sections", "search.suggest", "search.highlight", "content.tabs.link"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.sections", "search.suggest", "search.highlight", "content.tabs.link"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.fe8b6f2b.min.js"></script>
+      <script src="../../assets/javascripts/bundle.fe8b6f2b.min.js"></script>
       
     
   </body>

@@ -8,28 +8,28 @@
       
       
       
-        <link rel="canonical" href="https://platform.alternative-project.eu/ai-ml-api/security/authentication-and-authorization/">
+        <link rel="canonical" href="https://platform.alternative-project.eu/deployment/ai-ml-api/">
       
       
-        <link rel="prev" href="../../overview/data-flow/">
+        <link rel="prev" href="../envoy-filter/">
       
       
-        <link rel="next" href="../encryption/">
+        <link rel="next" href="../../jupyter/">
       
       
-      <link rel="icon" href="../../../assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.28">
     
     
       
-        <title>Authentication and Authorization - ALTERNATIVE Platform Documentation</title>
+        <title>AI/ML API - ALTERNATIVE Platform Documentation</title>
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.6543a935.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.6543a935.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -48,7 +48,7 @@
       
     
     
-    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#authentication-and-authorization" class="md-skip">
+        <a href="#aiml-api" class="md-skip">
           Skip to content
         </a>
       
@@ -90,7 +90,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../.." title="ALTERNATIVE Platform Documentation" class="md-header__button md-logo" aria-label="ALTERNATIVE Platform Documentation" data-md-component="logo">
+    <a href="../.." title="ALTERNATIVE Platform Documentation" class="md-header__button md-logo" aria-label="ALTERNATIVE Platform Documentation" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -110,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Authentication and Authorization
+              AI/ML API
             
           </span>
         </div>
@@ -225,7 +225,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../.." title="ALTERNATIVE Platform Documentation" class="md-nav__button md-logo" aria-label="ALTERNATIVE Platform Documentation" data-md-component="logo">
+    <a href="../.." title="ALTERNATIVE Platform Documentation" class="md-nav__button md-logo" aria-label="ALTERNATIVE Platform Documentation" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -255,7 +255,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../introduction/" class="md-nav__link">
+      <a href="../../introduction/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -275,7 +275,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../networking/" class="md-nav__link">
+      <a href="../../networking/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -295,7 +295,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../users/" class="md-nav__link">
+      <a href="../../users/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -315,7 +315,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../datasets/" class="md-nav__link">
+      <a href="../../datasets/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -335,141 +335,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../metadata/" class="md-nav__link">
+      <a href="../../metadata/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
     Metadata
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-    
-      
-        
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
-        
-          
-          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
-            
-  
-  <span class="md-ellipsis">
-    Deployment
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_6">
-            <span class="md-nav__icon md-icon"></span>
-            Deployment
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../deployment/platform/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Platform
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../deployment/envoy-filter/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Envoy Filter
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../deployment/ai-ml-api/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    AI/ML API
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../jupyter/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    JupyterHub
   </span>
   
 
@@ -499,7 +369,231 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Deployment
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Deployment
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../platform/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Platform
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../envoy-filter/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Envoy Filter
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    AI/ML API
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    AI/ML API
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#requirements" class="md-nav__link">
+    <span class="md-ellipsis">
+      Requirements
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installation-with-docker" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installation with Docker
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deployment-in-kubernetes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Deployment in Kubernetes
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#usage" class="md-nav__link">
+    <span class="md-ellipsis">
+      Usage
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#testing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Testing
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../jupyter/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    JupyterHub
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
         
           
           <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="">
@@ -513,7 +607,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_8">
             <span class="md-nav__icon md-icon"></span>
             Building Blocks
@@ -527,7 +621,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../building-blocks/cloud-infrastructure/" class="md-nav__link">
+      <a href="../../building-blocks/cloud-infrastructure/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -548,7 +642,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../building-blocks/kubernetes/" class="md-nav__link">
+      <a href="../../building-blocks/kubernetes/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -569,7 +663,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../building-blocks/administrative-services/" class="md-nav__link">
+      <a href="../../building-blocks/administrative-services/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -590,7 +684,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../building-blocks/storage/" class="md-nav__link">
+      <a href="../../building-blocks/storage/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -611,7 +705,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../building-blocks/user-services/" class="md-nav__link">
+      <a href="../../building-blocks/user-services/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -629,8 +723,6 @@
                 
   
   
-    
-  
   
   
     
@@ -639,11 +731,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_6" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_6" >
         
           
           <label class="md-nav__link" for="__nav_8_6" id="__nav_8_6_label" tabindex="0">
@@ -657,7 +749,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_6_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_6_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_8_6">
             <span class="md-nav__icon md-icon"></span>
             APIs
@@ -671,7 +763,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../building-blocks/apis/" class="md-nav__link">
+      <a href="../../building-blocks/apis/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -689,8 +781,6 @@
                 
   
   
-    
-  
   
   
     
@@ -699,11 +789,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_6_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_6_2" >
         
           
           <label class="md-nav__link" for="__nav_8_6_2" id="__nav_8_6_2_label" tabindex="0">
@@ -717,7 +807,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_8_6_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_8_6_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_8_6_2">
             <span class="md-nav__icon md-icon"></span>
             AI/ML API
@@ -731,7 +821,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../" class="md-nav__link">
+      <a href="../../ai-ml-api/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -789,7 +879,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../overview/system-architecture/" class="md-nav__link">
+      <a href="../../ai-ml-api/overview/system-architecture/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -810,7 +900,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../overview/data-flow/" class="md-nav__link">
+      <a href="../../ai-ml-api/overview/data-flow/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -836,8 +926,6 @@
                 
   
   
-    
-  
   
   
     
@@ -846,11 +934,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_6_2_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_6_2_3" >
         
           
           <label class="md-nav__link" for="__nav_8_6_2_3" id="__nav_8_6_2_3_label" tabindex="0">
@@ -864,7 +952,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_8_6_2_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_8_6_2_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_8_6_2_3">
             <span class="md-nav__icon md-icon"></span>
             Security
@@ -875,30 +963,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Authentication and Authorization
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../ai-ml-api/security/authentication-and-authorization/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -907,125 +975,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
-    <span class="md-ellipsis">
-      Overview
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#token-based-security-mechanism" class="md-nav__link">
-    <span class="md-ellipsis">
-      Token-based Security Mechanism
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Token-based Security Mechanism">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#implementation-details" class="md-nav__link">
-    <span class="md-ellipsis">
-      Implementation Details
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#verification-process" class="md-nav__link">
-    <span class="md-ellipsis">
-      Verification Process
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#keycloak-integration" class="md-nav__link">
-    <span class="md-ellipsis">
-      Keycloak Integration
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Keycloak Integration">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#integration-steps" class="md-nav__link">
-    <span class="md-ellipsis">
-      Integration Steps
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#access-control" class="md-nav__link">
-    <span class="md-ellipsis">
-      Access Control
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Access Control">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#best-practices" class="md-nav__link">
-    <span class="md-ellipsis">
-      Best Practices
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#common-issues-and-troubleshooting" class="md-nav__link">
-    <span class="md-ellipsis">
-      Common Issues and Troubleshooting
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1038,7 +987,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../encryption/" class="md-nav__link">
+      <a href="../../ai-ml-api/security/encryption/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1104,7 +1053,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../token-management/ckan-integration/" class="md-nav__link">
+      <a href="../../ai-ml-api/token-management/ckan-integration/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1125,7 +1074,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../token-management/token-lifecycle/" class="md-nav__link">
+      <a href="../../ai-ml-api/token-management/token-lifecycle/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1191,7 +1140,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../api-usage/endpoints/" class="md-nav__link">
+      <a href="../../ai-ml-api/api-usage/endpoints/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1212,7 +1161,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../api-usage/authentication/" class="md-nav__link">
+      <a href="../../ai-ml-api/api-usage/authentication/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1233,7 +1182,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../api-usage/error-handling/" class="md-nav__link">
+      <a href="../../ai-ml-api/api-usage/error-handling/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1262,7 +1211,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../scalability/" class="md-nav__link">
+      <a href="../../ai-ml-api/scalability/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1283,7 +1232,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../testing/" class="md-nav__link">
+      <a href="../../ai-ml-api/testing/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1304,7 +1253,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../deployment/" class="md-nav__link">
+      <a href="../../ai-ml-api/deployment/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1325,7 +1274,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../repositories/" class="md-nav__link">
+      <a href="../../ai-ml-api/repositories/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1362,7 +1311,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../building-blocks/features/" class="md-nav__link">
+      <a href="../../building-blocks/features/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1383,7 +1332,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../building-blocks/extensions/" class="md-nav__link">
+      <a href="../../building-blocks/extensions/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1431,99 +1380,54 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
+  <a href="#requirements" class="md-nav__link">
     <span class="md-ellipsis">
-      Overview
+      Requirements
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#token-based-security-mechanism" class="md-nav__link">
+  <a href="#installation" class="md-nav__link">
     <span class="md-ellipsis">
-      Token-based Security Mechanism
+      Installation
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="Token-based Security Mechanism">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#implementation-details" class="md-nav__link">
-    <span class="md-ellipsis">
-      Implementation Details
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#verification-process" class="md-nav__link">
-    <span class="md-ellipsis">
-      Verification Process
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#keycloak-integration" class="md-nav__link">
+  <a href="#installation-with-docker" class="md-nav__link">
     <span class="md-ellipsis">
-      Keycloak Integration
+      Installation with Docker
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="Keycloak Integration">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#integration-steps" class="md-nav__link">
-    <span class="md-ellipsis">
-      Integration Steps
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#access-control" class="md-nav__link">
+  <a href="#deployment-in-kubernetes" class="md-nav__link">
     <span class="md-ellipsis">
-      Access Control
+      Deployment in Kubernetes
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="Access Control">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#best-practices" class="md-nav__link">
-    <span class="md-ellipsis">
-      Best Practices
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#common-issues-and-troubleshooting" class="md-nav__link">
+  <a href="#usage" class="md-nav__link">
     <span class="md-ellipsis">
-      Common Issues and Troubleshooting
+      Usage
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#testing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Testing
     </span>
   </a>
   
@@ -1547,48 +1451,89 @@
   
 
 
-<h1 id="authentication-and-authorization">Authentication and Authorization</h1>
-<h2 id="overview">Overview</h2>
-<p>This document outlines the authentication and authorization mechanisms implemented in our system. It covers the token-based security mechanism using an Envoy filter, integration with Keycloak for identity and access management, and the application of Role-based Access Control (RBAC) for fine-grained permissions.</p>
-<h2 id="token-based-security-mechanism">Token-based Security Mechanism</h2>
-<p>The system employs a robust token-based security mechanism integrated within the Istio service mesh. This approach ensures that only authenticated and authorized requests can access protected services.</p>
-<h3 id="implementation-details">Implementation Details</h3>
+<h1 id="aiml-api">AI/ML API</h1>
+<h2 id="requirements">Requirements</h2>
 <ul>
-<li><strong>Envoy Filter</strong>: A custom HTTP filter deployed as a sidecar container alongside the service it secures. It performs the following functions:</li>
-<li><strong>Request Interception</strong>: All incoming requests are intercepted for validation.</li>
-<li><strong>Token Validation</strong>: Validates the JWT token's signature and checks the token ID against a revocation list stored in a PostgreSQL database.</li>
-<li><strong>Caching</strong>: To improve performance and reduce database queries, caching is used for the token's revocation status and the public key for signature verification.</li>
+<li>Python 3.9</li>
+<li>Anaconda</li>
+<li>PipelineAlternative_clinicaldata data</li>
+<li>PBPK data</li>
+<li>cddd data</li>
 </ul>
-<h3 id="verification-process">Verification Process</h3>
-<ol>
-<li><strong>Extract Token</strong>: The token is extracted from the request header.</li>
-<li><strong>Validate Structure and Signature</strong>: Checks if the token structure is valid and verifies the signature.</li>
-<li><strong>Check Expiration</strong>: Ensures the token has not expired.</li>
-<li><strong>Verify Claims</strong>: Verifies the issuer and audience claims.</li>
-<li><strong>Revocation List Check</strong>: Checks the token ID against a revocation list.</li>
-</ol>
-<h2 id="keycloak-integration">Keycloak Integration</h2>
-<p>Keycloak serves as the central identity and access management system, offering features like OAuth 2.0, OpenID Connect support, and multi-factor authentication.</p>
-<h3 id="integration-steps">Integration Steps</h3>
-<ol>
-<li><strong>Realm Configuration</strong>: Set up a Keycloak realm specific to the API.</li>
-<li><strong>Client Application Setup</strong>: Register the client application in Keycloak.</li>
-<li><strong>Roles and Permissions</strong>: Define roles and permissions for access control.</li>
-<li><strong>Token Configuration</strong>: Configure token settings, including lifespan and signature algorithm.</li>
-<li><strong>Library Integration</strong>: Integrate Keycloak libraries with the Envoy filter for seamless authentication and authorization.</li>
-</ol>
-<h2 id="access-control">Access Control</h2>
-<p>Role-based Access Control (RBAC) is implemented to provide fine-grained access control to API endpoints. This section could be expanded with examples of role definitions and how they are applied to endpoints.</p>
-<h3 id="best-practices">Best Practices</h3>
-<ul>
-<li><strong>Regularly Update Roles</strong>: Ensure roles and permissions are regularly reviewed and updated to reflect changes in access requirements.</li>
-</ul>
-<h2 id="common-issues-and-troubleshooting">Common Issues and Troubleshooting</h2>
-<ul>
-<li><strong>Token Validation Failure</strong>: Ensure the token has not expired and the signature matches the public key.</li>
-<li><strong>Access Denied</strong>: Verify the user's roles and permissions align with the requested resource's access control policies.</li>
-<li><strong>Performance Issues</strong>: Check the caching mechanism for token validation and revocation status to ensure it is functioning correctly.</li>
-</ul>
+<h2 id="installation">Installation</h2>
+<p>Clone the repository:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>git<span class="w"> </span>clone<span class="w"> </span>git@github.com:ALTERNATIVE-EU/ai-ml-api.git
+</code></pre></div>
+<p>Put the <code>PipelineAlternative_clinicaldata</code> <code>models</code> directory.
+Put the <code>cddd</code> directories in the <code>PipelineAlternative_clinicaldata</code> directory.
+Put the <code>PBPK</code> directory in the <code>models</code> directory.</p>
+<p>Copy the content of <code>patches</code> directory into the <code>models</code> directory.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>cp<span class="w"> </span>-r<span class="w"> </span>patches/*<span class="w"> </span>./models/
+</code></pre></div>
+<p>Create cddd virtual environment and install dependencies:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nb">cd</span><span class="w"> </span>cddd
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>conda<span class="w"> </span>env<span class="w"> </span>create<span class="w"> </span>-f<span class="w"> </span>environment.yml
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>conda<span class="w"> </span>activate<span class="w"> </span>cddd
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>pip<span class="w"> </span>install<span class="w"> </span>--ignore-installed<span class="w"> </span>--upgrade<span class="w"> </span>https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-1.10.0-cp36-cp36m-linux_x86_64.whl
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>pip<span class="w"> </span>install<span class="w"> </span>-e<span class="w"> </span>.
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>conda<span class="w"> </span>deactivate
+</code></pre></div>
+<p>Create alternative virtual environment:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>conda<span class="w"> </span>create<span class="w"> </span>-n<span class="w"> </span>alternative<span class="w"> </span><span class="nv">python</span><span class="o">=</span><span class="m">3</span>.9
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>conda<span class="w"> </span>activate<span class="w"> </span>alternative
+</code></pre></div>
+<p>Install dependencies:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>pip<span class="w"> </span>install<span class="w"> </span>-f<span class="w"> </span>requirements.txt
+</code></pre></div>
+<p>Start the server:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>python3<span class="w"> </span>app.py
+</code></pre></div>
+<h2 id="installation-with-docker">Installation with Docker</h2>
+<p>Build the image:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>docker<span class="w"> </span>build<span class="w"> </span>-t<span class="w"> </span>ai-ml-api<span class="w"> </span>.
+</code></pre></div>
+<p>Run the container:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>docker<span class="w"> </span>run<span class="w"> </span>-p<span class="w"> </span><span class="m">5000</span>:5000<span class="w"> </span>ai-ml-api
+</code></pre></div>
+<h2 id="deployment-in-kubernetes">Deployment in Kubernetes</h2>
+<p>Update the deployment files in the deployment/kubernetes directory, then apply them:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>kubectl<span class="w"> </span>apply<span class="w"> </span>-f<span class="w"> </span>deployment/kubernetes
+</code></pre></div>
+<p>For the authentication we use istio with custom envoy filter, follow the instructions in the <a href="../envoy-filter/">envoy-filter</a> documentation.</p>
+<h2 id="usage">Usage</h2>
+<p>ML:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>curl<span class="w"> </span>-X<span class="w"> </span>POST<span class="w"> </span>-H<span class="w"> </span><span class="s2">&quot;Content-Type: application/json&quot;</span><span class="w"> </span>-d<span class="w"> </span><span class="s1">&#39;{&quot;smiles&quot;: &quot;c1ccccc1O&quot;}&#39;</span><span class="w"> </span>http://localhost:5000/clinicaldata/ml/evaluate<span class="w"> </span>-o<span class="w"> </span>results.csv
+</code></pre></div>
+<p>AI:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>curl<span class="w"> </span>-X<span class="w"> </span>POST<span class="w"> </span>-H<span class="w"> </span><span class="s2">&quot;Content-Type: application/json&quot;</span><span class="w"> </span>-d<span class="w"> </span><span class="s1">&#39;{&quot;smiles&quot;: &quot;c1ccccc1O&quot;}&#39;</span><span class="w"> </span>http://localhost:5000/clinicaldata/ai/evaluate
+</code></pre></div>
+<p>AOP:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>curl<span class="w"> </span>-X<span class="w"> </span>POST<span class="w"> </span>-H<span class="w"> </span><span class="s2">&quot;Content-Type: application/json&quot;</span><span class="w"> </span>-d<span class="w"> </span><span class="s1">&#39;{&quot;smiles&quot;: &quot;c1ccccc1O&quot;}&#39;</span><span class="w"> </span>http://localhost:5000/clinicaldata/aop/evaluate
+</code></pre></div>
+<p>Doxorubicin:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>curl<span class="w"> </span>-X<span class="w"> </span>POST<span class="w"> </span>http://127.0.0.1:5000/pbpk/doxorubicin<span class="w">      </span>-H<span class="w"> </span><span class="s2">&quot;Content-Type: application/json&quot;</span><span class="w">      </span>-d<span class="w"> </span><span class="s1">&#39;{</span>
+<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="s1">           &quot;dose_mg&quot;: 60,</span>
+<a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a><span class="s1">           &quot;age&quot;: 50,</span>
+<a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a><span class="s1">           &quot;weight&quot;: 70,</span>
+<a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a><span class="s1">           &quot;height&quot;: 190</span>
+<a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a><span class="s1">         }&#39;</span>
+</code></pre></div>
+<p>HTTK:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>curl<span class="w"> </span>-X<span class="w"> </span>POST<span class="w"> </span>http://127.0.0.1:5000/pbpk/httk<span class="w"> </span>-H<span class="w"> </span><span class="s2">&quot;Content-Type: application/json&quot;</span><span class="w">      </span>-d<span class="w"> </span><span class="s1">&#39;{</span>
+<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a><span class="s1">           &quot;chem_name&quot;: &quot;Bisphenol A&quot;,</span>
+<a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a><span class="s1">           &quot;species&quot;: &quot;human&quot;,</span>
+<a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a><span class="s1">           &quot;daily_dose&quot;: 1,</span>
+<a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a><span class="s1">           &quot;doses_per_day&quot;: 1,</span>
+<a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a><span class="s1">           &quot;days&quot;: 15</span>
+<a id="__codelineno-13-7" name="__codelineno-13-7" href="#__codelineno-13-7"></a><span class="s1">         }&#39;</span>
+</code></pre></div>
+<p>IsAlive:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>curl<span class="w"> </span>http://localhost:5000/isalive
+</code></pre></div>
+<h2 id="testing">Testing</h2>
+<p>To run the tests:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>python<span class="w"> </span>-m<span class="w"> </span>unittest<span class="w"> </span>app_test.py
+</code></pre></div>
 
 
 
@@ -1663,10 +1608,10 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.sections", "search.suggest", "search.highlight", "content.tabs.link"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.sections", "search.suggest", "search.highlight", "content.tabs.link"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.fe8b6f2b.min.js"></script>
+      <script src="../../assets/javascripts/bundle.fe8b6f2b.min.js"></script>
       
     
   </body>

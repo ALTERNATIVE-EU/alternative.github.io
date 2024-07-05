@@ -50,6 +50,6 @@ A user in an organization can create a dataset owned by that organization.
 - Editor - anything a member can do + can edit and publish datasets
 - Admin - anything an editor can do + can add, remove and change roles of organization members
 
-### ML/AI Roles
+### AI/ML API Roles
 
 To have access to the AI/ML API models, a user needs to have the `ai-ml-api-{model}` roles. Each model has its own role, for example, to use the `clinicaldata` model, a user needs to have the `ai-ml-api-clinicaldata` role.

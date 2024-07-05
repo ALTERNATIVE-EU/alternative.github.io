@@ -54,6 +54,10 @@ nav:
   - Users, Organizations and Authorization: users.md
   - Datasets, Resources and Groups: datasets.md
   - Metadata: metadata.md
+  - Deployment:
+    - Platform: deployment/platform.md
+    - Envoy Filter: deployment/envoy-filter.md
+    - AI/ML API: deployment/ai-ml-api.md
   - JupyterHub: jupyter.md
   - Building Blocks:
     - Cloud Infrastructure: building-blocks/cloud-infrastructure.md

@@ -19,6 +19,17 @@ To generate an API token:
 
 Underneath the creation form you can see all your tokens. From the list you can also `Revoke` a token, that you don't need anymore.
 
+### AI/ML API Tokens
+
+AI/ML API tokens are used to access the AI/ML API. To generate an AI/ML API token:
+
+1. Go to your profile page
+2. Select the `AI/ML API Tokens` tab
+3. Set a name for your token and click `Create AI/ML API Token`
+4. Set expiration date and roles for the token
+5. Click `Create AI/ML API Token`
+6. A green box appears above, containing your AI/ML API token, make sure to copy it - you won't be able to see it again
+
 ### News Feed
 
 At the top of any page, select the dashboard symbol. This shows changes to datasets, organizations and groups that you follow. It is possible to follow individual users to be notified of changes that they make. To start/stop following something, go to its dedicated page and select `Follow`/`Unfollow`. You can also select the `Activity Stream` tab to see all activities related to the object. You can enable email notifications for updates to things you follow by enabling `Subscribe to notification emails` from your profile settings.
@@ -38,3 +49,7 @@ A user in an organization can create a dataset owned by that organization.
 - Member - can see the organization’s private datasets
 - Editor - anything a member can do + can edit and publish datasets
 - Admin - anything an editor can do + can add, remove and change roles of organization members
+
+### ML/AI Roles
+
+To have access to the AI/ML API models, a user needs to have the `ai-ml-api-{model}` roles. Each model has its own role, for example, to use the `clinicaldata` model, a user needs to have the `ai-ml-api-clinicaldata` role.

@@ -49,29 +49,41 @@ markdown_extensions:
           format: !!python/name:pymdownx.superfences.fence_code_format
 
 nav:
+  - Introduction: introduction.md
+  - Networking: networking.md
   - Users, Organizations and Authorization: users.md
   - Datasets, Resources and Groups: datasets.md
   - Metadata: metadata.md
   - JupyterHub: jupyter.md
-  - AI/ML API:
-    - Home: ai-ml-api/index.md
-    - Overview:
-      - System Architecture: ai-ml-api/overview/system-architecture.md
-      - Data Flow: ai-ml-api/overview/data-flow.md
-    - Security:
-      - Authentication and Authorization: ai-ml-api/security/authentication-and-authorization.md
-      - Encryption: ai-ml-api/security/encryption.md
-    - Token Management:
-      - CKAN Integration: ai-ml-api/token-management/ckan-integration.md
-      - Token Lifecycle: ai-ml-api/token-management/token-lifecycle.md
-    - API Usage:
-      - Endpoints: ai-ml-api/api-usage/endpoints.md
-      - Authentication: ai-ml-api/api-usage/authentication.md
-      - Error Handling: ai-ml-api/api-usage/error-handling.md
-    - Scalability: ai-ml-api/scalability.md
-    - Testing: ai-ml-api/testing.md
-    - Deployment: ai-ml-api/deployment.md
-    - Repositories: ai-ml-api/repositories.md
+  - Building Blocks:
+    - Cloud Infrastructure: building-blocks/cloud-infrastructure.md
+    - Kubernetes: building-blocks/kubernetes.md
+    - Administrative Services: building-blocks/administrative-services.md
+    - Storage: building-blocks/storage.md
+    - User Services: building-blocks/user-services.md
+    - APIs:
+      - CKAN API: building-blocks/apis.md
+      - AI/ML API:
+        - Introduction: ai-ml-api/index.md
+        - Overview:
+          - System Architecture: ai-ml-api/overview/system-architecture.md
+          - Data Flow: ai-ml-api/overview/data-flow.md
+        - Security:
+          - Authentication and Authorization: ai-ml-api/security/authentication-and-authorization.md
+          - Encryption: ai-ml-api/security/encryption.md
+        - Token Management:
+          - CKAN Integration: ai-ml-api/token-management/ckan-integration.md
+          - Token Lifecycle: ai-ml-api/token-management/token-lifecycle.md
+        - API Usage:
+          - Endpoints: ai-ml-api/api-usage/endpoints.md
+          - Authentication: ai-ml-api/api-usage/authentication.md
+          - Error Handling: ai-ml-api/api-usage/error-handling.md
+        - Scalability: ai-ml-api/scalability.md
+        - Testing: ai-ml-api/testing.md
+        - Deployment: ai-ml-api/deployment.md
+        - Repositories: ai-ml-api/repositories.md
+    - Features: building-blocks/features.md
+    - Extensions: building-blocks/extensions.md
 
 extra:
   social:

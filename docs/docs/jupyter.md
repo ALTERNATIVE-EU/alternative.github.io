@@ -2,7 +2,7 @@
 
 The platform integrates <a href="https://jupyterhub.readthedocs.io/en/stable/" target="_blank">JupyterHub</a> as a way to interact with datasets and virtual environments. To access JupyterHub select the `Jupyterhub` button from the top right corner of any page. Everytime a user visits the JupyterHub page, a <a href="https://jupyterlab.readthedocs.io/en/stable/" target="_blank">JupyterLab</a> server is spawned for them, which enables you to work with documents and activities such as Jupyter notebooks, text editors, files and terminals. <a href="https://jupyter-notebook.readthedocs.io/en/stable/" target="_blank">Jupyter Notebooks</a> (*.ipynb* files) are documents that combine runnable code with narrative text (Markdown), equations (LaTeX), images, interactive visualizations and more. Once your server is ready, you will be redirected to it. After some time of inactivity it will be shutdown.
 
-## JupyterLab
+## JupyterHub
 
 At the top you can find different options and settings. You can get back to JupyterHub by selecting `File` -> `Hub Control Panel` or press `Log Out` to end the session. At the bottom you can see how many terminals and consoles are open and what environment is being used. On the right there are debugging tools.
 
@@ -20,7 +20,7 @@ The `/home/jovyan` and `/home/shared` directories are not being deleted between 
 
 ## Environments
 
-Every JupyterLab server is being spawned with two environments from the start - default python environment and an additional <a href="https://conda.io/projects/conda/en/latest/user-guide/index.html" target="_blank">conda</a> environment. On `Launcher` tab under `Notebook` or `Console` you can choose which environment to use. You can also use the `Terminal`:
+Every JupyterHub server is being spawned with two environments from the start - default python environment and an additional <a href="https://conda.io/projects/conda/en/latest/user-guide/index.html" target="_blank">conda</a> environment. On `Launcher` tab under `Notebook` or `Console` you can choose which environment to use. You can also use the `Terminal`:
 
 ### Python Virtual Environments
 

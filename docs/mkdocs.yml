@@ -49,7 +49,7 @@ markdown_extensions:
           format: !!python/name:pymdownx.superfences.fence_code_format
 
 nav:
-  - Introduction: introduction.md
+  - Introduction: index.md
   - Networking: networking.md
   - Users, Organizations and Authorization: users.md
   - Datasets, Resources and Groups: datasets.md

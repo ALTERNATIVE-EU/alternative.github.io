@@ -1,58 +1,149 @@
-# Datasets, Resources and Groups
+# Datasets, Resources, and Groups in CKAN
 
-Data is published in units called *datasets*. A dataset contains: information or [*metadata*](metadata.md) about the data; a number of *resources*, which hold the data itself. They are stored in an S3 bucket in Google Cloud Storage, or simply as a link, if the resource is elsewhere on the web.
+## Overview
 
-## Exploring Datasets
+This document provides comprehensive information about Datasets, Resources, and Groups in the ALTERNATIVE platform, which is built on CKAN (Comprehensive Knowledge Archive Network). It covers the fundamental concepts, creation processes, management techniques, and best practices for working with datasets, resources, and groups. This guide is essential for users who need to understand how data is organized, shared, and accessed within the ALTERNATIVE platform.
 
-By selecting `Datasets` you can see a list of all datasets on the platform. From the datasets page or an organization's page you can find a dataset you are interested in ([more details about searching datasets](metadata.md#find-data)). Selecting it will display the dataset page. At the top there are 3 tabs:
-- `Dataset` - here you can see all the information about the dataset and a list of its resources, choosing a resource will take you to its page, where you can see details about it, manage and download it
-- `Groups` - see any group the dataset is part of, or add it to new groups by selecting the group name and pressing `Add to group`
-- `Activity Stream` - see the history of changes made to the dataset
+## General Information
+
+CKAN is a powerful open-source data management system that forms the backbone of the ALTERNATIVE platform's data sharing capabilities. It provides a web-based interface for cataloging, storing, and accessing data, making it easier for organizations to publish and share their data with internal teams or external audiences.
+
+### Datasets
+
+Datasets are the core units of data in CKAN. A dataset is a collection of data resources (such as files, databases, or APIs) along with descriptive metadata. Datasets in CKAN:
+
+- Represent a logical collection of related data resources
+- Contain metadata describing the data, its source, and usage
+- Can be public or private, depending on sharing settings
+- Are typically owned by an organization or user
+- Can be tagged, categorized, and grouped for easy discovery
+
+### Resources
+
+Resources are the actual data files or references that make up a dataset. In CKAN:
+
+- A resource can be any type of file (CSV, Excel, PDF, etc.) or a link to an external data source
+- Multiple resources can be added to a single dataset
+- Each resource has its own metadata, separate from the dataset metadata
+- Resources can be previewed, downloaded, or accessed via API depending on their type and configuration
+
+### Groups
+
+Groups in CKAN are collections of datasets that share a common theme. They provide an additional way to organize and categorize datasets beyond organizations. Key features of groups include:
+
+- Datasets from different organizations can be part of the same group
+- A dataset can belong to multiple groups
+- Groups can have their own pages with description and branding
+- They help in discovering related datasets across organizational boundaries
+- Groups can have members with different levels of access
 
 ## Creating a New Dataset
 
-1. You can access the `Create Dataset` screen in two ways. Go to `Datasets` page, then select the `Add Dataset` button. Alternatively, go to `Organizations`, select the page for the organization that should own your new dataset. Provided that you are a member of this organization, you can now select the `Add Dataset` button.
-2. Add [information](metadata.md#fields) about the data
-3. Press `Next: Add Data`
-4. This is where you will add one or more resources which contain the data for this dataset. Choose a file (`Upload` button, max file size = 1 GB) or link (`Link` button) for your data resource. Fill the other information on the page:
-   - Name - a name for this resource, different resources in the dataset should have different names
-   - Description - a description of the resource
-   - Format - the file format of the resource
-5. If you have more resources to add to the dataset, select `Save & add another`. When you have added all resources, press `Finish`.
+To create a new dataset in the ALTERNATIVE platform:
 
-## Managing Dataset
+1. From the 'Datasets' page, click the 'Add Dataset' button, or go to your organization's page and click 'Add Dataset'.
+2. Fill in the required metadata fields:
+   - Title (unique across the platform)
+   - Description
+   - Tags (for improved searchability)
+   - License
+   - Organization (dataset owner)
+   - Visibility (public or private)
+3. Click 'Next: Add Data'.
+4. Add one or more resources to your dataset:
+   - Upload a file or provide a link to the data
+   - Give the resource a name
+   - Provide a description of the resource
+   - Specify the format of the resource
+5. Click 'Finish' when you've added all resources.
 
-You can edit the dataset you have created, or any dataset owned by an organization that you are a member of, or any dataset, in which you have been listed as a collaborator with the Editor role or higher.
+## Managing Datasets and Resources
 
-Go to the dataset’s page. Select `Manage`. Here you can:
+### Editing Datasets
 
-### Edit Metadata or Delete Dataset
+To edit an existing dataset:
 
-In the `Edit metadata` tab you can edit any of the fields. When you have finished, press the `Update Dataset` button to save your changes. Alernatively, you can delete the dataset by pressing `Delete`. The dataset is not completely deleted. It is hidden, so it does not show up in any searches. However, by visiting the URL for the dataset’s page, it can still be seen (by users with appropriate authorization), and *undeleted* if necessary. If it's important to completely delete the dataset - contact a sysadmin user.
+1. Navigate to the dataset's page.
+2. Click 'Manage'.
+3. In the 'Edit metadata' tab, you can modify any of the fields.
+4. Click 'Update Dataset' to save your changes.
 
-### Manage a Dataset's Resources
+### Managing Resources
 
-In the `Resources` tab, you can add new resources to the dataset by pressing `Add new resource`, or, by selecting a resource, you can edit information about it. When you have finished editing, select the button marked `Update Resource` to save your changes. To delete the resource, press `Delete`.
+To manage resources within a dataset:
+
+1. Go to the dataset's 'Manage' page.
+2. Click on the 'Resources' tab.
+3. Here you can:
+   - Add new resources by clicking 'Add new resource'
+   - Edit existing resources by selecting them and modifying the information
+   - Delete resources if needed
 
 ### Dataset Collaborators
 
-In the `Collaborators` tab, you'll see a list of all users that have been given special permissions to the dataset (**collaborators don't have to be members of the organization that owns the dataset**). From the list you can `Edit` (change their role) or `Delete` a collaborator. Add new collaborator by selecting `Add Collaborators` - choose their username, assign a role and press `Add Collaborator`.
+You can manage collaborators for a dataset:
 
-**Collaborator Roles**:
+1. In the dataset's 'Manage' page, go to the 'Collaborators' tab.
+2. Add new collaborators or edit/delete existing ones.
+3. Assign roles: Member (view only), Editor (can edit), or Admin (full control).
 
-- Member - can access the dataset if private, but not edit it
-- Editor - can edit the dataset and its resources, as well as accessing the dataset if private
-- Admin - in addition to managing the dataset, they can add and remove collaborators
+## Groups Management
 
-## Groups
+### Creating a Group
 
-Groups are collections of datasets (**datasets in a group can be owned by different organizations**). They can also have members. By selecting `Groups` near the top of any page, you can find all the existing groups. Selecting a group will take you to its page where you'll find information about it and datasets that have been added to the group. Only sysadmin users can create groups, by going to the `Groups` page and pressing `Add Group`. Initially, the group has no datasets and only 1 member - the creator.
+Note: Only system administrators can create groups in the ALTERNATIVE platform.
 
-### Management
+To create a new group:
 
-From the group's page, select `Manage`. On this page there are 2 tabs: `Edit` - where you can change information about the group or `Delete` it; and `Members` - you can see a list of all members, add or remove users from the group, or change their role.
+1. Go to the 'Groups' page and click 'Add Group'.
+2. Fill in the required information:
+   - Name (used in URLs, can only contain lowercase letters, numbers, and dashes)
+   - Description
+3. Optionally, add an image to represent the group.
+4. Click 'Create Group'.
 
-**Group Roles**:
+### Adding Datasets to a Group
 
-- Member - can add/remove datasets from the group
-- Admin - do the same as a member + can edit group information, as well as manage the group's members
+To add a dataset to a group:
+
+1. Go to the dataset's page.
+2. Click on the 'Groups' tab.
+3. Select the group you want to add the dataset to from the dropdown menu.
+4. Click 'Add to group'.
+
+### Managing Group Membership
+
+Group administrators can manage group membership:
+
+1. Go to the group's page and click 'Manage'.
+2. In the 'Members' tab, you can:
+   - Add new members by entering their username and selecting a role
+   - Change roles of existing members
+   - Remove members from the group
+
+Group roles include:
+- Member: Can see the group's private datasets
+- Editor: Can add/remove datasets from the group
+- Admin: Can manage group membership and edit group properties
+
+## Metadata
+
+Metadata is crucial for organizing and discovering datasets. The ALTERNATIVE platform uses three types of metadata:
+
+1. Default Metadata: Includes fields like title, description, tags, license, etc.
+2. Advanced Metadata for Experiments: Custom fields for scientific experiments (e.g., culture medium, number of replicates, toxin type).
+3. Custom Metadata: Arbitrary key/value pairs for additional dataset information.
+
+## Best Practices
+
+- Use clear, descriptive titles for datasets and resources.
+- Provide comprehensive descriptions to aid in discovery and understanding.
+- Use relevant tags to improve searchability.
+- Always include licensing information.
+- Keep metadata up-to-date, especially for frequently updated datasets.
+- Use appropriate file formats for resources to ensure accessibility.
+- Use groups to create meaningful collections of datasets that span multiple organizations.
+- Keep group descriptions up-to-date to help users understand the purpose and content of the group.
+- Regularly review group memberships to ensure appropriate access levels.
+
+By following these guidelines, you can effectively create, manage, and share datasets, resources, and groups in the ALTERNATIVE platform, facilitating collaboration and data accessibility across the project.

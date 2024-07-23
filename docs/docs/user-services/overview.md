@@ -1,5 +1,5 @@
 ### User services
-The user services are those used by users to interact directly with. Those include CKAN and JupyterHub.
+The user services are those used by users to interact directly with.
 
 #### CKAN
 The ALTERNATIVE platform’s data sharing part is based on CKAN, a web-based catalog platform for working with large datasets in a collaborative style. CKAN provides an easy to use web interface, which can be used to create, share and manage various types of data either with internal teams or external audiences. 

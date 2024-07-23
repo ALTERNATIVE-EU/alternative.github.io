@@ -1,5 +1,23 @@
 # Install ALTERNATIVE CKAN Environment on K8S
 
+# Overview
+
+The Alternative platform is a comprehensive cloud-based solution designed to facilitate data sharing, analysis, and collaboration in scientific research. This guide provides detailed instructions for installing and configuring the platform's core components.
+
+### Platform Architecture
+
+The Alternative platform consists of several key building blocks:
+
+1. CKAN (Comprehensive Knowledge Archive Network): For data management and sharing
+2. Keycloak: For identity and access management
+3. JupyterHub: For interactive data analysis and development
+4. Kubernetes: For orchestrating and managing containerized applications
+5. PostgreSQL: As the primary database for CKAN and Keycloak
+6. Cloud Storage (S3): For storing large datasets
+7. AI/ML APIs: For integrating machine learning models
+
+These components interact to provide a seamless experience for researchers, data scientists, and administrators.
+
 ## Requirements
 
 You will need a cluster with:

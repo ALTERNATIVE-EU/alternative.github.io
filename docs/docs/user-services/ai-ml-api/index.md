@@ -1,6 +1,6 @@
 # AI/ML API Server
 
-Welcome to the documentation for the AI/ML API Server. This server a part of the ALTERNATIVE project, providing a robust and secure interface for accessing a wide range of machine learning models. Our goal is to simplify the integration of ML models into various applications and workflows, ensuring seamless access and efficient operation.
+This server a part of the ALTERNATIVE project, providing a robust and secure interface for accessing a wide range of machine learning models. Our goal is to simplify the integration of ML models into various applications and workflows, ensuring seamless access and efficient operation.
 
 ## Overview
 

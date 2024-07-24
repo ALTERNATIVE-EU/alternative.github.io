@@ -88,6 +88,7 @@ nav:
         - Error Handling: user-services/ai-ml-api/api-usage/error-handling.md
       - Scalability: user-services/ai-ml-api/scalability.md
       - Testing: user-services/ai-ml-api/testing.md
+      - Elastiacity: user-services/ai-ml-api/elastiacity.md
   - Administrative Services:
     - Overview: admin-services/overview.md
     - Keycloak: admin-services/keycloak.md

@@ -5,6 +5,7 @@ repo_name: ALTERNATIVE-EU/ai-ml-api
 
 theme:
   name: material
+  language: en
   palette:
     - scheme: default
       primary: indigo
@@ -20,9 +21,12 @@ theme:
         name: Switch to light mode
   features:
     - navigation.sections
+    - navigation.expand
     - search.suggest
     - search.highlight
     - content.tabs.link
+    - content.code.copy
+    - toc.follow
 
 plugins:
   - search
@@ -47,65 +51,69 @@ markdown_extensions:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
+  - footnotes
+  - abbr
+  - toc:
+      permalink: true
 
 nav:
   - Introduction: index.md
   - Architecture:
-    - Overview: architecture/overview.md
-    - Cloud Infrastructure: architecture/cloud-infrastructure.md
-    - Kubernetes: architecture/kubernetes.md
-    - Networking: architecture/networking.md
-    - Storage: architecture/storage.md
+      - Overview: architecture/overview.md
+      - Cloud Infrastructure: architecture/cloud-infrastructure.md
+      - Kubernetes: architecture/kubernetes.md
+      - Networking: architecture/networking.md
+      - Storage: architecture/storage.md
   - User Services:
-    - Overview: user-services/overview.md
-    - CKAN:
-      - Overview: user-services/ckan/overview.md
-      - Users, Organizations, and Authorization: user-services/ckan/users.md
-      - Datasets, Resources, and Groups: user-services/ckan/datasets.md
-      - Metadata: user-services/ckan/metadata.md
-      - Extensions: user-services/ckan/extensions.md
-      - API: user-services/ckan/api.md
-    - JupyterHub:
-      - Overview: user-services/jupyterhub/overview.md
-      - File System: user-services/jupyterhub/filesystem.md
-      - Environments: user-services/jupyterhub/environments.md
-      - Alternative Library: user-services/jupyterhub/library.md
-      - R: user-services/jupyterhub/r.md
-      - Bioconductor: user-services/jupyterhub/bioconductor.md
-    - AI/ML API:
-      - Overview: user-services/ai-ml-api/index.md
-      - System Architecture: user-services/ai-ml-api/system-architecture.md
-      - Data Flow: user-services/ai-ml-api/data-flow.md
-      - Security:
-        - Authentication and Authorization: user-services/ai-ml-api/security/authentication-and-authorization.md
-        - Encryption: user-services/ai-ml-api/security/encryption.md
-      - Token Management:
-        - CKAN Integration: user-services/ai-ml-api/token-management/ckan-integration.md
-        - Token Lifecycle: user-services/ai-ml-api/token-management/token-lifecycle.md
-      - API Usage:
-        - Endpoints: user-services/ai-ml-api/api-usage/endpoints.md
-        - Authentication: user-services/ai-ml-api/api-usage/authentication.md
-        - Error Handling: user-services/ai-ml-api/api-usage/error-handling.md
-      - Scalability: user-services/ai-ml-api/scalability.md
-      - Testing: user-services/ai-ml-api/testing.md
+      - Overview: user-services/overview.md
+      - CKAN:
+          - Overview: user-services/ckan/overview.md
+          - Users, Organizations, and Authorization: user-services/ckan/users.md
+          - Datasets, Resources, and Groups: user-services/ckan/datasets.md
+          - Metadata: user-services/ckan/metadata.md
+          - Extensions: user-services/ckan/extensions.md
+          - API: user-services/ckan/api.md
+      - JupyterHub:
+          - Overview: user-services/jupyterhub/overview.md
+          - File System: user-services/jupyterhub/filesystem.md
+          - Environments: user-services/jupyterhub/environments.md
+          - Alternative Library: user-services/jupyterhub/library.md
+          - R: user-services/jupyterhub/r.md
+          - Bioconductor: user-services/jupyterhub/bioconductor.md
+      - AI/ML API:
+          - Overview: user-services/ai-ml-api/index.md
+          - System Architecture: user-services/ai-ml-api/system-architecture.md
+          - Data Flow: user-services/ai-ml-api/data-flow.md
+          - Security:
+              - Authentication and Authorization: user-services/ai-ml-api/security/authentication-and-authorization.md
+              - Encryption: user-services/ai-ml-api/security/encryption.md
+          - Token Management:
+              - CKAN Integration: user-services/ai-ml-api/token-management/ckan-integration.md
+              - Token Lifecycle: user-services/ai-ml-api/token-lifecycle.md
+          - API Usage:
+              - Endpoints: user-services/ai-ml-api/api-usage/endpoints.md
+              - Authentication: user-services/ai-ml-api/api-usage/authentication.md
+              - Error Handling: user-services/ai-ml-api/api-usage/error-handling.md
+          - Scalability: user-services/ai-ml-api/scalability.md
+          - Testing: user-services/ai-ml-api/testing.md
   - Administrative Services:
-    - Overview: admin-services/overview.md
-    - Keycloak: admin-services/keycloak.md
-    - External DNS: admin-services/external-dns.md
-    - Cert Manager: admin-services/cert-manager.md
-    - Ingress Controller: admin-services/ingress-controller.md
-    - Istio: admin-services/istio.md
+      - Overview: admin-services/overview.md
+      - Keycloak: admin-services/keycloak.md
+      - External DNS: admin-services/external-dns.md
+      - Cert Manager: admin-services/cert-manager.md
+      - Ingress Controller: admin-services/ingress-controller.md
+      - Istio: admin-services/istio.md
   - Platform Features:
-    - Overview: features/overview.md
-    - Data Sharing: features/data-sharing.md
-    - Development Environment: features/development-environment.md
-    - Multi-user and Collaboration: features/multi-user-and-collaboration.md
-    - Single Sign-On: features/sso.md
-    - Elasticity: features/elasticity.md
+      - Overview: features/overview.md
+      - Data Sharing: features/data-sharing.md
+      - Development Environment: features/development-environment.md
+      - Multi-user and Collaboration: features/multi-user-and-collaboration.md
+      - Single Sign-On: features/sso.md
+      - Elasticity: features/elasticity.md
   - Deployment:
-    - Platform Deployment: deployment/platform.md
-    - Envoy Filter: deployment/envoy-filter.md
-    - AI/ML API: deployment/ai-ml-api.md
+      - Platform Deployment: deployment/platform.md
+      - Envoy Filter: deployment/envoy-filter.md
+      - AI/ML API: deployment/ai-ml-api.md
   - Repositories: repositories.md
 
 extra:
@@ -114,6 +122,24 @@ extra:
       link: https://github.com/ALTERNATIVE-EU
     - icon: fontawesome/brands/twitter
       link: https://twitter.com/ALTERNATIVE_EU
+  alternate:
+    - name: English
+      link: /
+      lang: en
+
+extra_css:
+  - 'stylesheets/extra.css'
+
+extra_javascript:
+  - 'javascripts/extra.js'
+
+metadata:
+  description: 'Documentation for the ALTERNATIVE Platform'
+  keywords: 'ALTERNATIVE, Platform, Documentation, AI, ML, API'
+  author: 'ALTERNATIVE-EU'
+  robots: 'index, follow'
+  generator: 'MkDocs'
+  title_suffix: ' - ALTERNATIVE Platform Documentation'
 
 deploy:
   provider: git

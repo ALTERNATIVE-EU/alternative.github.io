@@ -43,18 +43,18 @@ To create a new dataset in the ALTERNATIVE platform:
 
 1. From the 'Datasets' page, click the 'Add Dataset' button, or go to your organization's page and click 'Add Dataset'.
 2. Fill in the required metadata fields:
-   - Title (unique across the platform)
-   - Description
-   - Tags (for improved searchability)
-   - License
-   - Organization (dataset owner)
-   - Visibility (public or private)
+      - Title (unique across the platform)
+      - Description
+      - Tags (for improved searchability)
+      - License
+      - Organization (dataset owner)
+      - Visibility (public or private)
 3. Click 'Next: Add Data'.
 4. Add one or more resources to your dataset:
-   - Upload a file or provide a link to the data
-   - Give the resource a name
-   - Provide a description of the resource
-   - Specify the format of the resource
+      - Upload a file or provide a link to the data
+      - Give the resource a name
+      - Provide a description of the resource
+      - Specify the format of the resource
 5. Click 'Finish' when you've added all resources.
 
 ## Managing Datasets and Resources

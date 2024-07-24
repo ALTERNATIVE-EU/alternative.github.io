@@ -57,31 +57,31 @@ markdown_extensions:
       permalink: true
 
 nav:
-  - Introduction: index.md
+  - Overview: index.md
   - Architecture:
-      - Overview: architecture/overview.md
+      - Introduction: architecture/overview.md
       - Cloud Infrastructure: architecture/cloud-infrastructure.md
       - Kubernetes: architecture/kubernetes.md
       - Networking: architecture/networking.md
       - Storage: architecture/storage.md
   - User Services:
-      - Overview: user-services/overview.md
+      - Introduction: user-services/overview.md
       - CKAN:
-          - Overview: user-services/ckan/overview.md
+          - Introduction: user-services/ckan/overview.md
           - Users, Organizations, and Authorization: user-services/ckan/users.md
           - Datasets, Resources, and Groups: user-services/ckan/datasets.md
           - Metadata: user-services/ckan/metadata.md
-          - Extensions: user-services/ckan/extensions.md
           - API: user-services/ckan/api.md
+          - Extensions: user-services/ckan/extensions.md
       - JupyterHub:
-          - Overview: user-services/jupyterhub/overview.md
+          - Introduction: user-services/jupyterhub/overview.md
           - File System: user-services/jupyterhub/filesystem.md
           - Environments: user-services/jupyterhub/environments.md
           - Alternative Library: user-services/jupyterhub/library.md
           - R: user-services/jupyterhub/r.md
           - Bioconductor: user-services/jupyterhub/bioconductor.md
       - AI/ML API:
-          - Overview: user-services/ai-ml-api/index.md
+          - Introduction: user-services/ai-ml-api/index.md
           - System Architecture: user-services/ai-ml-api/system-architecture.md
           - Data Flow: user-services/ai-ml-api/data-flow.md
           - Security:
@@ -97,14 +97,14 @@ nav:
           - Scalability: user-services/ai-ml-api/scalability.md
           - Testing: user-services/ai-ml-api/testing.md
   - Administrative Services:
-      - Overview: admin-services/overview.md
+      - Introduction: admin-services/overview.md
       - Keycloak: admin-services/keycloak.md
       - External DNS: admin-services/external-dns.md
       - Cert Manager: admin-services/cert-manager.md
       - Ingress Controller: admin-services/ingress-controller.md
       - Istio: admin-services/istio.md
   - Platform Features:
-      - Overview: features/overview.md
+      - Introduction: features/overview.md
       - Data Sharing: features/data-sharing.md
       - Development Environment: features/development-environment.md
       - Multi-user and Collaboration: features/multi-user-and-collaboration.md

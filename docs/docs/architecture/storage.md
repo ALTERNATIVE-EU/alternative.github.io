@@ -85,19 +85,3 @@ A custom python library was developed for ALTERNATIVE users called `alternative-
 ## Databases
 
 Postgres database is deployed within the Kubernetes plane. It is used by CKAN and Keycloak services. The Postgres leverages block storage underneath.
-
-## Code repository
-
-ALTERNATIVE uses GitHub as a code repository. A dedicated GitHub organization has been created with the following repositories.
-
-**Table 1: List with ALTERNATIVE project code repositories in GitHub**
-
-| Repository Name             | Description                                                  |
-|-----------------------------|--------------------------------------------------------------|
-| platform-deployment         | Deployment files and instructions for the platform           |
-| ckanext-cloudstorage        | CKAN extension that implements support for S3 Cloud Storage  |
-| ckanext-keycloak_auth       | CKAN extension that enables Keycloak authentication and user management |
-| ckanext-alternative_theme   | CKAN extension that changes the default theme of the platform to match the look of ALTERNATIVE |
-| alternative.github.io       | Documentation about the ALTERNATIVE platform                 |
-| ckanext-extrafields         | CKAN extension that adds additional fields to dataset metadata, such as size and experiment info |
-| alternative-lib             | Python library to work with the Alternative platform         |

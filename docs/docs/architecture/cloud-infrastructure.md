@@ -1,6 +1,8 @@
 # Cloud Infrastructure
 
-The cloud infrastructure forms the foundational layer of the **ALTERNATIVE data platform**, consisting of virtual services and hardware components. This infrastructure is specifically architected to underpin the platform's diverse and demanding operational needs.
+## Overview
+
+The cloud infrastructure of the **ALTERNATIVE data platform** is a meticulously designed ecosystem, comprising a range of virtual services and hardware components tailored to support the platform's multifaceted operational requirements. At its core, the infrastructure leverages cutting-edge cloud computing technologies to ensure scalability, resilience, and security, which are paramount for handling the extensive data processing and analysis tasks inherent to the platform.
 
 ## Storage Solutions
 
@@ -18,8 +20,5 @@ A key component of the cloud infrastructure is the virtual networking aspect. Th
 
 Central to the infrastructure's capabilities is the Kubernetes cluster. This cluster plays a pivotal role in orchestrating containerized applications, ensuring their seamless deployment, scaling, and management. Kubernetes, renowned for its efficiency and flexibility, enhances the platform's ability to support a wide range of applications and services.
 
-## Elasticity
-
-One of the most significant advantages of this cloud infrastructure is its inherent elasticity, enabled by the virtual nature of its components. Services can be provisioned, scaled, or modified on demand through API integrations. This elasticity is not just a feature but a fundamental aspect, crucial for adapting to the fluctuating resource requirements inherent in the dynamic environment of the ALTERNATIVE platform. It allows for a responsive and agile infrastructure setup, capable of efficiently adapting to varying workloads and evolving project needs.
 
 ![Cloud Infrastructure](./images/cloud-data-platform-architecture.png)

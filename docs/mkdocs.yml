@@ -88,7 +88,6 @@ nav:
         - Error Handling: user-services/ai-ml-api/api-usage/error-handling.md
       - Scalability: user-services/ai-ml-api/scalability.md
       - Testing: user-services/ai-ml-api/testing.md
-      - Elastiacity: user-services/ai-ml-api/elastiacity.md
   - Administrative Services:
     - Overview: admin-services/overview.md
     - Keycloak: admin-services/keycloak.md
@@ -102,6 +101,7 @@ nav:
     - Development Environment: features/development-environment.md
     - Multi-user and Collaboration: features/multi-user-and-collaboration.md
     - Single Sign-On: features/sso.md
+    - Elasticity: features/elasticity.md
   - Deployment:
     - Platform Deployment: deployment/platform.md
     - Envoy Filter: deployment/envoy-filter.md

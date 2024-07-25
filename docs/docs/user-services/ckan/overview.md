@@ -1,7 +1,5 @@
 # CKAN Data Management Platform
 
-CKAN (Comprehensive Knowledge Archive Network) forms the core of the ALTERNATIVE project's data sharing infrastructure, providing a powerful web-based catalog platform for managing and collaborating on large datasets.
-
 ## Overview
 
 The CKAN-based ALTERNATIVE platform is designed to facilitate easy creation, sharing, and management of various types of data, catering to both internal teams and external audiences. It offers a user-friendly web interface that streamlines the process of data publication and discovery.

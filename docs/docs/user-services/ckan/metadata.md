@@ -1,8 +1,12 @@
 # Metadata
 
-Each dataset has metadata associated with it. Metadata is structured reference data that helps to sort and identify the information it describes.
+## Overview
+
+This document provides a comprehensive guide to metadata management in the ALTERNATIVE platform. Metadata is structured reference data that helps to sort and identify the information it describes. In the context of our platform, metadata plays a crucial role in organizing, finding, and understanding datasets. This guide covers the various metadata fields available, including standard fields, advanced fields for experimental data, and custom fields. It also explains how to effectively use metadata for searching and filtering datasets within the platform. Understanding and properly utilizing metadata is essential for researchers and data scientists to efficiently manage and access the wealth of information stored in the ALTERNATIVE platform.
 
 ## Fields
+
+Each dataset has metadata associated with it. The following fields are available for describing datasets:
 
 - Title - this title will be unique across the platform, so make it brief but specific
 - URL - automatically filled based on title, but can be edited
@@ -48,7 +52,7 @@ CKAN uses Apache Solr as its search engine. Note that not the whole functionalit
 
 CKAN defers most of the search to Solr and by default it uses the DisMax Query Parser that was primarily designed to be easy to use and to accept almost any input.
 
-The search words typed by the user in the search box defines the main query constituting the essence of the search. Some characters are treated as mandatory (`+`) and prohibited (`-`) modifiers for terms. Text wrapped in balanced quote characters (`“example text”`) is treated as a phrase. By default, all words or phrases specified by the user are treated as optional unless they are preceded by `+` or `-`. CKAN will search for the complete word and when doing simple search wildcards are not supported. Solr applies some preprocessing and stemming when searching. Stemmers remove morphological affixes from words, leaving only the word stem. This may cause, for example, that searching for `testing` or `tested` will show also results containing the word `test`. If the name of the dataset contains words separated by `-` it will consider each word independently in the search.
+The search words typed by the user in the search box defines the main query constituting the essence of the search. Some characters are treated as mandatory (`+`) and prohibited (`-`) modifiers for terms. Text wrapped in balanced quote characters (`"example text"`) is treated as a phrase. By default, all words or phrases specified by the user are treated as optional unless they are preceded by `+` or `-`. CKAN will search for the complete word and when doing simple search wildcards are not supported. Solr applies some preprocessing and stemming when searching. Stemmers remove morphological affixes from words, leaving only the word stem. This may cause, for example, that searching for `testing` or `tested` will show also results containing the word `test`. If the name of the dataset contains words separated by `-` it will consider each word independently in the search.
 
 **Examples**:
 
@@ -60,7 +64,7 @@ The search words typed by the user in the search box defines the main query cons
 
 ### Advanced Search
 
-This will be considered a fielded search and the query syntax of Solr will be used to search. This will allow us to use wildcards (`*`), proximity matching (`~`, looks for terms that are within a specific distance from one another) and general features described in <a href="https://solr.apache.org/guide/6_6/searching.html" target="_blank">Solr docs</a>. The basic syntax is `field:term`. Field names may differ from datasets' attributes, the mapping rules are defined in the <a href="https://github.com/ckan/ckan/blob/master/ckan/config/solr/schema.xml" target="_blank">schema.xml</a> file. You can use `title` to search by the dataset name and `text` to look in a catch-all field. CKAN supports fuzzy searches based on the Levenshtein Distance, or Edit Distance algorithm, to do a fuzzy search use the `~` symbol at the end of a single-word term.
+This will be considered a fielded search and the query syntax of Solr will be used to search. This will allow us to use wildcards (`*`), proximity matching (`~`, looks for terms that are within a specific distance from one another) and general features described in [Solr docs](https://solr.apache.org/guide/6_6/searching.html). The basic syntax is `field:term`. Field names may differ from datasets' attributes, the mapping rules are defined in the [schema.xml](https://github.com/ckan/ckan/blob/master/ckan/config/solr/schema.xml) file. You can use `title` to search by the dataset name and `text` to look in a catch-all field. CKAN supports fuzzy searches based on the Levenshtein Distance, or Edit Distance algorithm, to do a fuzzy search use the `~` symbol at the end of a single-word term.
 
 **Examples**:
 

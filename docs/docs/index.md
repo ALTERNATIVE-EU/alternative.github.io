@@ -2,7 +2,7 @@
 
 ## Horizon 2020 ALTERNATIVE Project
 
-The Horizon 2020 research project, ALTERNATIVE, develops an innovative platform for assessing the cardiotoxicity of chemicals. This novel platform will enable regulators and industry to identify, quantify, and prevent cardiotoxic co-exposures to industrial chemicals and pharmaceuticals cost-effectively.
+Horizon 2020 research project ALTERNATIVE develops an innovative platform and an integrated approach for testing and assessment of the potential of chemicals to induce cardiotoxicity. The novel approach will strengthen the capacity of regulators and industry to prevent cardiotoxic co-exposures to industrial chemicals and pharmaceuticals in an effective way.
 
 ## Purpose of the Cloud Data Platform
 

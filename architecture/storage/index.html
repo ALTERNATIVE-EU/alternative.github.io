@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://platform.alternative-project.eu/deployment/ai-ml-api/">
+        <link rel="canonical" href="https://platform.alternative-project.eu/architecture/storage/">
       
       
-        <link rel="prev" href="../envoy-filter/">
+        <link rel="prev" href="../networking/">
       
       
-        <link rel="next" href="../../repositories/">
+        <link rel="next" href="../../user-services/overview/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -22,7 +22,7 @@
     
     
       
-        <title>AI/ML API - ALTERNATIVE Platform Documentation</title>
+        <title>Storage - ALTERNATIVE Platform Documentation</title>
       
     
     
@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#aiml-api" class="md-skip">
+        <a href="#storage" class="md-skip">
           Skip to content
         </a>
       
@@ -112,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              AI/ML API
+              Storage
             
           </span>
         </div>
@@ -294,8 +294,10 @@
       
   
   
+    
   
   
+  
     
     
     
@@ -305,13 +307,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
@@ -325,7 +325,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Architecture
@@ -339,7 +339,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../architecture/overview/" class="md-nav__link">
+      <a href="../overview/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -360,7 +360,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../architecture/cloud-infrastructure/" class="md-nav__link">
+      <a href="../cloud-infrastructure/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -381,7 +381,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../architecture/kubernetes/" class="md-nav__link">
+      <a href="../kubernetes/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -402,7 +402,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../architecture/networking/" class="md-nav__link">
+      <a href="../networking/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -420,10 +420,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../architecture/storage/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Storage
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -432,6 +452,257 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overview
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Overview">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dynamic-allocation-of-data-volumes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dynamic Allocation of Data Volumes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#persistence-and-reattachment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Persistence and Reattachment
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#delegation-of-scalability-and-recovery" class="md-nav__link">
+    <span class="md-ellipsis">
+      Delegation of Scalability and Recovery
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#types-of-storage-used" class="md-nav__link">
+    <span class="md-ellipsis">
+      Types of Storage Used
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#s3-storage" class="md-nav__link">
+    <span class="md-ellipsis">
+      S3 Storage
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="S3 Storage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#scalability-and-cost-effectiveness-of-s3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Scalability and Cost-Effectiveness of S3
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#custom-ckan-integration-with-s3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Custom CKAN Integration with S3
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#direct-interface-with-s3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Direct Interface with S3
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#s3-storage-service-and-minio-library" class="md-nav__link">
+    <span class="md-ellipsis">
+      S3 Storage Service and Minio Library
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ckans-api-based-data-exposure" class="md-nav__link">
+    <span class="md-ellipsis">
+      CKAN's API-based Data Exposure
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#block-storage" class="md-nav__link">
+    <span class="md-ellipsis">
+      Block Storage
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Block Storage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#exposure-as-file-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exposure as File System
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#underlying-storage-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      Underlying Storage System
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#consumption-via-kubernetes-apis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Consumption via Kubernetes APIs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#decoupling-of-applications-from-storage" class="md-nav__link">
+    <span class="md-ellipsis">
+      Decoupling of Applications from Storage
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nfs" class="md-nav__link">
+    <span class="md-ellipsis">
+      NFS
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ckan-storage" class="md-nav__link">
+    <span class="md-ellipsis">
+      CKAN Storage
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#jupyterhub-storage" class="md-nav__link">
+    <span class="md-ellipsis">
+      JupyterHub Storage
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="JupyterHub Storage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#multi-user-capability" class="md-nav__link">
+    <span class="md-ellipsis">
+      Multi-user Capability
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#shared-folder" class="md-nav__link">
+    <span class="md-ellipsis">
+      Shared Folder
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#accessing-ckan-data-from-jupyter" class="md-nav__link">
+    <span class="md-ellipsis">
+      Accessing CKAN Data from Jupyter
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#databases" class="md-nav__link">
+    <span class="md-ellipsis">
+      Databases
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1654,8 +1925,6 @@
       
   
   
-    
-  
   
   
     
@@ -1667,11 +1936,13 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
         
           
           <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
@@ -1685,7 +1956,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
             Deployment
@@ -1699,7 +1970,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../platform/" class="md-nav__link">
+      <a href="../../deployment/platform/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1720,7 +1991,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../envoy-filter/" class="md-nav__link">
+      <a href="../../deployment/envoy-filter/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1738,30 +2009,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    AI/ML API
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../deployment/ai-ml-api/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1770,80 +2021,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#requirements" class="md-nav__link">
-    <span class="md-ellipsis">
-      Requirements
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#installation" class="md-nav__link">
-    <span class="md-ellipsis">
-      Installation
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#installation-with-docker" class="md-nav__link">
-    <span class="md-ellipsis">
-      Installation with Docker
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#deployment-in-kubernetes" class="md-nav__link">
-    <span class="md-ellipsis">
-      Deployment in Kubernetes
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#usage" class="md-nav__link">
-    <span class="md-ellipsis">
-      Usage
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#testing" class="md-nav__link">
-    <span class="md-ellipsis">
-      Testing
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1903,54 +2080,231 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#requirements" class="md-nav__link">
+  <a href="#overview" class="md-nav__link">
     <span class="md-ellipsis">
-      Requirements
+      Overview
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Overview">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dynamic-allocation-of-data-volumes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dynamic Allocation of Data Volumes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#persistence-and-reattachment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Persistence and Reattachment
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#delegation-of-scalability-and-recovery" class="md-nav__link">
+    <span class="md-ellipsis">
+      Delegation of Scalability and Recovery
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#types-of-storage-used" class="md-nav__link">
+    <span class="md-ellipsis">
+      Types of Storage Used
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#s3-storage" class="md-nav__link">
+    <span class="md-ellipsis">
+      S3 Storage
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="S3 Storage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#scalability-and-cost-effectiveness-of-s3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Scalability and Cost-Effectiveness of S3
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#custom-ckan-integration-with-s3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Custom CKAN Integration with S3
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#direct-interface-with-s3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Direct Interface with S3
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#s3-storage-service-and-minio-library" class="md-nav__link">
+    <span class="md-ellipsis">
+      S3 Storage Service and Minio Library
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ckans-api-based-data-exposure" class="md-nav__link">
+    <span class="md-ellipsis">
+      CKAN's API-based Data Exposure
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#block-storage" class="md-nav__link">
+    <span class="md-ellipsis">
+      Block Storage
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Block Storage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#exposure-as-file-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exposure as File System
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#underlying-storage-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      Underlying Storage System
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#consumption-via-kubernetes-apis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Consumption via Kubernetes APIs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#decoupling-of-applications-from-storage" class="md-nav__link">
+    <span class="md-ellipsis">
+      Decoupling of Applications from Storage
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nfs" class="md-nav__link">
+    <span class="md-ellipsis">
+      NFS
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#installation" class="md-nav__link">
+  <a href="#ckan-storage" class="md-nav__link">
     <span class="md-ellipsis">
-      Installation
+      CKAN Storage
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#installation-with-docker" class="md-nav__link">
+  <a href="#jupyterhub-storage" class="md-nav__link">
     <span class="md-ellipsis">
-      Installation with Docker
+      JupyterHub Storage
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="JupyterHub Storage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#multi-user-capability" class="md-nav__link">
+    <span class="md-ellipsis">
+      Multi-user Capability
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#deployment-in-kubernetes" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#shared-folder" class="md-nav__link">
     <span class="md-ellipsis">
-      Deployment in Kubernetes
+      Shared Folder
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#usage" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#accessing-ckan-data-from-jupyter" class="md-nav__link">
     <span class="md-ellipsis">
-      Usage
+      Accessing CKAN Data from Jupyter
     </span>
   </a>
   
 </li>
+        
+      </ul>
+    </nav>
+  
+</li>
       
         <li class="md-nav__item">
-  <a href="#testing" class="md-nav__link">
+  <a href="#databases" class="md-nav__link">
     <span class="md-ellipsis">
-      Testing
+      Databases
     </span>
   </a>
   
@@ -1974,89 +2328,64 @@
   
 
 
-<h1 id="aiml-api">AI/ML API<a class="headerlink" href="#aiml-api" title="Permanent link">&para;</a></h1>
-<h2 id="requirements">Requirements<a class="headerlink" href="#requirements" title="Permanent link">&para;</a></h2>
+<h1 id="storage">Storage<a class="headerlink" href="#storage" title="Permanent link">&para;</a></h1>
+<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
+<p>The storage architecture within the ALTERNATIVE platform is designed to provide robust, scalable, and persistent data storage solutions. This is achieved by leveraging Kubernetes' powerful storage abstractions: <code>StorageClass</code>, <code>Persistent Volume Claim (PVC)</code>, and <code>Volume</code>. These abstractions decouple applications from the underlying storage infrastructure, enhancing flexibility and scalability.</p>
+<p><img alt="Figure 2" src="../images/storage.png" />
+<strong>Figure 2:</strong> ALTERNATIVE cloud storage architecture</p>
+<h3 id="dynamic-allocation-of-data-volumes">Dynamic Allocation of Data Volumes<a class="headerlink" href="#dynamic-allocation-of-data-volumes" title="Permanent link">&para;</a></h3>
+<p>The platform utilizes Kubernetes' dynamic provisioning capabilities to allocate data volumes as needed. This approach ensures efficient use of storage resources by creating volumes on-the-fly to meet application demands, eliminating the need for pre-provisioning storage, optimizing resource allocation, and reducing overhead.</p>
+<h3 id="persistence-and-reattachment">Persistence and Reattachment<a class="headerlink" href="#persistence-and-reattachment" title="Permanent link">&para;</a></h3>
+<p>A key feature of the platform's storage strategy is data persistence, crucial for maintaining data integrity and continuity. Persistent data volumes remain intact even if the associated application is terminated or fails. These volumes can be seamlessly reattached to other instances of the application, ensuring data continuity and minimizing downtime.</p>
+<h3 id="delegation-of-scalability-and-recovery">Delegation of Scalability and Recovery<a class="headerlink" href="#delegation-of-scalability-and-recovery" title="Permanent link">&para;</a></h3>
+<p>The platform delegates scalability, recovery, and persistence responsibilities to the cloud provider. By leveraging the cloud provider's robust infrastructure and services, the platform benefits from high scalability and efficient recovery mechanisms. This delegation allows the platform to focus on its core functionalities while relying on the cloud provider for maintaining storage resilience and scalability.</p>
+<h3 id="types-of-storage-used">Types of Storage Used<a class="headerlink" href="#types-of-storage-used" title="Permanent link">&para;</a></h3>
 <ul>
-<li>Python 3.9</li>
-<li>Anaconda</li>
-<li>PipelineAlternative_clinicaldata data</li>
-<li>PBPK data</li>
-<li>cddd data</li>
+<li><strong>Block Storage:</strong> The platform employs block storage as the primary file system for applications. This type of storage is ideal for scenarios where performance and low latency are critical, providing high-speed access to data suitable for various workloads.</li>
+<li><strong>S3 Storage:</strong> For the CKAN component of the platform, S3 storage is utilized. Known for its scalability and durability, S3 is an object storage service offering a simple and cost-effective solution for storing and retrieving large amounts of data, aligning well with CKAN's design goal of handling large datasets.</li>
 </ul>
-<h2 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link">&para;</a></h2>
-<p>Clone the repository:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>git<span class="w"> </span>clone<span class="w"> </span>git@github.com:ALTERNATIVE-EU/ai-ml-api.git
-</code></pre></div>
-<p>Put the <code>PipelineAlternative_clinicaldata</code> <code>models</code> directory.
-Put the <code>cddd</code> directories in the <code>PipelineAlternative_clinicaldata</code> directory.
-Put the <code>PBPK</code> directory in the <code>models</code> directory.</p>
-<p>Copy the content of <code>patches</code> directory into the <code>models</code> directory.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>cp<span class="w"> </span>-r<span class="w"> </span>patches/*<span class="w"> </span>./models/
-</code></pre></div>
-<p>Create cddd virtual environment and install dependencies:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nb">cd</span><span class="w"> </span>cddd
-<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>conda<span class="w"> </span>env<span class="w"> </span>create<span class="w"> </span>-f<span class="w"> </span>environment.yml
-<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>conda<span class="w"> </span>activate<span class="w"> </span>cddd
-<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>pip<span class="w"> </span>install<span class="w"> </span>--ignore-installed<span class="w"> </span>--upgrade<span class="w"> </span>https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-1.10.0-cp36-cp36m-linux_x86_64.whl
-<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>pip<span class="w"> </span>install<span class="w"> </span>-e<span class="w"> </span>.
-<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>conda<span class="w"> </span>deactivate
-</code></pre></div>
-<p>Create alternative virtual environment:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>conda<span class="w"> </span>create<span class="w"> </span>-n<span class="w"> </span>alternative<span class="w"> </span><span class="nv">python</span><span class="o">=</span><span class="m">3</span>.9
-<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>conda<span class="w"> </span>activate<span class="w"> </span>alternative
-</code></pre></div>
-<p>Install dependencies:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>pip<span class="w"> </span>install<span class="w"> </span>-f<span class="w"> </span>requirements.txt
-</code></pre></div>
-<p>Start the server:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>python3<span class="w"> </span>app.py
-</code></pre></div>
-<h2 id="installation-with-docker">Installation with Docker<a class="headerlink" href="#installation-with-docker" title="Permanent link">&para;</a></h2>
-<p>Build the image:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>docker<span class="w"> </span>build<span class="w"> </span>-t<span class="w"> </span>ai-ml-api<span class="w"> </span>.
-</code></pre></div>
-<p>Run the container:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>docker<span class="w"> </span>run<span class="w"> </span>-p<span class="w"> </span><span class="m">5000</span>:5000<span class="w"> </span>ai-ml-api
-</code></pre></div>
-<h2 id="deployment-in-kubernetes">Deployment in Kubernetes<a class="headerlink" href="#deployment-in-kubernetes" title="Permanent link">&para;</a></h2>
-<p>Update the deployment files in the deployment/kubernetes directory, then apply them:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>kubectl<span class="w"> </span>apply<span class="w"> </span>-f<span class="w"> </span>deployment/kubernetes
-</code></pre></div>
-<p>For the authentication we use istio with custom envoy filter, follow the instructions in the <a href="../envoy-filter/">envoy-filter</a> documentation.</p>
-<h2 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">&para;</a></h2>
-<p>ML:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>curl<span class="w"> </span>-X<span class="w"> </span>POST<span class="w"> </span>-H<span class="w"> </span><span class="s2">&quot;Content-Type: application/json&quot;</span><span class="w"> </span>-d<span class="w"> </span><span class="s1">&#39;{&quot;smiles&quot;: &quot;c1ccccc1O&quot;}&#39;</span><span class="w"> </span>http://localhost:5000/clinicaldata/ml/evaluate<span class="w"> </span>-o<span class="w"> </span>results.csv
-</code></pre></div>
-<p>AI:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>curl<span class="w"> </span>-X<span class="w"> </span>POST<span class="w"> </span>-H<span class="w"> </span><span class="s2">&quot;Content-Type: application/json&quot;</span><span class="w"> </span>-d<span class="w"> </span><span class="s1">&#39;{&quot;smiles&quot;: &quot;c1ccccc1O&quot;}&#39;</span><span class="w"> </span>http://localhost:5000/clinicaldata/ai/evaluate
-</code></pre></div>
-<p>AOP:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>curl<span class="w"> </span>-X<span class="w"> </span>POST<span class="w"> </span>-H<span class="w"> </span><span class="s2">&quot;Content-Type: application/json&quot;</span><span class="w"> </span>-d<span class="w"> </span><span class="s1">&#39;{&quot;smiles&quot;: &quot;c1ccccc1O&quot;}&#39;</span><span class="w"> </span>http://localhost:5000/clinicaldata/aop/evaluate
-</code></pre></div>
-<p>Doxorubicin:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>curl<span class="w"> </span>-X<span class="w"> </span>POST<span class="w"> </span>http://127.0.0.1:5000/pbpk/doxorubicin<span class="w">      </span>-H<span class="w"> </span><span class="s2">&quot;Content-Type: application/json&quot;</span><span class="w">      </span>-d<span class="w"> </span><span class="s1">&#39;{</span>
-<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="s1">           &quot;dose_mg&quot;: 60,</span>
-<a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a><span class="s1">           &quot;age&quot;: 50,</span>
-<a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a><span class="s1">           &quot;weight&quot;: 70,</span>
-<a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a><span class="s1">           &quot;height&quot;: 190</span>
-<a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a><span class="s1">         }&#39;</span>
-</code></pre></div>
-<p>HTTK:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>curl<span class="w"> </span>-X<span class="w"> </span>POST<span class="w"> </span>http://127.0.0.1:5000/pbpk/httk<span class="w"> </span>-H<span class="w"> </span><span class="s2">&quot;Content-Type: application/json&quot;</span><span class="w">      </span>-d<span class="w"> </span><span class="s1">&#39;{</span>
-<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a><span class="s1">           &quot;chem_name&quot;: &quot;Bisphenol A&quot;,</span>
-<a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a><span class="s1">           &quot;species&quot;: &quot;human&quot;,</span>
-<a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a><span class="s1">           &quot;daily_dose&quot;: 1,</span>
-<a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a><span class="s1">           &quot;doses_per_day&quot;: 1,</span>
-<a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a><span class="s1">           &quot;days&quot;: 15</span>
-<a id="__codelineno-13-7" name="__codelineno-13-7" href="#__codelineno-13-7"></a><span class="s1">         }&#39;</span>
-</code></pre></div>
-<p>IsAlive:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>curl<span class="w"> </span>http://localhost:5000/isalive
-</code></pre></div>
-<h2 id="testing">Testing<a class="headerlink" href="#testing" title="Permanent link">&para;</a></h2>
-<p>To run the tests:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>python<span class="w"> </span>-m<span class="w"> </span>unittest<span class="w"> </span>app_test.py
-</code></pre></div>
+<h2 id="s3-storage">S3 Storage<a class="headerlink" href="#s3-storage" title="Permanent link">&para;</a></h2>
+<p>The ALTERNATIVE platform, particularly its CKAN component, has specific storage requirements due to potentially large datasets containing omics data. To effectively manage these datasets, the platform employs S3 storage, well-suited for handling large volumes of data.</p>
+<h3 id="scalability-and-cost-effectiveness-of-s3">Scalability and Cost-Effectiveness of S3<a class="headerlink" href="#scalability-and-cost-effectiveness-of-s3" title="Permanent link">&para;</a></h3>
+<p>S3 storage is chosen for its exceptional scalability and cost-effectiveness. It handles vast amounts of data, scaling seamlessly with the platform's storage needs. This scalability ensures that as the volume of omics data grows, the storage infrastructure can grow correspondingly without significant challenges. Additionally, S3's pricing model, which involves paying only for the storage used, makes it a cost-effective solution for managing large datasets.</p>
+<h3 id="custom-ckan-integration-with-s3">Custom CKAN Integration with S3<a class="headerlink" href="#custom-ckan-integration-with-s3" title="Permanent link">&para;</a></h3>
+<p>CKAN's integration with S3 storage is achieved through a custom CKAN extension. This extension enables CKAN to efficiently interface with S3 storage, optimizing data storage and retrieval processes for performance and reliability.</p>
+<h3 id="direct-interface-with-s3">Direct Interface with S3<a class="headerlink" href="#direct-interface-with-s3" title="Permanent link">&para;</a></h3>
+<p>In the ALTERNATIVE platform, CKAN interfaces directly with S3 storage, bypassing integration via the Kubernetes plane. This direct interaction streamlines data flow between CKAN and S3, reducing complexity and potential bottlenecks that might arise from additional layers of integration.</p>
+<h3 id="s3-storage-service-and-minio-library">S3 Storage Service and Minio Library<a class="headerlink" href="#s3-storage-service-and-minio-library" title="Permanent link">&para;</a></h3>
+<p>The S3 storage service provided by the cloud provider utilizes the Minio library, an open-source object storage server fully compatible with Amazon S3 APIs. Minio enhances the platform's ability to interact with S3 storage efficiently and securely.</p>
+<h3 id="ckans-api-based-data-exposure">CKAN's API-based Data Exposure<a class="headerlink" href="#ckans-api-based-data-exposure" title="Permanent link">&para;</a></h3>
+<p>CKAN does not directly expose the underlying S3 storage to end users. Instead, CKAN provides its own set of APIs for data access, ensuring controlled and secure data access. This approach enhances security and allows for the implementation of additional features and controls over how data is accessed and used.</p>
+<p>In summary, the use of S3 storage in the ALTERNATIVE platform, particularly for CKAN, addresses the specific needs of large-scale omics data management. The custom integration of CKAN with S3, the direct interface approach, and the use of the Minio library ensure efficient handling of large datasets while maintaining cost-effectiveness and security.</p>
+<h2 id="block-storage">Block Storage<a class="headerlink" href="#block-storage" title="Permanent link">&para;</a></h2>
+<p>In the ALTERNATIVE platform, block storage is the main type of data storage utilized by applications. This section details the implementation and management of block storage within the platform's architecture.</p>
+<h3 id="exposure-as-file-system">Exposure as File System<a class="headerlink" href="#exposure-as-file-system" title="Permanent link">&para;</a></h3>
+<p>Block storage is exposed to applications and services as a file system, allowing developers to interact with the storage using standard file operations. This method simplifies the process of reading from and writing to the storage medium, making it highly accessible for a variety of applications.</p>
+<h3 id="underlying-storage-system">Underlying Storage System<a class="headerlink" href="#underlying-storage-system" title="Permanent link">&para;</a></h3>
+<p>Block storage systems are typically disk-based, utilizing either Hard Disk Drives (HDD) or Solid State Drives (SSD). The choice between HDD and SSD depends on a trade-off between cost and performance. SSDs, with their faster data access speeds, are well-suited for high-performance requirements, while HDDs are used for cost-effective storage solutions where speed is less critical.</p>
+<h3 id="consumption-via-kubernetes-apis">Consumption via Kubernetes APIs<a class="headerlink" href="#consumption-via-kubernetes-apis" title="Permanent link">&para;</a></h3>
+<p>Block storage within the platform is consumed through Kubernetes APIs using volumes, Persistent Volume Claims (PVCs), and Storage Classes. This integration ensures seamless and efficient management of storage resources within the platform's ecosystem. The platform offers flexibility in defining different storage classes tailored to meet varying performance requirements, allowing customization based on the specific needs of different applications or services.</p>
+<h3 id="decoupling-of-applications-from-storage">Decoupling of Applications from Storage<a class="headerlink" href="#decoupling-of-applications-from-storage" title="Permanent link">&para;</a></h3>
+<p>Using block storage in this manner decouples applications from the physical storage, enhancing flexibility in scenarios such as backup, disaster recovery, and migration. By abstracting the storage layer, applications can be easily moved, backed up, or restored without managing the complexities of the underlying storage infrastructure, significantly improving the platform's resilience and agility in handling data.</p>
+<h2 id="nfs">NFS<a class="headerlink" href="#nfs" title="Permanent link">&para;</a></h2>
+<p>The platform deploys an NFS (Network File System) server to provide an additional storage class for some applications. For instance, JupyterHub users require a shared data folder for collaboration, necessitating a storage class with mode <code>ReadWriteMany</code>. Since the cloud provider only offers block storage classes of type <code>ReadWriteOnce</code>, the NFS server is used to expose such a volume.</p>
+<h2 id="ckan-storage">CKAN Storage<a class="headerlink" href="#ckan-storage" title="Permanent link">&para;</a></h2>
+<p>The CKAN application uses several types of storage:
+- <strong>Database:</strong> A relational database (Postgres) is used to store the application state, including metadata and user data.
+- <strong>S3:</strong> User-defined datasets are mapped to S3 buckets.
+- <strong>Block Storage:</strong> Regular files, such as configuration files needed by CKAN, use block storage.</p>
+<h2 id="jupyterhub-storage">JupyterHub Storage<a class="headerlink" href="#jupyterhub-storage" title="Permanent link">&para;</a></h2>
+<p><img alt="Figure 3" src="../images/storage-jupyter.png" />
+<strong>Figure 3:</strong> Diagram of Jupyter Storage</p>
+<p>JupyterHub has more complex storage requirements compared to other ALTERNATIVE services.</p>
+<h3 id="multi-user-capability">Multi-user Capability<a class="headerlink" href="#multi-user-capability" title="Permanent link">&para;</a></h3>
+<p>Each user is dynamically allocated a Kubernetes POD containing the Jupyter kernel and runtime. The POD is ephemeral, but its associated data must persist to a user volume (10 GB). Each user is allocated this volume upon first login, and it remains after session timeout or logout. When the POD is recreated, it attaches to the same volume, preserving the user's state from the last session.</p>
+<h3 id="shared-folder">Shared Folder<a class="headerlink" href="#shared-folder" title="Permanent link">&para;</a></h3>
+<p>Users can share data directly in Jupyter via a shared folder mapped to a static volume (20 GB) with mode <code>ReadWriteMany</code>. Multiple PODs must be able to attach and write to this volume simultaneously, provided by the NFS server.</p>
+<h3 id="accessing-ckan-data-from-jupyter">Accessing CKAN Data from Jupyter<a class="headerlink" href="#accessing-ckan-data-from-jupyter" title="Permanent link">&para;</a></h3>
+<p>A custom Python library, <code>alternative-lib</code>, simplifies access to CKAN/S3 data from Jupyter. Hosted on GitHub as an open-source project, it enhances user experience by providing seamless data access.</p>
+<h2 id="databases">Databases<a class="headerlink" href="#databases" title="Permanent link">&para;</a></h2>
+<p>A Postgres database, deployed within the Kubernetes plane, is used by CKAN and Keycloak services, leveraging block storage.</p>
 
 
 

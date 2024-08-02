@@ -1,7 +1,7 @@
 site_name: ALTERNATIVE Platform Documentation
 site_url: https://platform.alternative-project.eu
-repo_url: https://github.com/ALTERNATIVE-EU/ai-ml-api
-repo_name: ALTERNATIVE-EU/ai-ml-api
+repo_url: https://github.com/ALTERNATIVE-EU/alternative.github.io
+repo_name: ALTERNATIVE-EU/alternative.github.io
 
 theme:
   name: material

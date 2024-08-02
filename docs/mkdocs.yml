@@ -89,7 +89,7 @@ nav:
               - Encryption: user-services/ai-ml-api/security/encryption.md
           - Token Management:
               - CKAN Integration: user-services/ai-ml-api/token-management/ckan-integration.md
-              - Token Lifecycle: user-services/ai-ml-api/token-lifecycle.md
+              - Token Lifecycle: user-services/ai-ml-api/token-management/token-lifecycle.md
           - API Usage:
               - Endpoints: user-services/ai-ml-api/api-usage/endpoints.md
               - Authentication: user-services/ai-ml-api/api-usage/authentication.md

@@ -1,0 +1,16 @@
+.md-nav__item .md-nav__link {
+  color: rgba(0,0,0,0.87) !important;
+}
+
+.md-nav__item .md-nav__link--active {
+  color: var(--md-primary-fg-color) !important;
+  font-weight: bold;
+}
+
+.md-nav__title {
+  color: rgba(0,0,0,0.87) !important;
+}
+
+[data-md-color-scheme="slate"] .md-nav__item .md-nav__link {
+  color: rgba(255,255,255,0.87) !important;
+}

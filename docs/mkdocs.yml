@@ -1,7 +1,7 @@
 site_name: ALTERNATIVE Platform Documentation
 site_url: https://platform.alternative-project.eu
-repo_url: https://github.com/ALTERNATIVE-EU/ai-ml-api
-repo_name: ALTERNATIVE-EU/ai-ml-api
+repo_url: https://github.com/ALTERNATIVE-EU/alternative.github.io
+repo_name: ALTERNATIVE-EU/alternative.github.io
 
 theme:
   name: material
@@ -89,7 +89,7 @@ nav:
               - Encryption: user-services/ai-ml-api/security/encryption.md
           - Token Management:
               - CKAN Integration: user-services/ai-ml-api/token-management/ckan-integration.md
-              - Token Lifecycle: user-services/ai-ml-api/token-lifecycle.md
+              - Token Lifecycle: user-services/ai-ml-api/token-management/token-lifecycle.md
           - API Usage:
               - Endpoints: user-services/ai-ml-api/api-usage/endpoints.md
               - Authentication: user-services/ai-ml-api/api-usage/authentication.md

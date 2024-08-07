@@ -51,24 +51,24 @@ Users with the Admin role can edit an organization's information and change the 
 User roles within an organization define the level of access and permissions a user has for that organization's resources. There are three roles, each building upon the permissions of the previous:
 
 1. Member:
-   - Can view the organization's private datasets
-   - Can access and download data from the organization's datasets
-   - Cannot make changes to datasets or organization settings
+      - Can view the organization's private datasets
+      - Can access and download data from the organization's datasets
+      - Cannot make changes to datasets or organization settings
 
 2. Editor:
-   - Has all the permissions of a Member
-   - Can create new datasets owned by the organization
-   - Can edit and update existing datasets
-   - Can publish or unpublish datasets
-   - Cannot modify organization settings or manage other users
+      - Has all the permissions of a Member
+      - Can create new datasets owned by the organization
+      - Can edit and update existing datasets
+      - Can publish or unpublish datasets
+      - Cannot modify organization settings or manage other users
 
 3. Admin:
-   - Has all the permissions of an Editor
-   - Can add new members to the organization
-   - Can remove members from the organization
-   - Can change roles of organization members
-   - Can modify organization settings and information
-   - Has full control over all datasets owned by the organization
+      - Has all the permissions of an Editor
+      - Can add new members to the organization
+      - Can remove members from the organization
+      - Can change roles of organization members
+      - Can modify organization settings and information
+      - Has full control over all datasets owned by the organization
 
 To change a user's role:
 1. Go to the organization's page

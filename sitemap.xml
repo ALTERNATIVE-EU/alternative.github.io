@@ -186,6 +186,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://platform.alternative-project.eu/user-services/ckan/authentication/</loc>
+         <lastmod>2024-10-08</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://platform.alternative-project.eu/user-services/ckan/datasets/</loc>
          <lastmod>2024-10-08</lastmod>
          <changefreq>daily</changefreq>

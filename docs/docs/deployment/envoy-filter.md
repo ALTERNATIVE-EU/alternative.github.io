@@ -101,7 +101,7 @@ The alternative filter is configured using the `envoy-filter/manifests/envoyfilt
 2. Send a request to the service with the JWT token in the `Authorization` header:
 
    ```bash
-   curl -H "Authorization: Bearer <JWT token>" http://<service-url>
+   curl -H "Authorization: Bearer <JWT token>" https://ai-ml-api.platform.alternative-project.eu/
     ``` 
 
 3. The filter will validate the JWT token and forward the request to the service if the token is valid. If the token is invalid, the filter will reject the request.
@@ -115,7 +115,7 @@ The alternative filter is configured using the `envoy-filter/manifests/envoyfilt
 5. Send a request to the service with the JWT token in the `Authorization` header:
 
    ```bash
-    curl -H "Authorization: Bearer <JWT token>" http://<service-url>
+    curl -H "Authorization: Bearer <JWT token>" https://ai-ml-api.platform.alternative-project.eu/
     ```
 
 6. The filter will reject the request because the token has been revoked.

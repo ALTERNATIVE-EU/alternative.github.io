@@ -58,7 +58,7 @@ Here are some examples of how to use the CKAN API with Python:
     ```python
     import requests
 
-    url = 'https://your-ckan-instance.com/api/3/action/package_list'
+    url = 'https://platform.alternative-project.eu/api/3/action/package_list'
     response = requests.get(url)
     datasets = response.json()['result']
     print(datasets)
@@ -69,7 +69,7 @@ Here are some examples of how to use the CKAN API with Python:
     ```python
     import requests
 
-    url = 'https://your-ckan-instance.com/api/3/action/package_show'
+    url = 'https://platform.alternative-project.eu/api/3/action/package_show'
     params = {'id': 'dataset-name-or-id'}
     response = requests.get(url, params=params)
     dataset_metadata = response.json()['result']
@@ -81,7 +81,7 @@ Here are some examples of how to use the CKAN API with Python:
     ```python
     import requests
 
-    url = 'https://your-ckan-instance.com/api/3/action/package_create'
+    url = 'https://platform.alternative-project.eu/api/3/action/package_create'
     data = {
         'name': 'my-new-dataset',
         'title': 'My New Dataset',
@@ -99,19 +99,19 @@ Here are examples of how to use the CKAN API with curl:
 - **Listing all datasets**:
 
     ```bash
-    curl -X GET https://your-ckan-instance.com/api/3/action/package_list
+    curl -X GET https://platform.alternative-project.eu/api/3/action/package_list
     ```
 
 - **Retrieving dataset metadata**:
 
     ```bash
-    curl -X GET https://your-ckan-instance.com/api/3/action/package_show -d '{"id":"dataset-name-or-id"}'
+    curl -X GET https://platform.alternative-project.eu/api/3/action/package_show -d '{"id":"dataset-name-or-id"}'
     ```
 
 - **Creating a new dataset**:
 
     ```bash
-    curl -X POST https://your-ckan-instance.com/api/3/action/package_create \
+    curl -X POST https://platform.alternative-project.eu/api/3/action/package_create \
         -H "Authorization: your-api-key" \
         -H "Content-Type: application/json" \
         -d '{"name": "my-new-dataset", "title": "My New Dataset", "owner_org": "my-organization"}'
@@ -120,7 +120,7 @@ Here are examples of how to use the CKAN API with curl:
 4. **Updating a dataset**:
 
     ```bash
-    curl -X POST https://your-ckan-instance.com/api/3/action/package_update \
+    curl -X POST https://platform.alternative-project.eu/api/3/action/package_update \
         -H "Authorization: your-api-key" \
         -H "Content-Type: application/json" \
         -d '{"id": "existing-dataset-id", "title": "Updated Dataset Title"}'
@@ -129,7 +129,7 @@ Here are examples of how to use the CKAN API with curl:
 5. **Deleting a dataset**:
 
     ```bash
-    curl -X POST https://your-ckan-instance.com/api/3/action/package_delete \
+    curl -X POST https://platform.alternative-project.eu/api/3/action/package_delete \
         -H "Authorization: your-api-key" \
         -H "Content-Type: application/json" \
         -d '{"id": "dataset-to-delete-id"}'

@@ -14,5 +14,5 @@ curl -X POST \
   -H "Authorization: Bearer <your_token_here>" \
   -H "Content-Type: application/json" \
   -d '{"smiles": "c1ccccc1O"}' \
-  https://api.example.com/v1/ai/evaluate
+  https://ai-ml-api.platform.alternative-project.eu/v1/ai/evaluate
 ```

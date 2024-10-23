@@ -2,242 +2,242 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://platform.alternative-project.eu/</loc>
-         <lastmod>2024-10-22</lastmod>
+         <lastmod>2024-10-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://platform.alternative-project.eu/repositories/</loc>
-         <lastmod>2024-10-22</lastmod>
+         <lastmod>2024-10-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://platform.alternative-project.eu/admin-services/cert-manager/</loc>
-         <lastmod>2024-10-22</lastmod>
+         <lastmod>2024-10-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://platform.alternative-project.eu/admin-services/external-dns/</loc>
-         <lastmod>2024-10-22</lastmod>
+         <lastmod>2024-10-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://platform.alternative-project.eu/admin-services/ingress-controller/</loc>
-         <lastmod>2024-10-22</lastmod>
+         <lastmod>2024-10-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://platform.alternative-project.eu/admin-services/istio/</loc>
-         <lastmod>2024-10-22</lastmod>
+         <lastmod>2024-10-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://platform.alternative-project.eu/admin-services/keycloak/</loc>
-         <lastmod>2024-10-22</lastmod>
+         <lastmod>2024-10-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://platform.alternative-project.eu/admin-services/overview/</loc>
-         <lastmod>2024-10-22</lastmod>
+         <lastmod>2024-10-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://platform.alternative-project.eu/architecture/cloud-infrastructure/</loc>
-         <lastmod>2024-10-22</lastmod>
+         <lastmod>2024-10-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://platform.alternative-project.eu/architecture/kubernetes/</loc>
-         <lastmod>2024-10-22</lastmod>
+         <lastmod>2024-10-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://platform.alternative-project.eu/architecture/networking/</loc>
-         <lastmod>2024-10-22</lastmod>
+         <lastmod>2024-10-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://platform.alternative-project.eu/architecture/overview/</loc>
-         <lastmod>2024-10-22</lastmod>
+         <lastmod>2024-10-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://platform.alternative-project.eu/architecture/storage/</loc>
-         <lastmod>2024-10-22</lastmod>
+         <lastmod>2024-10-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://platform.alternative-project.eu/deployment/ai-ml-api/</loc>
-         <lastmod>2024-10-22</lastmod>
+         <lastmod>2024-10-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://platform.alternative-project.eu/deployment/envoy-filter/</loc>
-         <lastmod>2024-10-22</lastmod>
+         <lastmod>2024-10-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://platform.alternative-project.eu/deployment/platform/</loc>
-         <lastmod>2024-10-22</lastmod>
+         <lastmod>2024-10-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://platform.alternative-project.eu/deployment/platform/certificate/</loc>
-         <lastmod>2024-10-22</lastmod>
+         <lastmod>2024-10-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://platform.alternative-project.eu/features/data-sharing/</loc>
-         <lastmod>2024-10-22</lastmod>
+         <lastmod>2024-10-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://platform.alternative-project.eu/features/development-environment/</loc>
-         <lastmod>2024-10-22</lastmod>
+         <lastmod>2024-10-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://platform.alternative-project.eu/features/elasticity/</loc>
-         <lastmod>2024-10-22</lastmod>
+         <lastmod>2024-10-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://platform.alternative-project.eu/features/multi-user-and-collaboration/</loc>
-         <lastmod>2024-10-22</lastmod>
+         <lastmod>2024-10-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://platform.alternative-project.eu/features/overview/</loc>
-         <lastmod>2024-10-22</lastmod>
+         <lastmod>2024-10-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://platform.alternative-project.eu/features/sso/</loc>
-         <lastmod>2024-10-22</lastmod>
+         <lastmod>2024-10-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://platform.alternative-project.eu/user-services/overview/</loc>
-         <lastmod>2024-10-22</lastmod>
+         <lastmod>2024-10-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://platform.alternative-project.eu/user-services/ai-ml-api/</loc>
-         <lastmod>2024-10-22</lastmod>
+         <lastmod>2024-10-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://platform.alternative-project.eu/user-services/ai-ml-api/data-flow/</loc>
-         <lastmod>2024-10-22</lastmod>
+         <lastmod>2024-10-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://platform.alternative-project.eu/user-services/ai-ml-api/scalability/</loc>
-         <lastmod>2024-10-22</lastmod>
+         <lastmod>2024-10-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://platform.alternative-project.eu/user-services/ai-ml-api/system-architecture/</loc>
-         <lastmod>2024-10-22</lastmod>
+         <lastmod>2024-10-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://platform.alternative-project.eu/user-services/ai-ml-api/testing/</loc>
-         <lastmod>2024-10-22</lastmod>
+         <lastmod>2024-10-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://platform.alternative-project.eu/user-services/ai-ml-api/api-usage/authentication/</loc>
-         <lastmod>2024-10-22</lastmod>
+         <lastmod>2024-10-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://platform.alternative-project.eu/user-services/ai-ml-api/api-usage/endpoints/</loc>
-         <lastmod>2024-10-22</lastmod>
+         <lastmod>2024-10-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://platform.alternative-project.eu/user-services/ai-ml-api/api-usage/error-handling/</loc>
-         <lastmod>2024-10-22</lastmod>
+         <lastmod>2024-10-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://platform.alternative-project.eu/user-services/ai-ml-api/security/authentication-and-authorization/</loc>
-         <lastmod>2024-10-22</lastmod>
+         <lastmod>2024-10-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://platform.alternative-project.eu/user-services/ai-ml-api/security/encryption/</loc>
-         <lastmod>2024-10-22</lastmod>
+         <lastmod>2024-10-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://platform.alternative-project.eu/user-services/ai-ml-api/token-management/ckan-integration/</loc>
-         <lastmod>2024-10-22</lastmod>
+         <lastmod>2024-10-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://platform.alternative-project.eu/user-services/ai-ml-api/token-management/token-lifecycle/</loc>
-         <lastmod>2024-10-22</lastmod>
+         <lastmod>2024-10-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://platform.alternative-project.eu/user-services/ckan/api/</loc>
-         <lastmod>2024-10-22</lastmod>
+         <lastmod>2024-10-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://platform.alternative-project.eu/user-services/ckan/datasets/</loc>
-         <lastmod>2024-10-22</lastmod>
+         <lastmod>2024-10-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://platform.alternative-project.eu/user-services/ckan/extensions/</loc>
-         <lastmod>2024-10-22</lastmod>
+         <lastmod>2024-10-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://platform.alternative-project.eu/user-services/ckan/metadata/</loc>
-         <lastmod>2024-10-22</lastmod>
+         <lastmod>2024-10-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://platform.alternative-project.eu/user-services/ckan/overview/</loc>
-         <lastmod>2024-10-22</lastmod>
+         <lastmod>2024-10-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://platform.alternative-project.eu/user-services/ckan/users/</loc>
-         <lastmod>2024-10-22</lastmod>
+         <lastmod>2024-10-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://platform.alternative-project.eu/user-services/jupyterhub/bioconductor/</loc>
-         <lastmod>2024-10-22</lastmod>
+         <lastmod>2024-10-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://platform.alternative-project.eu/user-services/jupyterhub/environments/</loc>
-         <lastmod>2024-10-22</lastmod>
+         <lastmod>2024-10-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://platform.alternative-project.eu/user-services/jupyterhub/filesystem/</loc>
-         <lastmod>2024-10-22</lastmod>
+         <lastmod>2024-10-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://platform.alternative-project.eu/user-services/jupyterhub/library/</loc>
-         <lastmod>2024-10-22</lastmod>
+         <lastmod>2024-10-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://platform.alternative-project.eu/user-services/jupyterhub/overview/</loc>
-         <lastmod>2024-10-22</lastmod>
+         <lastmod>2024-10-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://platform.alternative-project.eu/user-services/jupyterhub/r/</loc>
-         <lastmod>2024-10-22</lastmod>
+         <lastmod>2024-10-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>

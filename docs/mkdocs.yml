@@ -68,6 +68,7 @@ nav:
       - Introduction: user-services/overview.md
       - CKAN:
           - Introduction: user-services/ckan/overview.md
+          - Authentication: user-services/ckan/authentication.md
           - Users, Organizations, and Authorization: user-services/ckan/users.md
           - Datasets, Resources, and Groups: user-services/ckan/datasets.md
           - Metadata: user-services/ckan/metadata.md

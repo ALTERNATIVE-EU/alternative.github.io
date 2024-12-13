@@ -95,3 +95,67 @@ To edit AI/ML API roles:
 4. To remove a role, reverse this process by selecting the role from the Assigned Roles list and removing it
 
 If you need a role added or removed, please contact a platform administrator.
+
+## CKAN Authentication
+
+### Overview
+
+Keycloak Auth plugin implements Keycloak authentication for CKAN. It allows users to log in to CKAN using their Keycloak credentials and manages user sessions and roles.
+
+### Configuration
+
+The following configuration parameters must be set in the CKAN `.ini` file:
+
+- `ckanext.keycloak.server_url`: Keycloak server URL
+- `ckanext.keycloak.realm`: Keycloak realm name
+- `ckanext.keycloak.client_id`: Keycloak client ID for CKAN
+- `ckanext.keycloak.frontend_client_id`: Keycloak frontend client ID
+- `ckanext.keycloak.admin_group`: Keycloak admin group name
+- `ckanext.keycloak.client_secret_key`: Keycloak client secret key
+- `ckanext.keycloak.ckan_url`: CKAN URL
+
+### Authentication Flow
+
+1. **User Identification**: 
+   - The plugin checks for a `session_id` cookie in the user's request.
+   - If found, it retrieves the corresponding user session from the database or cache.
+
+2. **Token Validation**:
+   - The plugin attempts to decode the JWT access token stored in the user session.
+   - If the token is expired, it tries to refresh the token using the refresh token.
+
+3. **User Processing**:
+   - If the token is valid, the plugin extracts user information (email, full name, username, roles).
+   - It then checks if the user exists in CKAN:
+     - If the user exists, it updates their information if necessary.
+     - If the user doesn't exist, it creates a new CKAN user with the provided information.
+
+4. **Session Management**:
+   - The plugin maintains user sessions in the database and cache.
+   - It handles token refreshing when access tokens expire.
+
+5. **Logout**:
+   - On logout, the plugin redirects the user to the Keycloak logout URL and clears the session cookie.
+
+### Security Features
+
+1. **JWT Verification**: Tokens are verified using Keycloak's public keys.
+2. **Public Key Caching**: The plugin caches public keys to reduce API calls to Keycloak.
+3. **Automatic Token Refresh**: Handles token expiration by automatically refreshing tokens.
+4. **Secure Cookie Handling**: Uses secure cookies for session management.
+
+### User Management
+
+- The plugin automatically creates or updates CKAN users based on Keycloak information.
+- It synchronizes user roles and other details between Keycloak and CKAN.
+
+### Error Handling
+
+- The plugin implements error handling for various scenarios, including token expiration, invalid tokens, and API errors.
+- It logs errors and takes appropriate actions (e.g., deleting invalid sessions, redirecting users).
+
+### Performance Considerations
+
+- Implements caching for user sessions and public keys to reduce database queries and API calls.
+- Uses asynchronous operations for fetching public keys to improve performance.
+

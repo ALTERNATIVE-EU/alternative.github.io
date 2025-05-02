@@ -8,26 +8,28 @@
       
       
       
-        <link rel="canonical" href="https://platform.alternative-project.eu/">
+        <link rel="canonical" href="https://platform.alternative-project.eu/maintainer-guide/architecture/cloud-infrastructure/">
       
       
+        <link rel="prev" href="../overview/">
       
-        <link rel="next" href="user-guide/getting-started/">
+      
+        <link rel="next" href="../kubernetes/">
       
       
-      <link rel="icon" href="assets/images/favicon.png">
+      <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.12">
     
     
       
-        <title>ALTERNATIVE Platform Documentation</title>
+        <title>Cloud Infrastructure - ALTERNATIVE Platform Documentation</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.2afb09e1.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.2afb09e1.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -46,9 +48,9 @@
       
     
     
-      <link rel="stylesheet" href="stylesheets/extra.css">
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -74,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#introduction" class="md-skip">
+        <a href="#cloud-infrastructure" class="md-skip">
           Skip to content
         </a>
       
@@ -90,7 +92,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="." title="ALTERNATIVE Platform Documentation" class="md-header__button md-logo" aria-label="ALTERNATIVE Platform Documentation" data-md-component="logo">
+    <a href="../../.." title="ALTERNATIVE Platform Documentation" class="md-header__button md-logo" aria-label="ALTERNATIVE Platform Documentation" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -110,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Overview
+              Cloud Infrastructure
             
           </span>
         </div>
@@ -248,7 +250,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="ALTERNATIVE Platform Documentation" class="md-nav__button md-logo" aria-label="ALTERNATIVE Platform Documentation" data-md-component="logo">
+    <a href="../../.." title="ALTERNATIVE Platform Documentation" class="md-nav__button md-logo" aria-label="ALTERNATIVE Platform Documentation" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -275,32 +277,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Overview
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="." class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
         
   
   
@@ -311,62 +291,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#horizon-2020-alternative-project" class="md-nav__link">
-    <span class="md-ellipsis">
-      Horizon 2020 ALTERNATIVE Project
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#purpose-of-the-cloud-data-platform" class="md-nav__link">
-    <span class="md-ellipsis">
-      Purpose of the Cloud Data Platform
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#key-objectives-of-the-cloud-data-platform" class="md-nav__link">
-    <span class="md-ellipsis">
-      Key Objectives of the Cloud Data Platform
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#structure-of-the-cloud-data-platform" class="md-nav__link">
-    <span class="md-ellipsis">
-      Structure of the Cloud Data Platform
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -421,7 +345,7 @@
   
   
     <li class="md-nav__item">
-      <a href="user-guide/getting-started/" class="md-nav__link">
+      <a href="../../../user-guide/getting-started/" class="md-nav__link">
         
   
   
@@ -484,7 +408,7 @@
   
   
     <li class="md-nav__item">
-      <a href="user-guide/ckan/overview/" class="md-nav__link">
+      <a href="../../../user-guide/ckan/overview/" class="md-nav__link">
         
   
   
@@ -507,7 +431,7 @@
   
   
     <li class="md-nav__item">
-      <a href="user-guide/ckan/users/" class="md-nav__link">
+      <a href="../../../user-guide/ckan/users/" class="md-nav__link">
         
   
   
@@ -530,7 +454,7 @@
   
   
     <li class="md-nav__item">
-      <a href="user-guide/ckan/datasets/" class="md-nav__link">
+      <a href="../../../user-guide/ckan/datasets/" class="md-nav__link">
         
   
   
@@ -553,7 +477,7 @@
   
   
     <li class="md-nav__item">
-      <a href="user-guide/ckan/metadata/" class="md-nav__link">
+      <a href="../../../user-guide/ckan/metadata/" class="md-nav__link">
         
   
   
@@ -576,7 +500,7 @@
   
   
     <li class="md-nav__item">
-      <a href="user-guide/ckan/api/" class="md-nav__link">
+      <a href="../../../user-guide/ckan/api/" class="md-nav__link">
         
   
   
@@ -647,7 +571,7 @@
   
   
     <li class="md-nav__item">
-      <a href="user-guide/jupyterhub/overview/" class="md-nav__link">
+      <a href="../../../user-guide/jupyterhub/overview/" class="md-nav__link">
         
   
   
@@ -670,7 +594,7 @@
   
   
     <li class="md-nav__item">
-      <a href="user-guide/jupyterhub/filesystem/" class="md-nav__link">
+      <a href="../../../user-guide/jupyterhub/filesystem/" class="md-nav__link">
         
   
   
@@ -693,7 +617,7 @@
   
   
     <li class="md-nav__item">
-      <a href="user-guide/jupyterhub/environments/" class="md-nav__link">
+      <a href="../../../user-guide/jupyterhub/environments/" class="md-nav__link">
         
   
   
@@ -716,7 +640,7 @@
   
   
     <li class="md-nav__item">
-      <a href="user-guide/jupyterhub/library/" class="md-nav__link">
+      <a href="../../../user-guide/jupyterhub/library/" class="md-nav__link">
         
   
   
@@ -739,7 +663,7 @@
   
   
     <li class="md-nav__item">
-      <a href="user-guide/jupyterhub/r/" class="md-nav__link">
+      <a href="../../../user-guide/jupyterhub/r/" class="md-nav__link">
         
   
   
@@ -762,7 +686,7 @@
   
   
     <li class="md-nav__item">
-      <a href="user-guide/jupyterhub/bioconductor/" class="md-nav__link">
+      <a href="../../../user-guide/jupyterhub/bioconductor/" class="md-nav__link">
         
   
   
@@ -793,7 +717,7 @@
   
   
     <li class="md-nav__item">
-      <a href="user-guide/model-usage/" class="md-nav__link">
+      <a href="../../../user-guide/model-usage/" class="md-nav__link">
         
   
   
@@ -820,8 +744,10 @@
       
   
   
+    
   
   
+  
     
     
     
@@ -832,11 +758,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
@@ -852,7 +778,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Maintainer's guide
@@ -866,7 +792,7 @@
   
   
     <li class="md-nav__item">
-      <a href="maintainer-guide/" class="md-nav__link">
+      <a href="../../" class="md-nav__link">
         
   
   
@@ -886,6 +812,8 @@
                 
   
   
+    
+  
   
   
     
@@ -895,11 +823,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" checked>
         
           
           <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
@@ -915,7 +843,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3_2">
             <span class="md-nav__icon md-icon"></span>
             Architecture
@@ -929,7 +857,7 @@
   
   
     <li class="md-nav__item">
-      <a href="maintainer-guide/architecture/overview/" class="md-nav__link">
+      <a href="../overview/" class="md-nav__link">
         
   
   
@@ -949,10 +877,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="maintainer-guide/architecture/cloud-infrastructure/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Cloud Infrastructure
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -963,6 +913,71 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#storage-solutions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Storage Solutions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#computational-resources" class="md-nav__link">
+    <span class="md-ellipsis">
+      Computational Resources
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#virtual-networking" class="md-nav__link">
+    <span class="md-ellipsis">
+      Virtual Networking
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kubernetes-cluster" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kubernetes Cluster
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -975,7 +990,7 @@
   
   
     <li class="md-nav__item">
-      <a href="maintainer-guide/architecture/kubernetes/" class="md-nav__link">
+      <a href="../kubernetes/" class="md-nav__link">
         
   
   
@@ -998,7 +1013,7 @@
   
   
     <li class="md-nav__item">
-      <a href="maintainer-guide/architecture/networking/" class="md-nav__link">
+      <a href="../networking/" class="md-nav__link">
         
   
   
@@ -1021,7 +1036,7 @@
   
   
     <li class="md-nav__item">
-      <a href="maintainer-guide/architecture/storage/" class="md-nav__link">
+      <a href="../storage/" class="md-nav__link">
         
   
   
@@ -1132,7 +1147,7 @@
   
   
     <li class="md-nav__item">
-      <a href="maintainer-guide/system-services/ai-ml-api/" class="md-nav__link">
+      <a href="../../system-services/ai-ml-api/" class="md-nav__link">
         
   
   
@@ -1155,7 +1170,7 @@
   
   
     <li class="md-nav__item">
-      <a href="maintainer-guide/system-services/ai-ml-api/system-architecture/" class="md-nav__link">
+      <a href="../../system-services/ai-ml-api/system-architecture/" class="md-nav__link">
         
   
   
@@ -1178,7 +1193,7 @@
   
   
     <li class="md-nav__item">
-      <a href="maintainer-guide/system-services/ai-ml-api/data-flow/" class="md-nav__link">
+      <a href="../../system-services/ai-ml-api/data-flow/" class="md-nav__link">
         
   
   
@@ -1241,7 +1256,7 @@
   
   
     <li class="md-nav__item">
-      <a href="maintainer-guide/system-services/ai-ml-api/security/authentication-and-authorization/" class="md-nav__link">
+      <a href="../../system-services/ai-ml-api/security/authentication-and-authorization/" class="md-nav__link">
         
   
   
@@ -1264,7 +1279,7 @@
   
   
     <li class="md-nav__item">
-      <a href="maintainer-guide/system-services/ai-ml-api/security/encryption/" class="md-nav__link">
+      <a href="../../system-services/ai-ml-api/security/encryption/" class="md-nav__link">
         
   
   
@@ -1335,7 +1350,7 @@
   
   
     <li class="md-nav__item">
-      <a href="maintainer-guide/system-services/ai-ml-api/token-management/ckan-integration/" class="md-nav__link">
+      <a href="../../system-services/ai-ml-api/token-management/ckan-integration/" class="md-nav__link">
         
   
   
@@ -1358,7 +1373,7 @@
   
   
     <li class="md-nav__item">
-      <a href="maintainer-guide/system-services/ai-ml-api/token-management/token-lifecycle/" class="md-nav__link">
+      <a href="../../system-services/ai-ml-api/token-management/token-lifecycle/" class="md-nav__link">
         
   
   
@@ -1429,7 +1444,7 @@
   
   
     <li class="md-nav__item">
-      <a href="maintainer-guide/system-services/ai-ml-api/api-usage/endpoints/" class="md-nav__link">
+      <a href="../../system-services/ai-ml-api/api-usage/endpoints/" class="md-nav__link">
         
   
   
@@ -1452,7 +1467,7 @@
   
   
     <li class="md-nav__item">
-      <a href="maintainer-guide/system-services/ai-ml-api/api-usage/authentication/" class="md-nav__link">
+      <a href="../../system-services/ai-ml-api/api-usage/authentication/" class="md-nav__link">
         
   
   
@@ -1475,7 +1490,7 @@
   
   
     <li class="md-nav__item">
-      <a href="maintainer-guide/system-services/ai-ml-api/api-usage/error-handling/" class="md-nav__link">
+      <a href="../../system-services/ai-ml-api/api-usage/error-handling/" class="md-nav__link">
         
   
   
@@ -1506,7 +1521,7 @@
   
   
     <li class="md-nav__item">
-      <a href="maintainer-guide/system-services/ai-ml-api/scalability/" class="md-nav__link">
+      <a href="../../system-services/ai-ml-api/scalability/" class="md-nav__link">
         
   
   
@@ -1529,7 +1544,7 @@
   
   
     <li class="md-nav__item">
-      <a href="maintainer-guide/system-services/ai-ml-api/testing/" class="md-nav__link">
+      <a href="../../system-services/ai-ml-api/testing/" class="md-nav__link">
         
   
   
@@ -1608,7 +1623,7 @@
   
   
     <li class="md-nav__item">
-      <a href="maintainer-guide/admin-services/overview/" class="md-nav__link">
+      <a href="../../admin-services/overview/" class="md-nav__link">
         
   
   
@@ -1631,7 +1646,7 @@
   
   
     <li class="md-nav__item">
-      <a href="maintainer-guide/admin-services/keycloak/" class="md-nav__link">
+      <a href="../../admin-services/keycloak/" class="md-nav__link">
         
   
   
@@ -1654,7 +1669,7 @@
   
   
     <li class="md-nav__item">
-      <a href="maintainer-guide/admin-services/external-dns/" class="md-nav__link">
+      <a href="../../admin-services/external-dns/" class="md-nav__link">
         
   
   
@@ -1677,7 +1692,7 @@
   
   
     <li class="md-nav__item">
-      <a href="maintainer-guide/admin-services/cert-manager/" class="md-nav__link">
+      <a href="../../admin-services/cert-manager/" class="md-nav__link">
         
   
   
@@ -1700,7 +1715,7 @@
   
   
     <li class="md-nav__item">
-      <a href="maintainer-guide/admin-services/ingress-controller/" class="md-nav__link">
+      <a href="../../admin-services/ingress-controller/" class="md-nav__link">
         
   
   
@@ -1723,7 +1738,7 @@
   
   
     <li class="md-nav__item">
-      <a href="maintainer-guide/admin-services/istio/" class="md-nav__link">
+      <a href="../../admin-services/istio/" class="md-nav__link">
         
   
   
@@ -1794,7 +1809,7 @@
   
   
     <li class="md-nav__item">
-      <a href="maintainer-guide/features/overview/" class="md-nav__link">
+      <a href="../../features/overview/" class="md-nav__link">
         
   
   
@@ -1817,7 +1832,7 @@
   
   
     <li class="md-nav__item">
-      <a href="maintainer-guide/features/data-sharing/" class="md-nav__link">
+      <a href="../../features/data-sharing/" class="md-nav__link">
         
   
   
@@ -1840,7 +1855,7 @@
   
   
     <li class="md-nav__item">
-      <a href="maintainer-guide/features/extensions/" class="md-nav__link">
+      <a href="../../features/extensions/" class="md-nav__link">
         
   
   
@@ -1863,7 +1878,7 @@
   
   
     <li class="md-nav__item">
-      <a href="maintainer-guide/features/development-environment/" class="md-nav__link">
+      <a href="../../features/development-environment/" class="md-nav__link">
         
   
   
@@ -1886,7 +1901,7 @@
   
   
     <li class="md-nav__item">
-      <a href="maintainer-guide/features/multi-user-and-collaboration/" class="md-nav__link">
+      <a href="../../features/multi-user-and-collaboration/" class="md-nav__link">
         
   
   
@@ -1909,7 +1924,7 @@
   
   
     <li class="md-nav__item">
-      <a href="maintainer-guide/features/sso/" class="md-nav__link">
+      <a href="../../features/sso/" class="md-nav__link">
         
   
   
@@ -1932,7 +1947,7 @@
   
   
     <li class="md-nav__item">
-      <a href="maintainer-guide/features/elasticity/" class="md-nav__link">
+      <a href="../../features/elasticity/" class="md-nav__link">
         
   
   
@@ -2003,7 +2018,7 @@
   
   
     <li class="md-nav__item">
-      <a href="maintainer-guide/deployment/platform/" class="md-nav__link">
+      <a href="../../deployment/platform/" class="md-nav__link">
         
   
   
@@ -2026,7 +2041,7 @@
   
   
     <li class="md-nav__item">
-      <a href="maintainer-guide/deployment/envoy-filter/" class="md-nav__link">
+      <a href="../../deployment/envoy-filter/" class="md-nav__link">
         
   
   
@@ -2049,7 +2064,7 @@
   
   
     <li class="md-nav__item">
-      <a href="maintainer-guide/deployment/ai-ml-api/" class="md-nav__link">
+      <a href="../../deployment/ai-ml-api/" class="md-nav__link">
         
   
   
@@ -2080,7 +2095,7 @@
   
   
     <li class="md-nav__item">
-      <a href="maintainer-guide/repositories/" class="md-nav__link">
+      <a href="../../repositories/" class="md-nav__link">
         
   
   
@@ -2130,36 +2145,45 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#horizon-2020-alternative-project" class="md-nav__link">
+  <a href="#overview" class="md-nav__link">
     <span class="md-ellipsis">
-      Horizon 2020 ALTERNATIVE Project
+      Overview
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#purpose-of-the-cloud-data-platform" class="md-nav__link">
+  <a href="#storage-solutions" class="md-nav__link">
     <span class="md-ellipsis">
-      Purpose of the Cloud Data Platform
+      Storage Solutions
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#key-objectives-of-the-cloud-data-platform" class="md-nav__link">
+  <a href="#computational-resources" class="md-nav__link">
     <span class="md-ellipsis">
-      Key Objectives of the Cloud Data Platform
+      Computational Resources
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#structure-of-the-cloud-data-platform" class="md-nav__link">
+  <a href="#virtual-networking" class="md-nav__link">
     <span class="md-ellipsis">
-      Structure of the Cloud Data Platform
+      Virtual Networking
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kubernetes-cluster" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kubernetes Cluster
     </span>
   </a>
   
@@ -2184,54 +2208,18 @@
   
 
 
-<h1 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h1>
-<h2 id="horizon-2020-alternative-project">Horizon 2020 ALTERNATIVE Project<a class="headerlink" href="#horizon-2020-alternative-project" title="Permanent link">&para;</a></h2>
-<p>Horizon 2020 research project ALTERNATIVE develops an innovative platform and an integrated approach for testing and assessment of the potential of chemicals to induce cardiotoxicity. The novel approach will strengthen the capacity of regulators and industry to prevent cardiotoxic co-exposures to industrial chemicals and pharmaceuticals in an effective way.</p>
-<h2 id="purpose-of-the-cloud-data-platform">Purpose of the Cloud Data Platform<a class="headerlink" href="#purpose-of-the-cloud-data-platform" title="Permanent link">&para;</a></h2>
-<p>The Cloud Data Platform is the cornerstone of the ALTERNATIVE project, designed to facilitate the project's core objectives. It serves multiple purposes:</p>
-<ol>
-<li>
-<p><strong>Central Hub for Data and ML Model Exchange:</strong> The platform acts as a central repository, enabling efficient and seamless exchange of data and ML models among consortium partners. This ensures that all participants have access to the latest resources, fostering collaboration and accelerating research progress.</p>
-</li>
-<li>
-<p><strong>Innovative Environment for ML Model Development and Hosting:</strong> By providing a robust infrastructure for ML model hosting, the platform supports the development and deployment of advanced in-silico models for toxicity prediction. This environment is crucial for the iterative improvement of models and the validation of their predictions.</p>
-</li>
-<li>
-<p><strong>Gateway for External Access to Project Resources:</strong> Beyond the lifespan of the ALTERNATIVE project, the platform aims to serve as a gateway for the broader research community. By exposing data and ML services through a well-defined API, it enables external users to leverage the project's outputs, thereby extending its impact and utility.</p>
-</li>
-</ol>
-<h2 id="key-objectives-of-the-cloud-data-platform">Key Objectives of the Cloud Data Platform<a class="headerlink" href="#key-objectives-of-the-cloud-data-platform" title="Permanent link">&para;</a></h2>
-<ul>
-<li>
-<p><strong>Facilitation of Data Exchange:</strong> A primary goal of the platform is to enable seamless and efficient data exchange between consortium partners throughout the duration of the ALTERNATIVE project. This feature is vital for ensuring that all participants have timely and easy access to the data necessary for the project's success.</p>
-</li>
-<li>
-<p><strong>Hosting of ML In-Silico Models for Toxicity Prediction:</strong> The platform serves as a robust environment for hosting advanced Machine Learning (ML) in-silico models. These models are crucial for toxicity prediction, representing a significant stride in the field of predictive analysis and safety assessment. By providing a reliable and scalable hosting solution, the platform ensures that these models are readily accessible and operable for the project's researchers and analysts.</p>
-</li>
-<li>
-<p><strong>Exposing Data and ML Services via API:</strong> Post-completion of the ALTERNATIVE project, the platform is designed to extend its utility beyond the consortium. It will expose data and ML services to external users through a well-defined Application Programming Interface (API). This extension will facilitate wider access to the project's valuable resources, thereby enhancing research and development efforts in related fields.</p>
-</li>
-</ul>
-<h2 id="structure-of-the-cloud-data-platform">Structure of the Cloud Data Platform<a class="headerlink" href="#structure-of-the-cloud-data-platform" title="Permanent link">&para;</a></h2>
-<p>To achieve these ambitious goals, the Cloud Data Platform is constructed as a multi-layered software stack, each layer playing a critical role in the platform's overall functionality and performance:</p>
-<ul>
-<li>
-<p><strong>Cloud and Infrastructure Layer:</strong> This foundational layer provides the necessary cloud-based infrastructure to support the platform's operations, ensuring scalability, reliability, and security.</p>
-</li>
-<li>
-<p><strong>Administrative Layer:</strong> The administrative layer is responsible for overseeing the platform's overall management, including user access control, resource allocation, and monitoring of platform activities.</p>
-</li>
-<li>
-<p><strong>Data Layer:</strong> At the core of the platform is the data layer, which handles the storage, processing, and management of data. This layer is optimized for high-performance data operations, essential for the effective functioning of ML models and data exchange processes.</p>
-</li>
-<li>
-<p><strong>APIs Layer:</strong> The APIs layer is designed to offer a streamlined and secure interface for accessing the platform's services. It plays a crucial role in integrating the platform with external systems and in making data and ML services available to external users post-project.</p>
-</li>
-<li>
-<p><strong>Microservices Layer:</strong> This layer comprises a suite of microservices, each designed to perform specific functions within the platform. The use of microservices architecture enhances the platform's modularity, flexibility, and ease of maintenance.</p>
-</li>
-</ul>
-<p>In summary, the Cloud Data Platform developed for the ALTERNATIVE project represents a sophisticated and multi-faceted solution, tailored to meet the project's unique requirements for data exchange, ML model hosting, and service accessibility. This document will delve into each aspect of the platform, elucidating its design, functionalities, and the value it brings to the ALTERNATIVE project and its stakeholders.</p>
+<h1 id="cloud-infrastructure">Cloud Infrastructure<a class="headerlink" href="#cloud-infrastructure" title="Permanent link">&para;</a></h1>
+<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
+<p>The cloud infrastructure of the <strong>ALTERNATIVE data platform</strong> is a meticulously designed ecosystem, comprising a range of virtual services and hardware components tailored to support the platform's multifaceted operational requirements. At its core, the infrastructure leverages cutting-edge cloud computing technologies to ensure scalability, resilience, and security, which are paramount for handling the extensive data processing and analysis tasks inherent to the platform.</p>
+<h2 id="storage-solutions">Storage Solutions<a class="headerlink" href="#storage-solutions" title="Permanent link">&para;</a></h2>
+<p>At the heart of this infrastructure lies a suite of storage solutions, including both block storage and object storage services (such as S3). These storage services are designed to offer high durability, scalability, and accessibility, ensuring that data is securely stored and readily available when needed.</p>
+<h2 id="computational-resources">Computational Resources<a class="headerlink" href="#computational-resources" title="Permanent link">&para;</a></h2>
+<p>In terms of computational resources, the infrastructure boasts an array of Virtual Machines, each equipped with scalable CPU and Memory capabilities. Those are usually deployed by the Kubernetes managed service and act as Kubernetes nodes rather than serving as VMs directly.</p>
+<h2 id="virtual-networking">Virtual Networking<a class="headerlink" href="#virtual-networking" title="Permanent link">&para;</a></h2>
+<p>A key component of the cloud infrastructure is the virtual networking aspect. This includes a comprehensive network architecture that ensures secure, fast, and reliable communication between various services and components within the platform. The virtual networking setup is integral to maintaining the overall performance and integrity of the cloud environment.</p>
+<h2 id="kubernetes-cluster">Kubernetes Cluster<a class="headerlink" href="#kubernetes-cluster" title="Permanent link">&para;</a></h2>
+<p>Central to the infrastructure's capabilities is the Kubernetes cluster. This cluster plays a pivotal role in orchestrating containerized applications, ensuring their seamless deployment, scaling, and management. Kubernetes, renowned for its efficiency and flexibility, enhances the platform's ability to support a wide range of applications and services.</p>
+<p><img alt="Cloud Infrastructure" src="../images/cloud-data-platform-architecture.png" /></p>
 
 
 
@@ -2308,12 +2296,12 @@
     
     
       
-      <script id="__config" type="application/json">{"base": ".", "features": ["navigation.sections", "search.suggest", "search.highlight", "content.tabs.link", "content.code.copy", "toc.follow"], "search": "assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.sections", "search.suggest", "search.highlight", "content.tabs.link", "content.code.copy", "toc.follow"], "search": "../../../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="assets/javascripts/bundle.c8b220af.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.c8b220af.min.js"></script>
       
-        <script src="javascripts/extra.js"></script>
+        <script src="../../../javascripts/extra.js"></script>
       
     
   </body>

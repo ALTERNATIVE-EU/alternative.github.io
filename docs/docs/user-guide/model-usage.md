@@ -16,7 +16,7 @@ Once provisioned, users can log in to the ALTERNATIVE web platform using their u
 
 ### Generate AI/ML Token
 
-To interact with the ALTERNATIVE APIs, users need an API token for authentication. This token is generated through the platform’s user interface. Users must navigate to the token management section, where they can generate, renew, or revoke access tokens. The generated token is required to authenticate API requests securely. You can find instruction how to obtain AI/ML API Tokens [Here](/maintainer-guide/system-services/ai-ml-api/api-usage/authentication)
+To interact with the ALTERNATIVE APIs, users need an API token for authentication. This token is generated through the platform’s user interface. Users must navigate to the token management section, where they can generate, renew, or revoke access tokens. The generated token is required to authenticate API requests securely. You can find instruction how to obtain AI/ML API Tokens [Here](../../maintainer-guide/system-services/ai-ml-api/api-usage/authentication/)
 
 ### Navigate to Swagger or use CURL
 

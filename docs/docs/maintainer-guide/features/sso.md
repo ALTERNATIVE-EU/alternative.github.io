@@ -1,6 +1,6 @@
 ## Single Sign-On (SSO)
 
-The ALTERNATIVE platform implements a robust Single Sign-On (SSO) solution, which is a key integration between the CKAN-based web application and the JupyterHub development environment. This feature enhances user experience and security across the platform.
+The ALTERNATIVE platform implements a robust Single Sign-On (SSO) solution, which is a key integration between the Platform web application and the JupyterHub development environment. This feature enhances user experience and security across the platform.
 
 ### Implementation with Keycloak
 
@@ -30,5 +30,5 @@ The implementation of SSO brings several advantages to the ALTERNATIVE platform:
 1. User logs in to the ALTERNATIVE web application using their Keycloak credentials.
 2. Upon successful authentication, Keycloak issues a secure token.
 3. When the user accesses JupyterHub or other integrated services, the token is used to authenticate the user automatically.
-4. The user can seamlessly navigate between CKAN, JupyterHub, and other platform components without additional login prompts.
+4. The user can seamlessly navigate between Data Management part, JupyterHub, and other platform components without additional login prompts.
 

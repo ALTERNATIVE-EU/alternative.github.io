@@ -1,8 +1,8 @@
-# CKAN Data Management Platform
+# Data Management Platform
 
 ## Overview
 
-The CKAN-based ALTERNATIVE platform is designed to facilitate easy creation, sharing, and management of various types of data, catering to both internal teams and external audiences. It offers a user-friendly web interface that streamlines the process of data publication and discovery.
+The ALTERNATIVE platform is designed to facilitate easy creation, sharing, and management of various types of data, catering to both internal teams and external audiences. It offers a user-friendly web interface that streamlines the process of data publication and discovery.
 
 ### Key Objectives
 
@@ -11,7 +11,7 @@ The CKAN-based ALTERNATIVE platform is designed to facilitate easy creation, sha
 - **Metadata Management**: Provide comprehensive metadata functionality, including custom fields for scientific experiments.
 - **Integration with Development Environment**: Seamless connection with JupyterHub for data analysis and model development.
 - **Secure Authentication**: Utilize Keycloak for robust identity and access management.
-- **Extensibility**: Leverage CKAN's extension mechanism to tailor functionality to ALTERNATIVE's specific needs.
+- **Extensibility**: Utilize the platform's modular extension mechanism to customize functionality in alignment with ALTERNATIVE's specific requirements.
 
 ## Features
 
@@ -21,4 +21,4 @@ The CKAN-based ALTERNATIVE platform is designed to facilitate easy creation, sha
 - **Secure Collaboration**: Granular access controls and dataset collaborator roles (Member, Editor, Admin).
 - **API Access**: Comprehensive API for programmatic interaction with datasets and resources.
 - **Cloud Storage Integration**: Utilization of S3 storage for efficient management of large datasets.
-- **Single Sign-On (SSO)**: Seamless authentication between CKAN and JupyterHub environments.
+- **Single Sign-On (SSO)**: Seamless authentication between Data Management and JupyterHub environments.

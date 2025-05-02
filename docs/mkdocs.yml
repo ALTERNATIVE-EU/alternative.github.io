@@ -21,7 +21,7 @@ theme:
         name: Switch to light mode
   features:
     - navigation.sections
-    - navigation.expand
+#    - navigation.expand
     - search.suggest
     - search.highlight
     - content.tabs.link
@@ -58,63 +58,68 @@ markdown_extensions:
 
 nav:
   - Overview: index.md
-  - Architecture:
-      - Introduction: architecture/overview.md
-      - Cloud Infrastructure: architecture/cloud-infrastructure.md
-      - Kubernetes: architecture/kubernetes.md
-      - Networking: architecture/networking.md
-      - Storage: architecture/storage.md
-  - User Services:
-      - Introduction: user-services/overview.md
-      - CKAN:
-          - Introduction: user-services/ckan/overview.md
-          - Users, Organizations, and Authorization: user-services/ckan/users.md
-          - Datasets, Resources, and Groups: user-services/ckan/datasets.md
-          - Metadata: user-services/ckan/metadata.md
-          - API: user-services/ckan/api.md
-          - Extensions: user-services/ckan/extensions.md
+  - User guide:
+      - Getting started: user-guide/getting-started.md
+      - Web Interface:
+          - Introduction: user-guide/ckan/overview.md
+          - Users, Organizations, and Authorization: user-guide/ckan/users.md
+          - Datasets, Resources, and Groups: user-guide/ckan/datasets.md
+          - Metadata: user-guide/ckan/metadata.md
+          - API: user-guide/ckan/api.md
       - JupyterHub:
-          - Introduction: user-services/jupyterhub/overview.md
-          - File System: user-services/jupyterhub/filesystem.md
-          - Environments: user-services/jupyterhub/environments.md
-          - Alternative Library: user-services/jupyterhub/library.md
-          - R: user-services/jupyterhub/r.md
-          - Bioconductor: user-services/jupyterhub/bioconductor.md
+          - Introduction: user-guide/jupyterhub/overview.md
+          - File System: user-guide/jupyterhub/filesystem.md
+          - Environments: user-guide/jupyterhub/environments.md
+          - Alternative Library: user-guide/jupyterhub/library.md
+          - R: user-guide/jupyterhub/r.md
+          - Bioconductor: user-guide/jupyterhub/bioconductor.md
+      - Model Usage: user-guide/model-usage.md
+  - Maintainer's guide: 
+    - Getting started: maintainer-guide/index.md
+    - Architecture:
+      - Introduction: maintainer-guide/architecture/overview.md
+      - Cloud Infrastructure: maintainer-guide/architecture/cloud-infrastructure.md
+      - Kubernetes: maintainer-guide/architecture/kubernetes.md
+      - Networking: maintainer-guide/architecture/networking.md
+      - Storage: maintainer-guide/architecture/storage.md
+    - System Services:
+#     - Introduction: system-services/overview.md   
       - AI/ML API:
-          - Introduction: user-services/ai-ml-api/index.md
-          - System Architecture: user-services/ai-ml-api/system-architecture.md
-          - Data Flow: user-services/ai-ml-api/data-flow.md
+          - Introduction: maintainer-guide/system-services/ai-ml-api/index.md
+          - System Architecture: maintainer-guide/system-services/ai-ml-api/system-architecture.md
+          - Data Flow: maintainer-guide/system-services/ai-ml-api/data-flow.md
           - Security:
-              - Authentication and Authorization: user-services/ai-ml-api/security/authentication-and-authorization.md
-              - Encryption: user-services/ai-ml-api/security/encryption.md
+              - Authentication and Authorization: maintainer-guide/system-services/ai-ml-api/security/authentication-and-authorization.md
+              - Encryption: maintainer-guide/system-services/ai-ml-api/security/encryption.md
           - Token Management:
-              - CKAN Integration: user-services/ai-ml-api/token-management/ckan-integration.md
-              - Token Lifecycle: user-services/ai-ml-api/token-management/token-lifecycle.md
+              - CKAN Integration: maintainer-guide/system-services/ai-ml-api/token-management/ckan-integration.md
+              - Token Lifecycle: maintainer-guide/system-services/ai-ml-api/token-management/token-lifecycle.md
           - API Usage:
-              - Endpoints: user-services/ai-ml-api/api-usage/endpoints.md
-              - Authentication: user-services/ai-ml-api/api-usage/authentication.md
-              - Error Handling: user-services/ai-ml-api/api-usage/error-handling.md
-          - Scalability: user-services/ai-ml-api/scalability.md
-          - Testing: user-services/ai-ml-api/testing.md
-  - Administrative Services:
-      - Introduction: admin-services/overview.md
-      - Keycloak: admin-services/keycloak.md
-      - External DNS: admin-services/external-dns.md
-      - Cert Manager: admin-services/cert-manager.md
-      - Ingress Controller: admin-services/ingress-controller.md
-      - Istio: admin-services/istio.md
-  - Platform Features:
-      - Introduction: features/overview.md
-      - Data Sharing: features/data-sharing.md
-      - Development Environment: features/development-environment.md
-      - Multi-user and Collaboration: features/multi-user-and-collaboration.md
-      - Single Sign-On: features/sso.md
-      - Elasticity: features/elasticity.md
-  - Deployment:
-      - Platform Deployment: deployment/platform.md
-      - Envoy Filter: deployment/envoy-filter.md
-      - AI/ML API: deployment/ai-ml-api.md
-  - Repositories: repositories.md
+              - Endpoints: maintainer-guide/system-services/ai-ml-api/api-usage/endpoints.md
+              - Authentication: maintainer-guide/system-services/ai-ml-api/api-usage/authentication.md
+              - Error Handling: maintainer-guide/system-services/ai-ml-api/api-usage/error-handling.md
+          - Scalability: maintainer-guide/system-services/ai-ml-api/scalability.md
+          - Testing: maintainer-guide/system-services/ai-ml-api/testing.md
+    - Administrative Services:
+      - Introduction: maintainer-guide/admin-services/overview.md
+      - Keycloak: maintainer-guide/admin-services/keycloak.md
+      - External DNS: maintainer-guide/admin-services/external-dns.md
+      - Cert Manager: maintainer-guide/admin-services/cert-manager.md
+      - Ingress Controller: maintainer-guide/admin-services/ingress-controller.md
+      - Istio: maintainer-guide/admin-services/istio.md
+    - Platform Features:
+      - Introduction: maintainer-guide/features/overview.md
+      - Data Sharing: maintainer-guide/features/data-sharing.md
+      - Extensions: maintainer-guide/features/extensions.md
+      - Development Environment: maintainer-guide/features/development-environment.md
+      - Multi-user and Collaboration: maintainer-guide/features/multi-user-and-collaboration.md
+      - Single Sign-On: maintainer-guide/features/sso.md
+      - Elasticity: maintainer-guide/features/elasticity.md
+    - Deployment:
+      - Platform Deployment: maintainer-guide/deployment/platform.md
+      - Envoy Filter: maintainer-guide/deployment/envoy-filter.md
+      - AI/ML API: maintainer-guide/deployment/ai-ml-api.md
+    - Repositories: maintainer-guide/repositories.md
 
 extra:
   social:

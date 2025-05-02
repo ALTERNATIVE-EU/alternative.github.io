@@ -1,14 +1,14 @@
-# CKAN API
+# Platform API
 
 ## Overview
 
-The CKAN API is a powerful interface that allows programmatic access to CKAN's functionality. It enables developers and data scientists to interact with datasets, resources, and other CKAN features without using the web interface. The API is RESTful, using HTTP methods to perform operations and returning results in JSON format.
+The Platform API is a powerful interface that allows programmatic access to its's functionality. It enables developers and data scientists to interact with datasets, resources, and other platform features without using the web interface. The API is RESTful, using HTTP methods to perform operations and returning results in JSON format.
 
-CKAN exposes most of its features through the API, making it the preferred method for working with datasets, especially for automation and integration purposes. 
+ALTERNATIVE platform exposes most of its features through the API, making it the preferred method for working with datasets, especially for automation and integration purposes. 
 
 ## Key API Functionalities
 
-CKAN's API offers a wide range of functionalities, including:
+Platform's API offers a wide range of functionalities, including:
 
 1. **Dataset Management**: Create, read, update, and delete datasets.
 2. **Resource Management**: Add, modify, and remove resources within datasets.
@@ -18,11 +18,11 @@ CKAN's API offers a wide range of functionalities, including:
 
 ## Common API Endpoints and Their Uses
 
-Here are some of the most commonly used CKAN API endpoints and their functions:
+Here are some of the most commonly used API endpoints and their functions:
 
 ### 1. Package (Dataset) API
 
-- `package_list`: List all datasets in CKAN.
+- `package_list`: List all datasets in the ALTERNATIVE platform.
 - `package_show`: Retrieve the metadata of a dataset.
 - `package_create`: Create a new dataset.
 - `package_update`: Update an existing dataset.
@@ -37,7 +37,7 @@ Here are some of the most commonly used CKAN API endpoints and their functions:
 
 ### 3. User API
 
-- `user_list`: List users on the CKAN site.
+- `user_list`: List users on the Platform site.
 - `user_show`: Return a user account.
 - `user_create`: Create a new user.
 
@@ -51,7 +51,7 @@ Here are some of the most commonly used CKAN API endpoints and their functions:
 
 ### Python Examples
 
-Here are some examples of how to use the CKAN API with Python:
+Here are some examples of how to use the API with Python:
 
 - **Listing all datasets**:
 
@@ -94,7 +94,7 @@ Here are some examples of how to use the CKAN API with Python:
 
 ### Curl Examples
 
-Here are examples of how to use the CKAN API with curl:
+Here are examples of how to use the API with curl:
 
 - **Listing all datasets**:
 
@@ -135,4 +135,4 @@ Here are examples of how to use the CKAN API with curl:
         -d '{"id": "dataset-to-delete-id"}'
     ```
 
-For more detailed information about the CKAN API, including all available endpoints and their parameters, please refer to the official [CKAN API documentation](https://docs.ckan.org/en/2.9/api/index.html).
+For more detailed information about the API, including all available endpoints and their parameters, please refer to the official [CKAN API documentation](https://docs.ckan.org/en/2.9/api/index.html).

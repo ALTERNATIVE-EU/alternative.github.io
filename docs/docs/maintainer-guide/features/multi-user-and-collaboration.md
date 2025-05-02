@@ -12,7 +12,7 @@ The ALTERNATIVE platform is designed with robust multi-user support and collabor
 
 3. **CKAN Customization**: Through CKAN extension points, the platform offers tailored experiences for different user groups, enhancing usability and efficiency.
 
-4. **Single Sign-On (SSO)**: Seamless authentication across CKAN and JupyterHub components, powered by Keycloak, ensures a smooth user experience.
+4. **Single Sign-On (SSO)**: Seamless authentication across Data Management part and JupyterHub components, powered by Keycloak, ensures a smooth user experience.
 
 5. **Flexible Organization Hierarchies**: Reflective sharing permissions allow for nuanced access control, such as department-specific visibility or project-based collaboration spaces.
 

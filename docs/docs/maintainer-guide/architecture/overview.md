@@ -16,7 +16,7 @@ The ALTERNATIVE platform comprises several key components:
 
 4. **Storage Solutions**: Utilizing a combination of S3 object storage, block storage, and NFS for various data storage needs.
 
-5. **User Services**: Primarily CKAN for data sharing and JupyterHub for providing an integrated development environment.
+5. **User Services**: Primarily Data sharing and JupyterHub for providing an integrated development environment.
 
 6. **APIs**: Facilitating communication between different components and enabling external integrations.
 
@@ -26,7 +26,7 @@ The ALTERNATIVE platform comprises several key components:
 - **Security**: Implements robust security measures, including SSL/TLS encryption, IAM through Keycloak, and fine-grained access controls.
 - **Flexibility**: The modular design allows for easy updates and additions to individual components without affecting the entire system.
 - **Collaboration**: Supports multi-user environments and facilitates seamless data sharing and collaborative work.
-- **Extensibility**: Utilizes CKAN's extension mechanism to add custom functionality tailored to the ALTERNATIVE project's needs.
+- **Extensibility**: Employs a modular extension mechanism to incorporate custom functionality tailored to the specific requirements of the ALTERNATIVE project.
 
 ## Purpose and Goals
 

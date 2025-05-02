@@ -38,7 +38,7 @@ AI/ML API tokens are used to access the AI/ML API. To generate an AI/ML API toke
 
 At the top of any page, select the dashboard symbol. This shows changes to datasets, organizations and groups that you follow. It is possible to follow individual users to be notified of changes that they make. To start/stop following a dataset, organization, group, or user, go to their dedicated page and select `Follow`/`Unfollow`. You can also select the `Activity Stream` tab to see all activities related to the item. You can enable email notifications for updates to items you follow by enabling `Subscribe to notification emails` from your profile settings.
 
-## Organizations
+### Organizations
 
 Organizations have members and own datasets. You need to be a member of an organization in order to create datasets. Each organization can have its own workflow and authorizations, allowing it to manage its own publishing process. It also has a homepage, where users can find some information about the organization and search within its datasets, this can be accessed by going to `Organizations` and selecting the specific organization you want to explore. Only administrator users can create organizations, by going to the `Organizations` page and pressing `Add Organization`. Initially, the organization has no datasets and only 1 member - the creator.
 
@@ -78,7 +78,7 @@ To change a user's role:
 5. Use the dropdown menu next to their name to select the new role
 6. Click `Update Member`
 
-### AI/ML API Roles
+<!-- ### AI/ML API Roles
 
 To have access to the AI/ML API models, a user needs to have the `ai-ml-api-{model}` roles. Each model has its own role, for example, to use the `clinicaldata` model, a user needs to have the `ai-ml-api-clinicaldata` role.
 
@@ -95,3 +95,4 @@ To edit AI/ML API roles:
 4. To remove a role, reverse this process by selecting the role from the Assigned Roles list and removing it
 
 If you need a role added or removed, please contact a platform administrator.
+-->

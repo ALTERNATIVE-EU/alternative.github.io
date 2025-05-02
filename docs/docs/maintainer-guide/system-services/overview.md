@@ -1,8 +1,8 @@
-# User Services
+# System Services
 
 ## Overview
 
-The user services provided by the ALTERNATIVE platform facilitate direct interaction with the platform's various features and tools.
+The system services provided by the ALTERNATIVE platform facilitate direct interaction with the platform's various features and tools.
 
 ## CKAN
 The ALTERNATIVE platform's data sharing component utilizes CKAN, a web-based catalog platform designed for collaborative handling of large datasets. CKAN offers an intuitive web interface for creating, sharing, and managing different types of data with both internal teams and external audiences.

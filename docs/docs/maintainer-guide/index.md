@@ -1,1 +1,0 @@
-The sections below document how to setup and maintain an instance based on ALTERNATIVE platform, including installing, upgrading and configuring its features and extensions.

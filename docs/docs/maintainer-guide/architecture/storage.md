@@ -22,33 +22,33 @@ The platform delegates scalability, recovery, and persistence responsibilities t
 ### Types of Storage Used
 
 - **Block Storage:** The platform employs block storage as the primary file system for applications. This type of storage is ideal for scenarios where performance and low latency are critical, providing high-speed access to data suitable for various workloads.
-- **S3 Storage:** For the CKAN component of the platform, S3 storage is utilized. Known for its scalability and durability, S3 is an object storage service offering a simple and cost-effective solution for storing and retrieving large amounts of data, aligning well with CKAN's design goal of handling large datasets.
+- **S3 Storage:** For the Data storing and sharing component of the platform, S3 storage is utilized. Known for its scalability and durability, S3 is an object storage service offering a simple and cost-effective solution for storing and retrieving large amounts of data, aligning well with platform's design goal of handling large datasets.
 
 ## S3 Storage
 
-The ALTERNATIVE platform, particularly its CKAN component, has specific storage requirements due to potentially large datasets containing omics data. To effectively manage these datasets, the platform employs S3 storage, well-suited for handling large volumes of data.
+The ALTERNATIVE platform has specific storage requirements due to the potentially large size of datasets, particularly those containing omics data. To manage these datasets effectively, the platform utilizes S3-compatible storage, which is well-suited for handling high volumes of data.
 
 ### Scalability and Cost-Effectiveness of S3
 
 S3 storage is chosen for its exceptional scalability and cost-effectiveness. It handles vast amounts of data, scaling seamlessly with the platform's storage needs. This scalability ensures that as the volume of omics data grows, the storage infrastructure can grow correspondingly without significant challenges. Additionally, S3's pricing model, which involves paying only for the storage used, makes it a cost-effective solution for managing large datasets.
 
-### Custom CKAN Integration with S3
+### Custom Platform Integration with S3
 
-CKAN's integration with S3 storage is achieved through a custom CKAN extension. This extension enables CKAN to efficiently interface with S3 storage, optimizing data storage and retrieval processes for performance and reliability.
+Integration with S3-compatible storage is achieved through a custom extension, enabling efficient interaction with the storage backend. This facilitates optimized data storage and retrieval processes, ensuring both performance and reliability.
 
 ### Direct Interface with S3
 
-In the ALTERNATIVE platform, CKAN interfaces directly with S3 storage, bypassing integration via the Kubernetes plane. This direct interaction streamlines data flow between CKAN and S3, reducing complexity and potential bottlenecks that might arise from additional layers of integration.
+In the ALTERNATIVE platform, the data management component interfaces directly with S3-compatible storage, bypassing integration through the Kubernetes layer. This direct interaction streamlines data flow, minimizing complexity and reducing potential bottlenecks associated with additional integration layers.
 
 ### S3 Storage Service and Minio Library
 
-The S3 storage service provided by the cloud provider utilizes the Minio library, an open-source object storage server fully compatible with Amazon S3 APIs. Minio enhances the platform's ability to interact with S3 storage efficiently and securely.
+The S3 storage service provided by the cloud provider utilizes the MinIO library, an open-source object storage server fully compatible with Amazon S3 APIs. MinIO enhances the platform's ability to interact with S3 storage efficiently and securely.
 
-### CKAN's API-based Data Exposure
+### API-based Data Exposure
 
-CKAN does not directly expose the underlying S3 storage to end users. Instead, CKAN provides its own set of APIs for data access, ensuring controlled and secure data access. This approach enhances security and allows for the implementation of additional features and controls over how data is accessed and used.
+The platform does not expose the underlying S3-compatible storage directly to end users. Instead, it provides a dedicated set of APIs for data access, ensuring controlled and secure interaction with stored data. This approach enhances security and enables the implementation of additional features and access controls, governing how data is retrieved and utilized.
 
-In summary, the use of S3 storage in the ALTERNATIVE platform, particularly for CKAN, addresses the specific needs of large-scale omics data management. The custom integration of CKAN with S3, the direct interface approach, and the use of the Minio library ensure efficient handling of large datasets while maintaining cost-effectiveness and security.
+In summary, the use of S3-compatible storage within the ALTERNATIVE platform addresses the specific requirements of large-scale omics data management. The custom integration, combined with a direct interface approach and the use of the MinIO library, ensures efficient handling of large datasets while maintaining both cost-effectiveness and security.
 
 ## Block Storage
 
@@ -74,12 +74,12 @@ Using block storage in this manner decouples applications from the physical stor
 
 The platform deploys an NFS (Network File System) server to provide an additional storage class for some applications. For instance, JupyterHub users require a shared data folder for collaboration, necessitating a storage class with mode `ReadWriteMany`. Since the cloud provider only offers block storage classes of type `ReadWriteOnce`, the NFS server is used to expose such a volume.
 
-## CKAN Storage
+## ALTERNATIVE Data Management Storage
 
-The CKAN application uses several types of storage:
+The Platform uses several types of storage:
 - **Database:** A relational database (Postgres) is used to store the application state, including metadata and user data.
 - **S3:** User-defined datasets are mapped to S3 buckets.
-- **Block Storage:** Regular files, such as configuration files needed by CKAN, use block storage.
+- **Block Storage:** Regular files, such as configuration files needed by the Platform, use block storage.
 
 ## JupyterHub Storage
 
@@ -96,10 +96,10 @@ Each user is dynamically allocated a Kubernetes POD containing the Jupyter kerne
 
 Users can share data directly in Jupyter via a shared folder mapped to a static volume (20 GB) with mode `ReadWriteMany`. Multiple PODs must be able to attach and write to this volume simultaneously, provided by the NFS server.
 
-### Accessing CKAN Data from Jupyter
+### Accessing ALTERNATIVE platform data from Jupyter
 
-A custom Python library, `alternative-lib`, simplifies access to CKAN/S3 data from Jupyter. Hosted on GitHub as an open-source project, it enhances user experience by providing seamless data access.
+A custom Python library, `alternative-lib`, simplifies access to ALTERNATIVE/S3 data from Jupyter. Hosted on GitHub as an open-source project, it enhances user experience by providing seamless data access.
 
 ## Databases
 
-A Postgres database, deployed within the Kubernetes plane, is used by CKAN and Keycloak services, leveraging block storage.
+A Postgres database, deployed within the Kubernetes plane, is used by the Platform and Keycloak services, leveraging block storage.

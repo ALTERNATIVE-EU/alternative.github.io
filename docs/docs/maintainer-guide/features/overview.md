@@ -21,7 +21,7 @@ JupyterHub is integrated into the platform to provide a powerful development env
 
 - **On-demand JupyterLab Servers**: Users get personalized workspaces with a rich set of tools for data analysis and visualization.
 - **Multiple Programming Environments**: Support for Python, R, and other languages, with pre-configured environments and libraries.
-- **Integration with Platform Data**: Easy access to datasets stored in CKAN through custom Python libraries.
+- **Integration with Platform Data**: Easy access to datasets stored in the Platform through custom Python libraries.
 - **Resource Optimization**: Automatic shutdown of inactive servers to manage platform resources efficiently.
 - **Customizable Workspace**: Users can configure their JupyterLab interface with various plugins and extensions.
 
@@ -32,14 +32,14 @@ The platform is designed to facilitate collaboration among diverse teams of rese
 - **Shared Datasets**: Users can share datasets within organizations or with specific collaborators.
 - **Collaborative Notebooks**: JupyterHub supports multi-user access to notebooks, enabling real-time collaboration.
 - **Version Control Integration**: Built-in support for Git, allowing users to manage and share code effectively.
-- **Customizable User Experiences**: CKAN extensions allow for tailored interfaces for different user groups.
+- **Customizable User Experiences**: Platform extensions allow for tailored interfaces for different user groups.
 
 ## Single Sign-On
 
 To provide a seamless user experience across different components of the platform, Single Sign-On (SSO) has been implemented:
 
 - **Keycloak Integration**: Uses Keycloak for centralized identity and access management.
-- **Unified Authentication**: Users can access both CKAN and JupyterHub with a single set of credentials.
+- **Unified Authentication**: Users can access both Data Platform and JupyterHub with a single set of credentials.
 - **Secure Access Control**: Supports fine-grained access control and advanced security features like Two-Factor Authentication (2FA).
 
 ## Elasticity

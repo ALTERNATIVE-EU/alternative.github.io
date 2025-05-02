@@ -14,7 +14,7 @@ If the user is authenticated and authorized, the request is forwarded to the API
 
 The API Server processes the request, obtains the necessary results from the ML model(s), and generates a response, which is then sent back to the client application through the same secure communication channel.
 
-The system also integrates with CKAN, a data management platform, which handles access token management. Users can create, renew, and revoke their API tokens through a user-friendly interface provided by CKAN. Revoked tokens are stored in a PostgreSQL database to ensure that they cannot be used for unauthorized access.
+The system includes a data access management component that handles API token lifecycle operations. Users can create, renew, and revoke their API tokens through a user-friendly interface. Revoked tokens are recorded in a PostgreSQL database to ensure they cannot be reused for unauthorized access.
 
 The entire system is designed to be secure, scalable, and efficient. Security measures include HTTPS encryption, data encryption at rest and in transit, and role-based access control (RBAC) mechanisms. Scalability is achieved through the use of Docker for containerization and Kubernetes for container orchestration, allowing the system to scale up or down as needed to handle increased demand.
 
@@ -37,11 +37,11 @@ Overall, the AI/ML API Server provides a centralized and secure way for client a
 ### Istio Service Mesh
 
 - **Description:** The Istio Service Mesh is a robust infrastructure layer that provides a uniform approach to securing, connecting, and monitoring microservices. It significantly enhances the security, reliability, and observability of microservices by offering advanced features like mutual TLS authentication, traffic control, and telemetry collection.
-- **Responsibilities:** 
+- **Responsibilities:**
     - Security: Implementing strong security policies, including mutual TLS and fine-grained access controls.
     - Monitoring: Collecting and analyzing telemetry data to provide deep insights into service performance and health.
     - Traffic Management: Managing traffic flow between services, including load balancing, traffic splitting, and fault injection to ensure smooth and reliable service interactions.
-- **Technologies:** 
+- **Technologies:**
     - Istio: For service mesh management, providing a comprehensive suite of features to control and observe service interactions.
     - Envoy: As the high-performance proxy that intercepts and routes all traffic within the service mesh, enabling sophisticated traffic management and security enforcement.
 
@@ -62,7 +62,7 @@ Overall, the AI/ML API Server provides a centralized and secure way for client a
 - **Responsibilities:** Identity management, access control.
 - **Technologies:** Keycloak.
 
-### CKAN Data Management Platform
+<!-- ### CKAN Data Management Platform
 
 - **Description:** CKAN is a powerful data management platform designed for publishing, sharing, and accessing data. It is integrated with the API server to handle access tokens and manage user permissions, ensuring secure and efficient data access and distribution.
 - **Responsibilities:** 
@@ -72,6 +72,7 @@ Overall, the AI/ML API Server provides a centralized and secure way for client a
     - User Permissions Management: Managing user roles and permissions to control access to data and functionalities within the platform.
 - **Technologies:** 
     - CKAN: The core technology provides a comprehensive suite of features for data management, including a web-based interface for dataset management, an API for programmatic access, and extensions for customization.
+    -->
 
 ### Docker
 

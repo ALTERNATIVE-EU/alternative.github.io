@@ -1,17 +1,17 @@
 
-# Data sharing in CKAN
+# Data sharing
 
 ## Overview
 
-CKAN facilitates secure data sharing and exchange between permitted users and groups through its rich access control capabilities. All datasets and resources uploaded to CKAN can be assigned granular privileges dictating which users or organizations can view, access for analysis, edit metadata, or fully delete the assets.
+The ALTERNATIVE platform facilitates secure data sharing and exchange between authorized users and groups through its comprehensive access control capabilities. All datasets and resources uploaded to the platform can be assigned granular permissions, specifying which users or organizations are allowed to view, access for analysis, edit metadata, or delete the assets entirely.
 
 Flexible organization hierarchies allow reflective sharing permissions, such as a folder visible to members of a specific department, or an analytics project workspace shared between different users collaborating tightly. Access requests can also be configured for privileged approvals before enabling wider dataset visibility.
 
 Published open data is made publicly findable and accessible to all CKAN visitors. Private data restricted to members of the same group or organization can be easily shared for collaboration scenarios with audit logs tracking all access. Restricted datasets also benefit from CKAN features like ratings/comments, metadata enhancements, and discussions while remaining protected.
 
-### CKAN Metadata
+### Metadata
 
-Metadata helps organize, find, and understand information better, acting as a helpful guide that tells you what you need to know about the stuff you're looking at or working with. CKAN provides a powerful metadata functionality, including default fields, custom fields and metadata extension for scientific experiments.
+Metadata helps organize, find, and understand information better, acting as a helpful guide that tells you what you need to know about the stuff you're looking at or working with. The Platform provides a powerful metadata functionality, including default fields, custom fields and metadata extension for scientific experiments.
 
 #### Default Metadata Fields
 

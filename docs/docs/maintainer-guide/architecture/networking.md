@@ -8,7 +8,7 @@ The network is provisioned by a cloud provider, encompassing a comprehensive sui
 
 1. **Virtual Data Center (VDC)**: A software-defined data center that provides virtualized compute, storage, and networking resources. In the ALTERNATIVE platform, the VDC serves as the foundation for hosting all project-related services and applications.
 
-2. **Subnets**: Logical subdivisions of the IP network. The platform utilizes multiple subnets to segregate different types of traffic and services, enhancing security and performance. For example, separate subnets are used for the CKAN data sharing platform, JupyterHub computational environments, and administrative services.
+2. **Subnets**: Logical subdivisions of the IP network. The platform utilizes multiple subnets to segregate different types of traffic and services, enhancing security and performance. For example, separate subnets are used for the data sharing platform, JupyterHub computational environments, and administrative services.
 
 3. **Public and Private IPs**: 
    - **Public IPs**: Globally routable addresses that allow resources to be accessed from the internet. In the ALTERNATIVE platform, public IPs are assigned to load balancers and ingress controllers, enabling external access to the web portal and API endpoints.
@@ -16,7 +16,7 @@ The network is provisioned by a cloud provider, encompassing a comprehensive sui
 
 4. **Network Gateways**: Devices that serve as entry and exit points between networks. The platform employs gateways to manage traffic flow between the internal network and external internet, implementing security policies and routing rules.
 
-5. **Load Balancers**: Distribute incoming network traffic across multiple servers to ensure no single server becomes overwhelmed, improving the reliability and capacity of applications. In the ALTERNATIVE platform, load balancers are crucial for maintaining high availability of key services like the CKAN data portal and JupyterHub.
+5. **Load Balancers**: Distribute incoming network traffic across multiple servers to ensure no single server becomes overwhelmed, improving the reliability and capacity of applications. In the ALTERNATIVE platform, load balancers are crucial for maintaining high availability of key services like the data portal and JupyterHub.
 
 6. **Ingress Controllers**: Manage external access to services within the Kubernetes cluster. The platform uses NGINX-based ingress controllers to route HTTP and HTTPS traffic to the appropriate internal services based on defined rules.
 
@@ -40,9 +40,9 @@ The ALTERNATIVE platform leverages Kubernetes as its container orchestration sys
 
 Key Kubernetes networking concepts utilized in the ALTERNATIVE platform include:
 
-1. **Pods**: The smallest deployable units in Kubernetes. In the ALTERNATIVE platform, pods host individual components of services like CKAN, JupyterHub, and various data processing pipelines.
+1. **Pods**: The smallest deployable units in Kubernetes. In the ALTERNATIVE platform, pods host individual components of services like data platform, JupyterHub, and various data processing pipelines.
 
-2. **Services**: Kubernetes abstractions that define a logical set of pods and a policy by which to access them. For example, the CKAN web interface and API are exposed as Kubernetes services.
+2. **Services**: Kubernetes abstractions that define a logical set of pods and a policy by which to access them. For example, the web interface and API are exposed as Kubernetes services.
 
 3. **NetworkPolicies**: These are specifications of how groups of pods are allowed to communicate with each other and other network endpoints. In the ALTERNATIVE platform, NetworkPolicies are used to enforce strict access controls between different components, enhancing security.
 

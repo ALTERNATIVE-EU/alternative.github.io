@@ -1,16 +1,12 @@
-# Datasets, Resources, and Groups in CKAN
-
-## Overview
-
-This document provides comprehensive information about Datasets, Resources, and Groups in the ALTERNATIVE platform, which is built on CKAN (Comprehensive Knowledge Archive Network). It covers the fundamental concepts, creation processes, management techniques, and best practices for working with datasets, resources, and groups. This guide is essential for users who need to understand how data is organized, shared, and accessed within the ALTERNATIVE platform.
+# Datasets, Resources, and Groups
 
 ## General Information
 
-CKAN is a powerful open-source data management system that forms the backbone of the ALTERNATIVE platform's data sharing capabilities. It provides a web-based interface for cataloging, storing, and accessing data, making it easier for organizations to publish and share their data with internal teams or external audiences.
+The data management system underlying the ALTERNATIVE platform supports robust data sharing capabilities. It offers a web-based interface for cataloging, storing, and accessing data, enabling organizations to efficiently publish and share information with internal stakeholders or external audiences.
 
 ### Datasets
 
-Datasets are the core units of data in CKAN. A dataset is a collection of data resources (such as files, databases, or APIs) along with descriptive metadata. Datasets in CKAN:
+Datasets are the core units of data in the platform. A dataset is a collection of data resources (such as files, databases, or APIs) along with descriptive metadata:
 
 - Represent a logical collection of related data resources
 - Contain metadata describing the data, its source, and usage
@@ -20,7 +16,7 @@ Datasets are the core units of data in CKAN. A dataset is a collection of data r
 
 ### Resources
 
-Resources are the actual data files or references that make up a dataset. In CKAN:
+Resources are the actual data files or references that make up a dataset.
 
 - A resource can be any type of file (CSV, Excel, PDF, etc.) or a link to an external data source
 - Multiple resources can be added to a single dataset
@@ -29,7 +25,7 @@ Resources are the actual data files or references that make up a dataset. In CKA
 
 ### Groups
 
-Groups in CKAN are collections of datasets that share a common theme. They provide an additional way to organize and categorize datasets beyond organizations. Key features of groups include:
+Groups are collections of datasets that share a common theme. They provide an additional way to organize and categorize datasets beyond organizations. Key features of groups include:
 
 - Datasets from different organizations can be part of the same group
 - A dataset can belong to multiple groups

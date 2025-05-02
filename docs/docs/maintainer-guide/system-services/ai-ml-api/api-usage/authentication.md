@@ -2,7 +2,7 @@
 
 To obtain and use API tokens:
 
-1. Log in to the CKAN platform
+1. Log in to the ALTERNATIVE platform
 2. Navigate to "Profile" > "AI/ML API Tokens"
 3. Specify token name, scopes, and expiration
 4. Click "Create New Token"

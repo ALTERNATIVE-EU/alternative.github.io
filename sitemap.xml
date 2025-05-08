@@ -2,206 +2,206 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://platform.alternative-project.eu/</loc>
-         <lastmod>2025-05-02</lastmod>
+         <lastmod>2025-05-08</lastmod>
     </url>
     <url>
          <loc>https://platform.alternative-project.eu/maintainer-guide/</loc>
-         <lastmod>2025-05-02</lastmod>
+         <lastmod>2025-05-08</lastmod>
     </url>
     <url>
          <loc>https://platform.alternative-project.eu/maintainer-guide/repositories/</loc>
-         <lastmod>2025-05-02</lastmod>
+         <lastmod>2025-05-08</lastmod>
     </url>
     <url>
          <loc>https://platform.alternative-project.eu/maintainer-guide/admin-services/cert-manager/</loc>
-         <lastmod>2025-05-02</lastmod>
+         <lastmod>2025-05-08</lastmod>
     </url>
     <url>
          <loc>https://platform.alternative-project.eu/maintainer-guide/admin-services/external-dns/</loc>
-         <lastmod>2025-05-02</lastmod>
+         <lastmod>2025-05-08</lastmod>
     </url>
     <url>
          <loc>https://platform.alternative-project.eu/maintainer-guide/admin-services/ingress-controller/</loc>
-         <lastmod>2025-05-02</lastmod>
+         <lastmod>2025-05-08</lastmod>
     </url>
     <url>
          <loc>https://platform.alternative-project.eu/maintainer-guide/admin-services/istio/</loc>
-         <lastmod>2025-05-02</lastmod>
+         <lastmod>2025-05-08</lastmod>
     </url>
     <url>
          <loc>https://platform.alternative-project.eu/maintainer-guide/admin-services/keycloak/</loc>
-         <lastmod>2025-05-02</lastmod>
+         <lastmod>2025-05-08</lastmod>
     </url>
     <url>
          <loc>https://platform.alternative-project.eu/maintainer-guide/admin-services/overview/</loc>
-         <lastmod>2025-05-02</lastmod>
+         <lastmod>2025-05-08</lastmod>
     </url>
     <url>
          <loc>https://platform.alternative-project.eu/maintainer-guide/architecture/cloud-infrastructure/</loc>
-         <lastmod>2025-05-02</lastmod>
+         <lastmod>2025-05-08</lastmod>
     </url>
     <url>
          <loc>https://platform.alternative-project.eu/maintainer-guide/architecture/kubernetes/</loc>
-         <lastmod>2025-05-02</lastmod>
+         <lastmod>2025-05-08</lastmod>
     </url>
     <url>
          <loc>https://platform.alternative-project.eu/maintainer-guide/architecture/networking/</loc>
-         <lastmod>2025-05-02</lastmod>
+         <lastmod>2025-05-08</lastmod>
     </url>
     <url>
          <loc>https://platform.alternative-project.eu/maintainer-guide/architecture/overview/</loc>
-         <lastmod>2025-05-02</lastmod>
+         <lastmod>2025-05-08</lastmod>
     </url>
     <url>
          <loc>https://platform.alternative-project.eu/maintainer-guide/architecture/storage/</loc>
-         <lastmod>2025-05-02</lastmod>
+         <lastmod>2025-05-08</lastmod>
     </url>
     <url>
          <loc>https://platform.alternative-project.eu/maintainer-guide/deployment/ai-ml-api/</loc>
-         <lastmod>2025-05-02</lastmod>
+         <lastmod>2025-05-08</lastmod>
     </url>
     <url>
          <loc>https://platform.alternative-project.eu/maintainer-guide/deployment/envoy-filter/</loc>
-         <lastmod>2025-05-02</lastmod>
+         <lastmod>2025-05-08</lastmod>
     </url>
     <url>
          <loc>https://platform.alternative-project.eu/maintainer-guide/deployment/platform/</loc>
-         <lastmod>2025-05-02</lastmod>
+         <lastmod>2025-05-08</lastmod>
     </url>
     <url>
          <loc>https://platform.alternative-project.eu/maintainer-guide/deployment/platform/certificate/</loc>
-         <lastmod>2025-05-02</lastmod>
+         <lastmod>2025-05-08</lastmod>
     </url>
     <url>
          <loc>https://platform.alternative-project.eu/maintainer-guide/features/data-sharing/</loc>
-         <lastmod>2025-05-02</lastmod>
+         <lastmod>2025-05-08</lastmod>
     </url>
     <url>
          <loc>https://platform.alternative-project.eu/maintainer-guide/features/development-environment/</loc>
-         <lastmod>2025-05-02</lastmod>
+         <lastmod>2025-05-08</lastmod>
     </url>
     <url>
          <loc>https://platform.alternative-project.eu/maintainer-guide/features/elasticity/</loc>
-         <lastmod>2025-05-02</lastmod>
+         <lastmod>2025-05-08</lastmod>
     </url>
     <url>
          <loc>https://platform.alternative-project.eu/maintainer-guide/features/extensions/</loc>
-         <lastmod>2025-05-02</lastmod>
+         <lastmod>2025-05-08</lastmod>
     </url>
     <url>
          <loc>https://platform.alternative-project.eu/maintainer-guide/features/multi-user-and-collaboration/</loc>
-         <lastmod>2025-05-02</lastmod>
+         <lastmod>2025-05-08</lastmod>
     </url>
     <url>
          <loc>https://platform.alternative-project.eu/maintainer-guide/features/overview/</loc>
-         <lastmod>2025-05-02</lastmod>
+         <lastmod>2025-05-08</lastmod>
     </url>
     <url>
          <loc>https://platform.alternative-project.eu/maintainer-guide/features/sso/</loc>
-         <lastmod>2025-05-02</lastmod>
+         <lastmod>2025-05-08</lastmod>
     </url>
     <url>
          <loc>https://platform.alternative-project.eu/maintainer-guide/system-services/overview/</loc>
-         <lastmod>2025-05-02</lastmod>
+         <lastmod>2025-05-08</lastmod>
     </url>
     <url>
          <loc>https://platform.alternative-project.eu/maintainer-guide/system-services/ai-ml-api/</loc>
-         <lastmod>2025-05-02</lastmod>
+         <lastmod>2025-05-08</lastmod>
     </url>
     <url>
          <loc>https://platform.alternative-project.eu/maintainer-guide/system-services/ai-ml-api/data-flow/</loc>
-         <lastmod>2025-05-02</lastmod>
+         <lastmod>2025-05-08</lastmod>
     </url>
     <url>
          <loc>https://platform.alternative-project.eu/maintainer-guide/system-services/ai-ml-api/scalability/</loc>
-         <lastmod>2025-05-02</lastmod>
+         <lastmod>2025-05-08</lastmod>
     </url>
     <url>
          <loc>https://platform.alternative-project.eu/maintainer-guide/system-services/ai-ml-api/system-architecture/</loc>
-         <lastmod>2025-05-02</lastmod>
+         <lastmod>2025-05-08</lastmod>
     </url>
     <url>
          <loc>https://platform.alternative-project.eu/maintainer-guide/system-services/ai-ml-api/testing/</loc>
-         <lastmod>2025-05-02</lastmod>
+         <lastmod>2025-05-08</lastmod>
     </url>
     <url>
          <loc>https://platform.alternative-project.eu/maintainer-guide/system-services/ai-ml-api/api-usage/authentication/</loc>
-         <lastmod>2025-05-02</lastmod>
+         <lastmod>2025-05-08</lastmod>
     </url>
     <url>
          <loc>https://platform.alternative-project.eu/maintainer-guide/system-services/ai-ml-api/api-usage/endpoints/</loc>
-         <lastmod>2025-05-02</lastmod>
+         <lastmod>2025-05-08</lastmod>
     </url>
     <url>
          <loc>https://platform.alternative-project.eu/maintainer-guide/system-services/ai-ml-api/api-usage/error-handling/</loc>
-         <lastmod>2025-05-02</lastmod>
+         <lastmod>2025-05-08</lastmod>
     </url>
     <url>
          <loc>https://platform.alternative-project.eu/maintainer-guide/system-services/ai-ml-api/security/authentication-and-authorization/</loc>
-         <lastmod>2025-05-02</lastmod>
+         <lastmod>2025-05-08</lastmod>
     </url>
     <url>
          <loc>https://platform.alternative-project.eu/maintainer-guide/system-services/ai-ml-api/security/encryption/</loc>
-         <lastmod>2025-05-02</lastmod>
+         <lastmod>2025-05-08</lastmod>
     </url>
     <url>
          <loc>https://platform.alternative-project.eu/maintainer-guide/system-services/ai-ml-api/token-management/ckan-integration/</loc>
-         <lastmod>2025-05-02</lastmod>
+         <lastmod>2025-05-08</lastmod>
     </url>
     <url>
          <loc>https://platform.alternative-project.eu/maintainer-guide/system-services/ai-ml-api/token-management/token-lifecycle/</loc>
-         <lastmod>2025-05-02</lastmod>
+         <lastmod>2025-05-08</lastmod>
     </url>
     <url>
          <loc>https://platform.alternative-project.eu/user-guide/getting-started/</loc>
-         <lastmod>2025-05-02</lastmod>
+         <lastmod>2025-05-08</lastmod>
     </url>
     <url>
          <loc>https://platform.alternative-project.eu/user-guide/model-usage/</loc>
-         <lastmod>2025-05-02</lastmod>
+         <lastmod>2025-05-08</lastmod>
     </url>
     <url>
          <loc>https://platform.alternative-project.eu/user-guide/ckan/api/</loc>
-         <lastmod>2025-05-02</lastmod>
+         <lastmod>2025-05-08</lastmod>
     </url>
     <url>
          <loc>https://platform.alternative-project.eu/user-guide/ckan/datasets/</loc>
-         <lastmod>2025-05-02</lastmod>
+         <lastmod>2025-05-08</lastmod>
     </url>
     <url>
          <loc>https://platform.alternative-project.eu/user-guide/ckan/metadata/</loc>
-         <lastmod>2025-05-02</lastmod>
+         <lastmod>2025-05-08</lastmod>
     </url>
     <url>
          <loc>https://platform.alternative-project.eu/user-guide/ckan/overview/</loc>
-         <lastmod>2025-05-02</lastmod>
+         <lastmod>2025-05-08</lastmod>
     </url>
     <url>
          <loc>https://platform.alternative-project.eu/user-guide/ckan/users/</loc>
-         <lastmod>2025-05-02</lastmod>
+         <lastmod>2025-05-08</lastmod>
     </url>
     <url>
          <loc>https://platform.alternative-project.eu/user-guide/jupyterhub/bioconductor/</loc>
-         <lastmod>2025-05-02</lastmod>
+         <lastmod>2025-05-08</lastmod>
     </url>
     <url>
          <loc>https://platform.alternative-project.eu/user-guide/jupyterhub/environments/</loc>
-         <lastmod>2025-05-02</lastmod>
+         <lastmod>2025-05-08</lastmod>
     </url>
     <url>
          <loc>https://platform.alternative-project.eu/user-guide/jupyterhub/filesystem/</loc>
-         <lastmod>2025-05-02</lastmod>
+         <lastmod>2025-05-08</lastmod>
     </url>
     <url>
          <loc>https://platform.alternative-project.eu/user-guide/jupyterhub/library/</loc>
-         <lastmod>2025-05-02</lastmod>
+         <lastmod>2025-05-08</lastmod>
     </url>
     <url>
          <loc>https://platform.alternative-project.eu/user-guide/jupyterhub/overview/</loc>
-         <lastmod>2025-05-02</lastmod>
+         <lastmod>2025-05-08</lastmod>
     </url>
     <url>
          <loc>https://platform.alternative-project.eu/user-guide/jupyterhub/r/</loc>
-         <lastmod>2025-05-02</lastmod>
+         <lastmod>2025-05-08</lastmod>
     </url>
 </urlset>

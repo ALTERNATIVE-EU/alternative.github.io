@@ -33,3 +33,167 @@ Each AI/ML model within the ALTERNATIVE platform requires specific input paramet
 ### Execute request against the API
 
 After entering the required input parameters, users can submit a request to the API. The API processes the request, executes the corresponding AI/ML model, and returns prediction results. The response includes toxicity classifications, probability scores, simulated concentration-time profiles, or other model outputs. Users can retrieve and analyze the results either via Swagger UI, CURL, or programmatically through an API client.
+
+### Example Qurl requests
+
+#### AOP AI_MitDys
+
+```bash
+curl -X 'POST' \
+  'https://ai-ml-api.platform.alternative-project.eu/AOP/AI_MitDys/evaluate' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: application/json' \
+  -d '{
+  "smiles": "C2C(N=Cc1ccccc1)=C(N(N2c3ccccc3)C)C"
+}'
+```
+#### AOP ML_KEsMIEs
+
+```bash
+curl -X 'POST' \
+  'https://ai-ml-api.platform.alternative-project.eu/AOP/ML_KEsMIEs/evaluate' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: application/json' \
+  -d '{
+  "smiles": "C2C(N=Cc1ccccc1)=C(N(N2c3ccccc3)C)C"
+}'
+```
+#### DICTrank ML_apical_cardiotox
+
+```bash
+curl -X 'POST' \
+  'https://ai-ml-api.platform.alternative-project.eu/DICTrank/ML_apical_cardiotox/evaluate' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: application/json' \
+  -d '{
+  "smiles": "C2C(N=Cc1ccccc1)=C(N(N2c3ccccc3)C)C"
+}'
+```
+
+#### hERG
+
+```bash
+curl -X 'POST' \
+  'https://ai-ml-api.platform.alternative-project.eu/hERG/evaluate' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: application/json' \
+  -d '{
+  "smiles": "C2C(N=Cc1ccccc1)=C(N(N2c3ccccc3)C)C"
+}'
+```
+
+#### Multitask
+
+```bash
+curl -X 'POST' \
+  'https://ai-ml-api.platform.alternative-project.eu/Multitask/evaluate' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: application/json' \
+  -d '{
+  "smiles": "C2C(N=Cc1ccccc1)=C(N(N2c3ccccc3)C)C"
+}'
+```
+
+#### AHR
+
+```bash
+curl -X 'POST' \
+  'https://ai-ml-api.platform.alternative-project.eu/AHR/evaluate' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: application/json' \
+  -d '{
+  "smiles": "C2C(N=Cc1ccccc1)=C(N(N2c3ccccc3)C)C"
+}'
+```
+
+#### PBPK Doxorubicin
+
+```bash
+curl -X 'POST' \
+  'https://ai-ml-api.platform.alternative-project.eu/pbpk/doxorubicin' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: application/json' \
+  -d '{
+  "dose_mg": 60,
+  "age": 50,
+  "weight": 70,
+  "height": 190
+}'
+```
+
+#### PBPK httk
+
+```bash
+curl -X 'POST' \
+  'https://ai-ml-api.platform.alternative-project.eu/pbpk/httk' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: application/json' \
+  -d '{
+  "chem_name": "Bisphenol A",
+  "species": "human",
+  "daily_dose": 1,
+  "doses_per_day": 1,
+  "days": 15
+}'
+```
+
+#### TK 2D
+
+```bash
+curl -X 'POST' \
+  'https://ai-ml-api.platform.alternative-project.eu/TK/2D/evaluate' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: application/json' \
+  -d '{
+  "compound": "DOX"
+}'
+```
+
+#### TK 3D
+
+```bash
+curl -X 'POST' \
+  'https://ai-ml-api.platform.alternative-project.eu/TK/3D/evaluate' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: application/json' \
+  -d '{
+  "compound": "DOX"
+}'
+```
+
+#### TD Lipidomics
+
+```bash
+curl -X 'POST' \
+  'https://ai-ml-api.platform.alternative-project.eu/TD/lipidomics/evaluate' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: application/json' \
+  -d '{
+  "compound": "DOX"
+}'
+```
+
+#### TD Metabolomics
+
+```bash
+curl -X 'POST' \
+  'https://ai-ml-api.platform.alternative-project.eu/TD/metabolomics/evaluate' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: application/json' \
+  -d '{
+  "compound": "DOX"
+}'
+```
+
+#### TD Proteomics
+
+```bash
+curl -X 'POST' \
+  'https://ai-ml-api.platform.alternative-project.eu/TD/proteomics/evaluate' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: application/json' \
+  -d '{
+  "compound": "DOX",
+  "protein": "P16403"
+}'
+```
